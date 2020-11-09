@@ -5,7 +5,7 @@ Copyright (C) 2020 Takym.
 [English](#en)
 [編集/Edit](https://github.com/Takym/takym.github.io/)
 
-* **Attention:** please do not fork and clone this repository.
+* **Attention:** please do not fork or clone this repository.
 * **注意：** このリポジトリをフォークまたはクローンしないでください。
 
 # English <a id="en"></a>
