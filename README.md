@@ -24,6 +24,8 @@ Copyright (C) 2020 Takym.
 	* [View the site](https://takym.github.io/ExapisSOP).
 * [AupLauncher](https://github.com/Takym/AupLauncher)
 	* Launcher for AviUtl & Audacity Project Files
+* [shutage](https://github.com/Takym/shutage)
+	* [View the site](https://takym.github.io/shutage).
 * For more misc repositories, please see [this page](./repos.md).
 
 ## Terms for this Site <a id="en_terms"></a>
@@ -46,6 +48,8 @@ Copyright (C) 2020 Takym.
 	* [サイトを表示する](https://takym.github.io/ExapisSOP)。
 * [AupLauncher](https://github.com/Takym/AupLauncher)
 	* AviUtl/Audacityプロジェクトファイル自動切り替えツール。
+* [shutage](https://github.com/Takym/shutage)
+	* [サイトを表示する](https://takym.github.io/shutage)。
 * その他の情報は[こちらのページ](./repos.md)にまとめています。
 
 ## このサイトの規約について <a id="ja_terms"></a>
