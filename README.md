@@ -17,6 +17,7 @@ Copyright (C) 2020 Takym.
 ## Summary <a id="en_summary"></a>
 * Aggregates and manages my repository information.
 * Plese see [tags list](https://takym.github.io/articles/tags.html) (Japanese) to find articles.
+* [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
 
 ## List of repositories <a id="en_repos"></a>
 * [ExapisSOP](https://github.com/Takym/ExapisSOP)
@@ -41,6 +42,7 @@ Copyright (C) 2020 Takym.
 ## 概要 <a id="ja_summary"></a>
 * 自分で作成したリポジトリの情報を集約しています。
 * [記事一覧](https://takym.github.io/articles/tags.html)から記事を探せます。
+* [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
 
 ## リポジトリ一覧 <a id="ja_repos"></a>
 * [ExapisSOP](https://github.com/Takym/ExapisSOP)
