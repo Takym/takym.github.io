@@ -18,6 +18,7 @@ Copyright (C) 2020 Takym.
 | 11|shutage                     |https://github.com/Takym/shutage              |Available         |利用可能       |MIT License     |
 | 12|docfx                       |https://github.com/Takym/docfx                |Forked            |フォーク       |                |
 | 13|Yigty.ORG                   |https://github.com/Takym/Yigty.ORG            |Forked            |フォーク       |Undecided/未決定|
+| 14|TakymLib                    |https://github.com/Takym/TakymLib             |Private           |非公開         |MIT License     |
 |   |[Other Private Repositories]|                                              |Private           |非公開         |You cannot use. |
 
 * **Proprietary** software is distributed under a custom license.
