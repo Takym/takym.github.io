@@ -1,5 +1,5 @@
 # Terms for takym.github.io
-Copyright (C) 2020 Takym.
+Copyright (C) 2020-2021 Takym.
 
 * This page is written in Japanese only.
 
