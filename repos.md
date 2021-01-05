@@ -4,6 +4,7 @@ Copyright (C) 2020 Takym.
 | # |Name                        |Address                                       |Status            |状態           |License/規約   |
 |:-:|:---------------------------|:---------------------------------------------|:-----------------|:--------------|:--------------|
 |  0|takym.github.io             |https://github.com/Takym/takym.github.io      |This Repo         |このリポジトリ |Proprietary    |
+|  0|Takym                       |https://github.com/Takym/Takym                |This Repo         |このリポジトリ |Proprietary    |
 |  1|ExapisSOP                   |https://github.com/Takym/ExapisSOP            |No developing     |開発休止中     |MIT License    |
 |  2|AupLauncher                 |https://github.com/Takym/AupLauncher          |No developing     |開発休止中     |MIT License    |
 |  3|OSDeveloper                 |https://github.com/Takym/OSDeveloper          |Closed            |終了           |MIT License    |

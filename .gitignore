@@ -16,3 +16,6 @@ desktop.ini
 
 # Site files
 _site/
+
+# Visual Studio files
+/.vs
