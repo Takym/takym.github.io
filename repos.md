@@ -19,6 +19,7 @@ Copyright (C) 2020-2021 Takym.
 | 12|docfx                       |<https://github.com/Takym/docfx>                |Forked            |フォーク       |                |
 | 13|Yigty.ORG                   |<https://github.com/Takym/Yigty.ORG>            |Forked            |フォーク       |Undecided/未決定|
 | 14|TakymLib                    |<https://github.com/Takym/TakymLib>             |Forked            |フォーク       |MIT License     |
+| 15|cocoa                       |<https://github.com/Takym/cocoa>                |Forked            |フォーク       |                |
 |   |[Other Private Repositories]|                                                |Private           |非公開         |You cannot use. |
 
 * **Proprietary** software is distributed under a custom license.
