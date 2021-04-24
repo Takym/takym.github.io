@@ -20,6 +20,8 @@ Copyright (C) 2020-2021 Takym.
 | 13|Yigty.ORG                   |<https://github.com/Takym/Yigty.ORG>            |Forked            |フォーク       |Undecided/未決定|
 | 14|TakymLib                    |<https://github.com/Takym/TakymLib>             |Forked            |フォーク       |MIT License     |
 | 15|cocoa                       |<https://github.com/Takym/cocoa>                |Forked            |フォーク       |                |
+| 16|Gradexor                    |<https://github.com/Takym/Gradexor>             |Ongoing little    |少しずつ継続中 |MIT License     |
+| 17|AclibMarkup                 |<https://github.com/Takym/AclibMarkup>          |Ongoing little    |少しずつ継続中 |MIT License     |
 |   |[Other Private Repositories]|                                                |Private           |非公開         |You cannot use. |
 
 * **Proprietary** software is distributed under a custom license.
