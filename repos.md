@@ -22,6 +22,7 @@ Copyright (C) 2020-2021 Takym.
 | 15|cocoa                       |<https://github.com/Takym/cocoa>                |Forked            |フォーク       |                |
 | 16|Gradexor                    |<https://github.com/Takym/Gradexor>             |Ongoing little    |少しずつ継続中 |MIT License     |
 | 17|AclibMarkup                 |<https://github.com/Takym/AclibMarkup>          |Moved & Deprecated|移転して廃止   |MIT License     |
+| 18|CocoaLogViewer              |<https://github.com/Takym/CocoaLogViewer>       |Forked            |フォーク       |MIT License     |
 |   |[Other Private Repositories]|                                                |Private           |非公開         |You cannot use. |
 
 * **Proprietary** software is distributed under a custom license.
