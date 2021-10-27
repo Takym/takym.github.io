@@ -11,7 +11,7 @@ Copyright (C) 2020-2021 Takym.
 	* <https://github.com/Takym/takym.github.io/blob/gh-pages/LICENSE.md>
 
 ## 制限
-<!--
+<!-- GitHub の規約上不可能？
 * このサイトのリポジトリを如何なる理由でも**フォーク**してはいけません。
 * このサイトのリポジトリを如何なる理由でも**クローン**してはいけません。
 -->
