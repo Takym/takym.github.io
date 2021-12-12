@@ -19,11 +19,15 @@ Copyright (C) 2020-2021 Takym.
 | 12|docfx                       |<https://github.com/Takym/docfx>                |Forked            |フォーク       |                |
 | 13|Yigty.ORG                   |<https://github.com/Takym/Yigty.ORG>            |Forked            |フォーク       |Undecided/未決定|
 | 14|TakymLib                    |<https://github.com/Takym/TakymLib>             |Forked            |フォーク       |MIT License     |
-| 15|cocoa                       |<https://github.com/Takym/cocoa>                |Forked            |フォーク       |                |
+| 15|cocoa                       |<https://github.com/Takym/cocoa>                |Forked            |フォーク       |MPLv2           |
 | 16|Gradexor                    |<https://github.com/Takym/Gradexor>             |Ongoing little    |少しずつ継続中 |MIT License     |
 | 17|AclibMarkup                 |<https://github.com/Takym/AclibMarkup>          |Moved & Deprecated|移転して廃止   |MIT License     |
 | 18|CocoaLogViewer              |<https://github.com/Takym/CocoaLogViewer>       |Forked            |フォーク       |MIT License     |
+| 19|GnuCash                     |<https://github.com/Takym/GnuCash>              |Forked            |フォーク       |GPLv2           |
+| 20|github-docs                 |<https://github.com/Takym/github-docs>          |Forked            |フォーク       |                |
 |   |[Other Private Repositories]|                                                |Private           |非公開         |You cannot use. |
 
 * **Proprietary** software is distributed under a custom license.
 * **Proprietary** と表示されているソフトウェアは独自の規約で公開されています。
+* 空白の場合、まだ記載できていません。リポジトリから確認してください。
+* 情報は古い可能性があります。
