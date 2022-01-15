@@ -1,5 +1,5 @@
 # takym.github.io
-Copyright (C) 2020-2021 Takym.
+Copyright (C) 2020-2022 Takym.
 
 [日本語](#ja)
 [English](#en)

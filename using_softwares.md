@@ -1,5 +1,5 @@
 # 利用ソフトウェア一覧
-Copyright (C) 2020-2021 Takym.
+Copyright (C) 2020-2022 Takym.
 
 * This page is written in Japanese only.
 * このサイトを運用する上で利用しているソフトウェアの一覧です。
