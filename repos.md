@@ -25,6 +25,7 @@ Copyright (C) 2020-2022 Takym.
 | 18|CocoaLogViewer              |<https://github.com/Takym/CocoaLogViewer>       |Forked            |フォーク       |MIT License     |
 | 19|GnuCash                     |<https://github.com/Takym/GnuCash>              |Forked            |フォーク       |GPLv2           |
 | 20|github-docs                 |<https://github.com/Takym/github-docs>          |Forked            |フォーク       |                |
+| 21|BinFuck                     |<https://github.com/Takym/BinFuck>              |Ongoing little    |少しずつ継続中 |MIT License     |
 |   |[Other Private Repositories]|                                                |Private           |非公開         |You cannot use. |
 
 * **Proprietary** software is distributed under a custom license.
