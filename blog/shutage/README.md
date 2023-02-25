@@ -44,20 +44,20 @@ Copyright (C) 2020-2023 Takym.
 * 科学ADVを除き他作品が含まれない事。
 	* ただし現実の有名人は含む。(現実の有名人は作品の人物ではない為)
 * 例外：
-	* [岡部倫太郎 12.14 HAPPY BIRTHDAY](https://takym.github.io/blogs/shutage/2017/12/14/ss0000.html)
+	* [岡部倫太郎 12.14 HAPPY BIRTHDAY](https://takym.github.io/blog/shutage/2017/12/14/ss0000.html)
 		* 公式作品である。
-	* [『逆転のタイムマシン』](https://takym.github.io/blogs/shutage/2017/05/20/ss0001.html)
-	* [シュタゲで安価SS](https://takym.github.io/blogs/shutage/2016/01/23/ss0000.html)
-	* [Steins;Gate「二律背反のライデマイスター」](https://takym.github.io/blogs/shutage/2015/09/27/ss0000.html)
+	* [『逆転のタイムマシン』](https://takym.github.io/blog/shutage/2017/05/20/ss0001.html)
+	* [シュタゲで安価SS](https://takym.github.io/blog/shutage/2016/01/23/ss0000.html)
+	* [Steins;Gate「二律背反のライデマイスター」](https://takym.github.io/blog/shutage/2015/09/27/ss0000.html)
 		* 鍵括弧前に `Steins;Gate` とあるが、これは台詞とは見做されない。
-	* [亡命者 ∞ 牧瀬章一【シュタゲSS】](https://takym.github.io/blogs/shutage/2015/10/11/ss0000.html)
+	* [亡命者 ∞ 牧瀬章一【シュタゲSS】](https://takym.github.io/blog/shutage/2015/10/11/ss0000.html)
 		* 台詞ではないが、牧瀬章一(その他キャラ)をタグ付けのキャラとしている。
-	* [【シュタゲSS】ラボに帰ると紅莉栖が真っ赤だった](https://takym.github.io/blogs/shutage/2015/08/06/ss0000.html)
+	* [【シュタゲSS】ラボに帰ると紅莉栖が真っ赤だった](https://takym.github.io/blog/shutage/2015/08/06/ss0000.html)
 		* 台詞ではないが、紅莉栖をタグ付けのキャラとしている。
-	* [幻影のチェシャ猫](https://takym.github.io/blogs/shutage/2015/02/28/ss0000.html)
+	* [幻影のチェシャ猫](https://takym.github.io/blog/shutage/2015/02/28/ss0000.html)
 		* 台詞ではないが、ﾌｪｲﾘｽをタグ付けのキャラとしている。
 * 特殊な例：
-	* [キムタク「ちょっと、待てよ」](https://takym.github.io/blogs/shutage/2016/01/19/ss0000.html)
+	* [キムタク「ちょっと、待てよ」](https://takym.github.io/blog/shutage/2016/01/19/ss0000.html)
 		* 作品名がキャラの台詞であり、且つ有名人が登場するが他作品は含まれないので、例外ではない。
 
 ## charname.js の使い方 <a id="charname"></a>
@@ -73,27 +73,27 @@ Copyright (C) 2020-2023 Takym.
 		* **#岡部**「フゥーハッハッハ！！！」
 		* **^岡部**「フゥーハッハッハ！！！」
 * 利用できるキャラの名前と色付けは下記のページを参照。
-	* [最新](https://takym.github.io/blogs/shutage/charname.html)
-	* [2021年06月07日](https://takym.github.io/blogs/shutage/2021/06/07/charname.html)
-	* [2021年01月09日](https://takym.github.io/blogs/shutage/2021/01/09/charname.html)
-	* [2020年11月16日](https://takym.github.io/blogs/shutage/2020/11/16/charname.html)
+	* [最新](https://takym.github.io/blog/shutage/charname.html)
+	* [2021年06月07日](https://takym.github.io/blog/shutage/2021/06/07/charname.html)
+	* [2021年01月09日](https://takym.github.io/blog/shutage/2021/01/09/charname.html)
+	* [2020年11月16日](https://takym.github.io/blog/shutage/2020/11/16/charname.html)
 
 ## キャラ名タグ一覧 <a id="charname_tags"></a>
-* **^岡部倫太郎**                - [岡部](https://takym.github.io/blogs/tags.html#岡部)
-* **^椎名まゆり**                - [まゆり](https://takym.github.io/blogs/tags.html#まゆり)
-* **^橋田至**                    - [ダル](https://takym.github.io/blogs/tags.html#ダル)
-* **^牧瀬紅莉栖**                - [紅莉栖](https://takym.github.io/blogs/tags.html#紅莉栖)
-* **^桐生萌郁**                  - [桐生萌郁](https://takym.github.io/blogs/tags.html#桐生萌郁)
-* **^漆原るか**                  - [ルカ子](https://takym.github.io/blogs/tags.html#ルカ子)
-* **^秋葉留未穂**                - [ﾌｪｲﾘｽ](https://takym.github.io/blogs/tags.html#ﾌｪｲﾘｽ)
-* **^阿万音鈴羽**/**^橋田鈴羽**  - [鈴羽](https://takym.github.io/blogs/tags.html#鈴羽)
-* **^比屋定真帆**                - [真帆](https://takym.github.io/blogs/tags.html#真帆)
-* **^椎名かがり**                - [かがり](https://takym.github.io/blogs/tags.html#かがり)
-* **^阿万音由季**                - [由季](https://takym.github.io/blogs/tags.html#由季)
-* **^天王寺裕吾**                - [天王寺](https://takym.github.io/blogs/tags.html#天王寺)
-* **^天王寺綯**                  - [綯](https://takym.github.io/blogs/tags.html#綯)
-* **^アレクシス・レスキネン**    - [ﾚｽｷﾈﾝ](https://takym.github.io/blogs/tags.html#ﾚｽｷﾈﾝ)
-* **上記以外**                   - [その他キャラ](https://takym.github.io/blogs/tags.html#その他キャラ)
+* **^岡部倫太郎**                - [岡部](https://takym.github.io/blog/tags.html#岡部)
+* **^椎名まゆり**                - [まゆり](https://takym.github.io/blog/tags.html#まゆり)
+* **^橋田至**                    - [ダル](https://takym.github.io/blog/tags.html#ダル)
+* **^牧瀬紅莉栖**                - [紅莉栖](https://takym.github.io/blog/tags.html#紅莉栖)
+* **^桐生萌郁**                  - [桐生萌郁](https://takym.github.io/blog/tags.html#桐生萌郁)
+* **^漆原るか**                  - [ルカ子](https://takym.github.io/blog/tags.html#ルカ子)
+* **^秋葉留未穂**                - [ﾌｪｲﾘｽ](https://takym.github.io/blog/tags.html#ﾌｪｲﾘｽ)
+* **^阿万音鈴羽**/**^橋田鈴羽**  - [鈴羽](https://takym.github.io/blog/tags.html#鈴羽)
+* **^比屋定真帆**                - [真帆](https://takym.github.io/blog/tags.html#真帆)
+* **^椎名かがり**                - [かがり](https://takym.github.io/blog/tags.html#かがり)
+* **^阿万音由季**                - [由季](https://takym.github.io/blog/tags.html#由季)
+* **^天王寺裕吾**                - [天王寺](https://takym.github.io/blog/tags.html#天王寺)
+* **^天王寺綯**                  - [綯](https://takym.github.io/blog/tags.html#綯)
+* **^アレクシス・レスキネン**    - [ﾚｽｷﾈﾝ](https://takym.github.io/blog/tags.html#ﾚｽｷﾈﾝ)
+* **上記以外**                   - [その他キャラ](https://takym.github.io/blog/tags.html#その他キャラ)
 
 ## このサイトの規約について <a id="terms"></a>
 * ソフトウェアではありませんがMITライセンスとします。
