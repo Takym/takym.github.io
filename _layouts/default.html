@@ -37,6 +37,9 @@
 				color: #CC424B;
 				background-color: #F0F0F0;
 			}
+			b.tag > a {
+				color: inherit;
+			}
 		</style>
 		<!-- rouge begin -->
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/rouge-syntax-highlighter.css" />
@@ -99,7 +102,7 @@
 				{% if tags %}
 				<span>タグ：|</span>
 				{% for tag in tags %}
-				<b>#<a href="{{ site.baseurl }}/blog/tags.html#{{ tag }}">{{ tag }}</a></b>
+				<b class="tag">#<a href="{{ site.baseurl }}/blog/tags.html#{{ tag }}">{{ tag }}</a></b>
 				<span>|</span>
 				{% endfor %}
 				<br />

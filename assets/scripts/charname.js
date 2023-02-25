@@ -446,7 +446,12 @@ const charnames = [
 	{ "name": "ネタ",             "color": valid   },
 	{ "name": "シリアス",         "color": valid   },
 	{ "name": "その他キャラ",     "color": valid   },
-	{ "name": "まっちょしぃ登場", "color": mayuri },
+	{ "name": "まっちょしぃ登場", "color": mayuri  },
+	{ "name": "Article",          "color": invalid },
+	{ "name": "HowTo",            "color": invalid },
+	{ "name": "Sample",           "color": invalid },
+	{ "name": "Test",             "color": invalid },
+	{ "name": "テスト",           "color": invalid },
 ];
 
 // ページ読み込み処理
