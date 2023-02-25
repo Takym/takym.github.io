@@ -58,13 +58,15 @@
 	</head>
 	<body>
 		{% if post %}
-			{% assign date = post.date %}
-			{% assign tags = post.tags %}
-			{% assign authors = post.authors %}
+			{% assign date     = post.date %}
+			{% assign category = post.category %}
+			{% assign tags     = post.tags %}
+			{% assign authors  = post.authors %}
 		{% else %}
-			{% assign date = page.date %}
-			{% assign tags = page.tags %}
-			{% assign authors = page.authors %}
+			{% assign date     = page.date %}
+			{% assign category = page.category %}
+			{% assign tags     = page.tags %}
+			{% assign authors  = page.authors %}
 		{% endif %}
 		<header class="page-header" role="banner">
 			<h1 class="project-name"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
@@ -86,6 +88,11 @@
 			{{ content }}
 			<footer class="site-footer">
 				<hr />
+				{% if category %}
+				<span>カテゴリ：</span>
+				<b><a href="{{ site.baseurl }}/blog/{{ category }}/pages.html">{{ category }}</a></b>
+				<br />
+				{% endif %}
 				{% if tags %}
 				<span>タグ：|</span>
 				{% for tag in tags %}

@@ -1,0 +1,32 @@
+---
+layout: post
+---
+{% if site.posts %}
+{% assign pages=site.posts %}
+{% include pages.html %}
+{% if page.pages_viewmode=="table" %}
+<a href="{{ site.baseurl }}/blog/{{ page.category }}/postlist.html?no_redirect">箇条書き形式</a>
+{% else %}
+<a href="{{ site.baseurl }}/blog/{{ page.category }}/posts.html?no_redirect">表形式</a>
+{% endif %}
+{% else %}
+{{ content }}
+{% endif %}
+
+<script>
+	window.onload = (function() {
+		if (location.search === "?no_redirect") {
+			return;
+		}
+		let ua = navigator.userAgent;
+{% if page.pages_viewmode=="table" %}
+		if (ua.indexOf("Phone") !== -1 || ua.indexOf("Mobile") !== -1) {
+			location.href = "{{ site.baseurl }}/blog/{{ page.category }}/postlist.html" + location.hash;
+		}
+{% else %}
+		if (ua.indexOf("Phone") === -1 && ua.indexOf("Mobile") === -1) {
+			location.href = "{{ site.baseurl }}/blog/{{ page.category }}/posts.html" + location.hash;
+		}
+{% endif%}
+	});
+</script>
