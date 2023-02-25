@@ -20,7 +20,11 @@
 			</td>
 			<td>
 				{% for tag in post.tags %}
+				{% if this_page_is_taglist=="this_page_is_taglist" %}
 				<b class="tag">#<a href="#{{ tag }}">{{ tag }}</a></b>
+				{% else %}
+				<b class="tag">#<a href="{{ site.baseurl }}/blog/tags.html#{{ tag }}">{{ tag }}</a></b>
+				{% endif %}
 				{% endfor %}
 			</td>
 		</tr>
