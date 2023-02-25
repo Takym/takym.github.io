@@ -18,7 +18,7 @@ category: shutage
 </code></pre>
 
 <script>
-const code = document.getElementById("code");a
+const code = document.getElementById("code");
 for (let i = 0; i < charnames.length; ++i) {
 	code.innerText += "**^" + charnames[i].name + "**\r\n";
 }
