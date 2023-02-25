@@ -470,8 +470,6 @@ window.addEventListener("load", _ => {
 					tag.innerText     = name;
 					tag.style.cssText = prefix + charnames[j].color;
 					break;
-				} else {
-					tag.style.cssText = prefix + "#000000;";
 				}
 			}
 		}
