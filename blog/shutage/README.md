@@ -74,6 +74,7 @@ Copyright (C) 2020-2023 Takym.
 		* **^岡部**「フゥーハッハッハ！！！」
 * 利用できるキャラの名前と色付けは下記のページを参照。
 	* [最新](https://takym.github.io/blog/shutage/charname.html)
+	* [2023年02月25日](https://takym.github.io/blog/shutage/2023/02/25/charname.html)
 	* [2021年06月07日](https://takym.github.io/blog/shutage/2021/06/07/charname.html)
 	* [2021年01月09日](https://takym.github.io/blog/shutage/2021/01/09/charname.html)
 	* [2020年11月16日](https://takym.github.io/blog/shutage/2020/11/16/charname.html)
