@@ -7,6 +7,7 @@ tags:
   - Sample
 authors:
   - Takym
+category: general
 ---
 記事を追加するには、`_posts` ディレクトリに記事ファイルを作成します。
 Markdown で記述する場合は、ファイル名は `yyyy-mm-dd-title.md` の様なフォーマットにします。
