@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: charname.js の実験用ファイル生成器
 authors: Takym
 category: shutage
