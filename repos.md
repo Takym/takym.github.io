@@ -1,5 +1,10 @@
 # Repository List リポジトリ一覧
-Copyright (C) 2020-2022 Takym.
+Copyright (C) 2020-2023 Takym.
+
+* 現在、このページは更新されていません。
+* 最新の情報は <https://github.com/Takym?tab=repositories> をご覧ください。
+* Now I would not update this page.
+* Please see <https://github.com/Takym?tab=repositories> for the latest information.
 
 | # |Name                        |Address                                         |Status            |状態           |License/規約    |
 |:-:|:---------------------------|:-----------------------------------------------|:-----------------|:--------------|:---------------|

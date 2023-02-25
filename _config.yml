@@ -1,5 +1,5 @@
 title: takym.github.io
 theme: jekyll-theme-cayman
 google_analytics: UA-99298946-3
-include: [ README.md, LICENSE.md ]
-permalink: /articles/:year/:month/:day/:title:output_ext
+include: [ README.md, LICENSE.md, THIRD_PARTY_NOTICE.md ]
+permalink: /blog/:year/:month/:day/:title:output_ext
