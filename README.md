@@ -31,7 +31,7 @@ Copyright (C) 2020-2023 Takym.
 * [Gradexor](https://github.com/Takym/Gradexor)
 	* 排他的論理和色彩変化画像
 * [shutage](https://github.com/Takym/shutage)
-	* [サイトを表示する](https://takym.github.io/shutage)。
+	* [サイトを表示する](https://takym.github.io/blog/shutage)。
 * [CocoaLogViewer](https://github.com/YigtyORG/CocoaLogViewer)
 	* 接触確認アプリのログファイルを表示するツール。
 	* 開発休止中。
@@ -71,7 +71,7 @@ Copyright (C) 2020-2023 Takym.
 * [TakymLib](https://github.com/YigtyORG/TakymLib)
 * [Gradexor](https://github.com/Takym/Gradexor)
 * [shutage](https://github.com/Takym/shutage)
-	* [View the site](https://takym.github.io/shutage).
+	* [View the site](https://takym.github.io/blog/shutage).
 * [CocoaLogViewer](https://github.com/YigtyORG/CocoaLogViewer)
 	* I stopped developing.
 * [AupLauncher](https://github.com/Takym/AupLauncher)

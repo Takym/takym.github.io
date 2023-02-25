@@ -14,7 +14,7 @@ layout: post
 {% endif %}
 
 <script>
-	window.onload = (function() {
+	window.addEventListener("load", _ => {
 		if (location.search === "?no_redirect") {
 			return;
 		}

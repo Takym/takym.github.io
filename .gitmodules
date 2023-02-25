@@ -1,3 +1,6 @@
 [submodule "wiki"]
 	path = wiki
 	url = https://github.com/Takym/takym.github.io.wiki.git
+[submodule "_posts/shutage"]
+	path = _posts/shutage
+	url = https://github.com/Takym/shutage.git
