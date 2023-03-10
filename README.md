@@ -19,7 +19,7 @@ Copyright (C) 2020-2023 Takym.
 ## 概要 <a id="ja_summary"></a>
 * 自分で作成したリポジトリの情報を集約しています。
 * [ブログ記事](https://takym.github.io/blog/tags.html)
-* [ウィキ記事](https://takym.github.io/wiki/Home.html)
+* [ウィキ記事](https://takym.github.io/wiki/README.html)
 	* [ウィキを編集する](https://github.com/Takym/shutage/wiki)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
 * 古いブログ
@@ -61,7 +61,7 @@ Copyright (C) 2020-2023 Takym.
 ## Summary <a id="en_summary"></a>
 * Aggregates and manages my repository information.
 * [Blog Articles](https://takym.github.io/blog/tags.html)
-* [Wiki Articles](https://takym.github.io/wiki/Home.html)
+* [Wiki Articles](https://takym.github.io/wiki/README.html)
 	* [Edit Wiki](https://github.com/Takym/shutage/wiki)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
 * Old Blogs
