@@ -4,3 +4,8 @@
 [submodule "_posts/shutage"]
 	path = _posts/shutage
 	url = https://github.com/Takym/shutage.git
+	branch = master
+[submodule "blog/shutage"]
+	path = blog/shutage
+	url = https://github.com/Takym/shutage.git
+	branch = main
