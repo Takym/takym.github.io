@@ -1,6 +1,8 @@
 # takym.github.io
 Copyright (C) 2020-2023 Takym.
 
+[![pages-build-deployment](https://github.com/Takym/takym.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/pages/pages-build-deployment)
+
 [English](#en)
 [日本語](#ja)
 [編集/Edit](https://github.com/Takym/takym.github.io/)
