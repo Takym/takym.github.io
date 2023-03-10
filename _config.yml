@@ -3,3 +3,4 @@ theme: jekyll-theme-cayman
 google_analytics: UA-99298946-3
 include: [ README.md, LICENSE.md, THIRD_PARTY_NOTICE.md ]
 permalink: /blog/:categories/:year/:month/:day/:title:output_ext
+timezone: Asia/Tokyo
