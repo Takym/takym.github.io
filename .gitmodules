@@ -1,5 +1,5 @@
-[submodule "wiki"]
-	path = wiki
+[submodule "wiki/general"]
+	path = wiki/general
 	url = https://github.com/Takym/takym.github.io.wiki.git
 [submodule "_posts/shutage"]
 	path = _posts/shutage
@@ -9,3 +9,6 @@
 	path = blog/shutage
 	url = https://github.com/Takym/shutage.git
 	branch = main
+[submodule "wiki/shutage"]
+	path = wiki/shutage
+	url = https://github.com/Takym/shutage.wiki.git
