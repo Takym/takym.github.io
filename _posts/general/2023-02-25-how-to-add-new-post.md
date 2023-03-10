@@ -10,6 +10,8 @@ tags:
   - テスト
 category: general
 ---
+Copyright (C) 2023 Takym.
+
 [この記事](../../../2019/08/15/how-to-add-new-post.html)の情報が古くなったため書き直しました。
 
 ## 記事の追加方法
