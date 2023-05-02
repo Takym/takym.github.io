@@ -27,3 +27,9 @@ Copyright (C) 2023 Takym.
 ## 参考文献
 * <https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/toroku_seido/faq.html>
 * <https://ja.wikipedia.org/wiki/%E5%AE%9F%E5%90%8D%E3%81%AE%E7%99%BB%E9%8C%B2>
+
+## 追記
+* Bing AI に尋ねた所、著者が明らかであれば保護期間は「死後70年間」になるらしい。
+* **Bing AI による出典**
+	* <https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/gaiyo/hogokikan.html>
+	* <https://www.authense.jp/komon/blog/ip/2802/>
