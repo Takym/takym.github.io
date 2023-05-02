@@ -3,6 +3,7 @@ layout: post
 title: 記事の追加方法【2023年02月版】
 authors: Takym
 tags:
+  - サイトの管理方針
   - Article
   - HowTo
   - Sample

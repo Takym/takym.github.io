@@ -447,6 +447,7 @@ const charnames = [
 	{ "name": "シリアス",             "color": valid   },
 	{ "name": "その他キャラ",         "color": valid   },
 	{ "name": "まっちょしぃ登場",     "color": mayuri  },
+	{ "name": "サイトの管理方針",     "color": valid   },
 	{ "name": "Article",              "color": invalid },
 	{ "name": "HowTo",                "color": invalid },
 	{ "name": "Sample",               "color": invalid },
@@ -455,6 +456,7 @@ const charnames = [
 	{ "name": ".NET",                 "color": valid   },
 	{ "name": "低レイヤ",             "color": valid   },
 	{ "name": "アドベントカレンダー", "color": valid   },
+	{ "name": "著作権",               "color": valid   },
 ];
 
 // ページ読み込み処理
