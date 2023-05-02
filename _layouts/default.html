@@ -40,6 +40,11 @@
 			b.tag > a {
 				color: inherit;
 			}
+			main#content.main-content > footer.site-footer > div
+			{
+				margin: 0;
+				padding: 0;
+			}
 		</style>
 		<!-- rouge begin -->
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/rouge-syntax-highlighter.css" />
@@ -95,25 +100,36 @@
 			<footer class="site-footer">
 				<hr />
 				{% if category %}
-				<span>カテゴリ：</span>
-				<b><a href="{{ site.baseurl }}/blog/{{ category }}/posts.html">{{ category }}</a></b>
-				<br />
+				<div>
+					<span>カテゴリ：</span>
+					<b><a href="{{ site.baseurl }}/blog/{{ category }}/posts.html">{{ category }}</a></b>
+					<br />
+				</div>
 				{% endif %}
 				{% if tags %}
-				<span>タグ：|</span>
-				{% for tag in tags %}
-				<b class="tag">#<a href="{{ site.baseurl }}/blog/tags.html#{{ tag }}">{{ tag }}</a></b>
-				<span>|</span>
-				{% endfor %}
-				<br />
+				<div>
+					<span>タグ：|</span>
+					{% for tag in tags %}
+					<b class="tag">#<a href="{{ site.baseurl }}/blog/tags.html#{{ tag }}">{{ tag }}</a></b>
+					<span>|</span>
+					{% endfor %}
+					<br />
+				</div>
 				{% endif %}
 				{% if authors %}
-				<span>編集者：|</span>
-				{% for author in authors %}
-				<b>@<a href="https://github.com/{{ author }}">{{ author }}</a></b>
-				<span>|</span>
-				{% endfor %}
-				<br />
+				<div>
+					<span>編集者：|</span>
+					{% for author in authors %}
+					<b>@<a href="https://github.com/{{ author }}">{{ author }}</a></b>
+					<span>|</span>
+					{% endfor %}
+					<span>
+						※「編集者」は本サイト内の記事の編集者のみを表します。
+						他サイトの記事へのリンクのみで構成されている場合でも同様です。
+					</span>
+					<br />
+					<br />
+				</div>
 				{% endif %}
 				<span class="site-footer-credits">
 					<small>Copyright (C) 2020-2023 Takym.</small>
