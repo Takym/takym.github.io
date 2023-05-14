@@ -30,6 +30,7 @@ Copyright (C) 2020-2023 Takym.
 	* Twitter: [@takym0818](https://twitter.com/takym0818)
 	* Lancers: [takym](https://www.lancers.jp/profile/takym)
 	* Discord: [Takym Server](https://discord.gg/ph9sQdY2NA)
+	* Discord: [Takym Server Freedom](https://discord.gg/tUZUNqKJ6r)
 
 ## リポジトリ一覧 <a id="ja_repos"></a>
 * [TakymLib](https://github.com/YigtyORG/TakymLib)
@@ -76,6 +77,7 @@ Copyright (C) 2020-2023 Takym.
 	* Twitter: [@takym0818](https://twitter.com/takym0818)
 	* Lancers: [takym](https://www.lancers.jp/profile/takym)
 	* Discord: [Takym Server](https://discord.gg/ph9sQdY2NA)
+	* Discord: [Takym Server Freedom](https://discord.gg/tUZUNqKJ6r)
 
 ## My repositories <a id="en_repos"></a>
 * [TakymLib](https://github.com/YigtyORG/TakymLib)
