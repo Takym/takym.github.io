@@ -80,7 +80,12 @@
 			{% assign authors  = page.authors %}
 		{% endif %}
 		<header class="page-header" role="banner">
-			<h1 class="project-name"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+			<h1 class="project-name">
+				<a href="{{ "/" | absolute_url }}">
+					<img src="https://takym.github.io/assets/images/TakymLogo.png" />
+					<span>{{ site.title | default: site.github.repository_name }}</span>
+				</a>
+			</h1>
 			<p>
 				{{ site.description | default: "[DESCRIPTION IN HERE]" }}<br />
 				{{ page.description | default: "" }}
