@@ -32,7 +32,7 @@ const kayano   = "#444444;"; // 伽夜乃
 const valid    = "#000000;"; // 有効
 const invalid  = "#808080;"; // 無効
 
-// キャラ登録
+// キャラ登録（全てのカテゴリを登録しなければならない。shutage リポジトリと takym.github.io リポジトリを統合したための措置）
 const charnames = [
 	{ "name": "岡部倫太郎",                         "color": okabe    }, // 岡部
 	{ "name": "岡部",                               "color": okabe    },
