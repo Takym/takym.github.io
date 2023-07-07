@@ -91,9 +91,6 @@
 				{{ site.description | default: "[DESCRIPTION IN HERE]" }}<br />
 				{{ page.description | default: "" }}
 			</p>
-			<p style="color:#EE2060;font-size:120%">
-				<strong>無断転載禁止</strong>
-			</p>
 			<div>
 				<a href="{{ site.github.repository_url }}" class="btn">GitHub リポジトリ</a>
 				<a href="{{ site.github.owner_url }}" class="btn">管理者：{{ site.github.owner_name | default: "Takym" }}</a>
@@ -103,6 +100,9 @@
 				<a href="{{ site.github.repository_url }}/issues/new/?title=About%20{{ page.path }}&body=Write%20your%20issue%20here%2E%0D%0A%0D%0A---%0D%0APlease%20do%20not%20remove%20the%20below%2E%0D%0A{{ site.github.repository_url }}/blob/{{ site.github.build_revision }}/{{ page.path }}%23L1-L5" class="btn">問題提起</a>
 			</div>
 			<hr />
+			<p style="color:#EE2060;font-size:120%">
+				<strong>無断転載禁止</strong>
+			</p>
 		</header>
 		<main id="content" class="main-content" role="main">
 			{{ content }}
