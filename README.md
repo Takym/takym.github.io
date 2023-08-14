@@ -17,6 +17,7 @@ Copyright (C) 2020-2023 Takym.
 * [このサイトの規約について](#ja_terms)
 
 ## 概要 <a id="ja_summary"></a>
+* 「Takym」は「たかやま」と読みます。
 * 自分で作成したリポジトリの情報を集約しています。
 * [ブログ記事](https://takym.github.io/blog/tags.html)
 * [ウィキ記事](https://takym.github.io/wiki/README.html)
@@ -64,6 +65,7 @@ Copyright (C) 2020-2023 Takym.
 * [Terms for this site](#en_terms)
 
 ## Summary <a id="en_summary"></a>
+* Please pronounce "Takym" as TA-KA-YA-MA.
 * Aggregates and manages my repository information.
 * [Blog Articles](https://takym.github.io/blog/tags.html)
 * [Wiki Articles](https://takym.github.io/wiki/README.html)
