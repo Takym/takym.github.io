@@ -457,6 +457,10 @@ const charnames = [
 	{ "name": "低レイヤ",             "color": valid   },
 	{ "name": "アドベントカレンダー", "color": valid   },
 	{ "name": "著作権",               "color": valid   },
+	{ "name": "生成系人工知能",       "color": valid   },
+	{ "name": "架空の言語",           "color": valid   },
+	{ "name": "Sobityezjyo",          "color": valid   },
+	{ "name": "措備手著語",           "color": valid   },
 ];
 
 // ページ読み込み処理
