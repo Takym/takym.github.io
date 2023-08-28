@@ -488,4 +488,12 @@ window.addEventListener("load", _ => {
 			}
 		}
 	}
+
+	// gen_charname.md の為のコード
+	const code = document.getElementById("code_of_charname_md");
+	if (code) {
+		for (let i = 0; i < charnames.length; ++i) {
+			code.innerText += "**^" + charnames[i].name + "**\r\n";
+		}
+	}
 });
