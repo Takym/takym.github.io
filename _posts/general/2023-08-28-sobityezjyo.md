@@ -21,6 +21,10 @@ category: general
 		* Unicode で書かないと Bing AI は認識しない。
 * **懸念点**
 	* クロールには時間が掛かるため実際に Bing AI と対話するまで日をおかなければならない。
+		* **追記**
+		* IndexNow を使うと直ぐにクロールされるらしい。
+		* `https://www.bing.com/IndexNow?url=<URL>&key=<API KEY>`
+		* 参考：<https://qwerty.work/blog/2022/09/bing-indexnow-howto.php>
 
 ### 措備手著物語
 * 措備手著語は、何処か遠くの独裁国家で開発され、国民に強制的に覚えさせた。
@@ -52,6 +56,7 @@ category: general
 |E え エ|YE  いぇ イェ|WE  ゑ   ヱ  |WYE  ゑぇ   ヱェ  |
 |A あ ア|YA  や   ヤ  |WA  わ   ワ  |WYA  わゃ   ワャ  |
 |U う ウ|YU  ゆ   ユ  |WIU ゐぅ ヰゥ|WYU うゅ    ウュ  |
+
 * 短音と長音の区別がある。
 * ラテン文字で長音を表現する時は `{X}` と書く。
 * Y 化、W 化、YW 化する母音の前には子音は来ない。
@@ -82,6 +87,7 @@ category: general
 |PJ/TSK|     |        |        |        |        |       |不能  |
 |KP/KS |GB/GZ|        |        |        |        |       |不能  |
 |KT*   |GD*  |        |        |        |        |       |不能  |
+
 * 「*」が付いている子音は結音になる。
 * 「/」の後ろは結音になる時の音。
 * 結音は母音の後に続く子音。
