@@ -21,6 +21,8 @@ Copyright (C) 2020-2023 Takym.
 * 「Takym」は「たかやま」と読みます。
 * 自分で作成したリポジトリの情報を集約しています。
 * [ブログ記事](https://takym.github.io/blog/tags.html)
+	* [general: 一般的な記事](https://takym.github.io/blog/general)
+	* [shutage: シュタゲ関連の情報](https://takym.github.io/blog/shutage)
 * [ウィキ記事](https://takym.github.io/wiki/README.html)
 	* [ウィキを編集する](https://github.com/Takym/shutage/wiki)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
@@ -51,6 +53,9 @@ Copyright (C) 2020-2023 Takym.
 	* サービス指向プログラミング向け拡張APIライブラリ。
 	* 開発休止中。TakymLib と共に大幅に作り直す予定。
 	* [サイトを表示する](https://takym.github.io/ExapisSOP)。
+* [FastChatProtocolInterface](https://github.com/Takym/FastChatProtocolInterface)
+	* 「高速会話プロトコル・インターフェース」の参考実装。
+	* 開発休止中。
 * ~~その他の情報は[こちらのページ](./repos.md)にまとめています。~~
 
 ## このサイトの規約について <a id="ja_terms"></a>
@@ -69,6 +74,8 @@ Copyright (C) 2020-2023 Takym.
 * Please pronounce "Takym" as TA-KA-YA-MA.
 * Aggregates and manages my repository information.
 * [Blog Articles](https://takym.github.io/blog/tags.html)
+	* [general](https://takym.github.io/blog/general)
+	* [shutage](https://takym.github.io/blog/shutage)
 * [Wiki Articles](https://takym.github.io/wiki/README.html)
 	* [Edit Wiki](https://github.com/Takym/shutage/wiki)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
@@ -96,6 +103,9 @@ Copyright (C) 2020-2023 Takym.
 	* Extensible APIs for the Service-Oriented Programming.
 	* I stopped developing.
 	* [View the site](https://takym.github.io/ExapisSOP).
+* [FastChatProtocolInterface](https://github.com/Takym/FastChatProtocolInterface)
+	* Reference Implementation for "FACHPI: Fast Chat Protocol/Interface"
+	* I stopped developing.
 * ~~For more misc repositories, please see [this page](./repos.md).~~
 
 ## Terms for this site <a id="en_terms"></a>
