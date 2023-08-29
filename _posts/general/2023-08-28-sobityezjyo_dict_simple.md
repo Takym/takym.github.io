@@ -9,6 +9,8 @@ tags:
   - 措備手著語
 category: general
 ---
+Copyright (C) 2023 Takym.
+
 ## 概要
 これは[措備手著語](sobityezjyo.html)の簡易的な辞書です。例文も含んでいます。
 
