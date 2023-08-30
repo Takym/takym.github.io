@@ -65,9 +65,28 @@
 		<!-- Google Analytics end -->
 		<!-- KaTeX begin -->
 		<!-- copied from: https://github.com/KaTeX/KaTeX -->
+		<!-- 参考：https://katex.org/docs/autorender.html -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous" />
 		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				renderMathInElement(document.body, {
+					"delimiters": [
+						{ // ブロック（区画）
+							"left": "$$",
+							"right": "$$",
+							"display": true
+						},
+						{ // インライン（行内）
+							"left": "$",
+							"right": "$",
+							"display": false
+						}
+					]
+				});
+			});
+		</script>
 		<!-- KaTeX end-->
 		<!-- charname.js begin -->
 		<script src="{{ site.baseurl }}/assets/scripts/charname.js"></script>
