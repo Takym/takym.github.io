@@ -24,7 +24,6 @@ Copyright (C) 2020-2023 Takym.
 	* [general: 一般的な記事](https://takym.github.io/blog/general)
 	* [shutage: シュタゲ関連の情報](https://takym.github.io/blog/shutage)
 * [ウィキ記事](https://takym.github.io/wiki/README.html)
-	* [ウィキを編集する](https://github.com/Takym/shutage/wiki)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
 * 古いブログ
 	* <https://takym.code.blog/>
@@ -77,7 +76,6 @@ Copyright (C) 2020-2023 Takym.
 	* [general](https://takym.github.io/blog/general)
 	* [shutage](https://takym.github.io/blog/shutage)
 * [Wiki Articles](https://takym.github.io/wiki/README.html)
-	* [Edit Wiki](https://github.com/Takym/shutage/wiki)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
 * Old Blogs
 	* <https://takym.code.blog/>
