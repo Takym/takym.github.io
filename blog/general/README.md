@@ -19,3 +19,4 @@ Copyright (C) 2020-2023 Takym.
 * [文法など](./2023/08/28/sobityezjyo.html)
 * [辞書](./2023/08/28/sobityezjyo_dict.html)
 * [物語](./2023/08/29/sobityezjyo_story.html)
+* [表記](./2023/10/05/sobityezjyo_spells.html)
