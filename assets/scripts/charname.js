@@ -435,7 +435,7 @@ const charnames = [
 	////////////////////////////
 	{ "name": "未指定",               "color": invalid     },
 	{ "name": "実験用",               "color": invalid     },
-	{ "name": "charname.html",        "color": valid       },
+	{ "name": "charname.html",        "color": invalid     },
 	{ "name": "SS作品",               "color": valid       },
 	{ "name": "自作",                 "color": valid       },
 	{ "name": "公式",                 "color": valid       },
