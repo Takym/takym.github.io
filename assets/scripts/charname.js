@@ -32,6 +32,7 @@ const kayano      = "#444444;"; // 伽夜乃
 const valid       = "#000000;"; // 有効
 const invalid     = "#808080;"; // 無効
 const sobityezjyo = "#4ED158;"; // 措備手著語
+const lenofodu    = "#7B4B9D;"; // レノフォドゥ語
 
 // キャラ登録（全てのカテゴリを登録しなければならない。shutage リポジトリと takym.github.io リポジトリを統合したための措置）
 const charnames = [
@@ -463,7 +464,10 @@ const charnames = [
 	{ "name": "架空の言語",           "color": valid       },
 	{ "name": "Sobityezjyo",          "color": sobityezjyo },
 	{ "name": "措備手著語",           "color": sobityezjyo },
-	{ "name": "ソビティエズ語",       "color": sobityezjyo }
+	{ "name": "ソビティエズ語",       "color": sobityezjyo },
+	{ "name": "Lenofodu",             "color": lenofodu    },
+	{ "name": "レノフォドゥ語",       "color": lenofodu    },
+	{ "name": "例埜捕衝語・此人語",   "color": lenofodu    }
 ];
 
 // ページ読み込み処理
