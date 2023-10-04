@@ -8,7 +8,7 @@ Copyright (C) 2020-2023 Takym.
 * [ウィキ編集](https://github.com/Takym/takym.github.io/wiki)
 
 ## おすすめ記事
-* [.NET 7 と C# を用いて OS を開発する事はできるのか？](./2022/02/25/osdotnet.html)
+* [.NET 7 と C# を用いて OS を開発する事はできるのか？](./2022/12/25/osdotnet.html)
 * [本名を公開していない人の著作権はどうなるのか？](./2023/05/02/copyright.html)
 * [措備手著語について Bing AI に質問してみる・その２](./2023/10/05/sobityezjyo_bing_ai.html)
 
