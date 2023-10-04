@@ -16,7 +16,8 @@
 				{% endfor %}
 			</td>
 			<td>
-				<b><a href="{{ site.baseurl }}/blog/{{ post.category }}/posts.html">{{ post.category }}</a></b>
+				<b><a href="{{ site.baseurl }}/blog/{{ post.category }}/README.html">{{ post.category }}</a></b>
+				<span>（<a href="{{ site.baseurl }}/blog/{{ post.category }}/posts.html">記事一覧</a>）</span>
 			</td>
 			<td>
 				{% for tag in post.tags %}
