@@ -1,36 +1,37 @@
 // キャラ色 (Mは母親(Mother)、Fは父親(Father))
-const okabe    = "#884444;"; // 岡部
-const mayuri   = "#6677EE;"; // まゆり
-const daru     = "#BBCC22;"; // ダル
-const tina     = "#F53333;"; // 紅莉栖
-const moeka    = "#EAA522;"; // 桐生萌郁
-const ruka     = "#336666;"; // ルカ子
-const faris    = "#FF0080;"; // ﾌｪｲﾘｽ
-const suzu     = "#1111BB;"; // 鈴羽
-const maho     = "#446633;"; // 真帆
-const kagari   = "#AA2266;"; // かがり
-const yuki     = "#8F65FF;"; // 由季
-const brown    = "#989800;"; // 天王寺
-const nae      = "#FF44CC;"; // 綯
-const leskinen = "#AA7766;"; // ﾚｽｷﾈﾝ
+const okabe       = "#884444;"; // 岡部
+const mayuri      = "#6677EE;"; // まゆり
+const daru        = "#BBCC22;"; // ダル
+const tina        = "#F53333;"; // 紅莉栖
+const moeka       = "#EAA522;"; // 桐生萌郁
+const ruka        = "#336666;"; // ルカ子
+const faris       = "#FF0080;"; // ﾌｪｲﾘｽ
+const suzu        = "#1111BB;"; // 鈴羽
+const maho        = "#446633;"; // 真帆
+const kagari      = "#AA2266;"; // かがり
+const yuki        = "#8F65FF;"; // 由季
+const brown       = "#989800;"; // 天王寺
+const nae         = "#FF44CC;"; // 綯
+const leskinen    = "#AA7766;"; // ﾚｽｷﾈﾝ
 // 以下、色未決定
-const okabeM   = "#444444;"; // 岡部母、朱美
-const tinaF    = "#444444;"; // 紅莉栖父、中鉢
-const rukaF    = "#444444;"; // ルカ子父、栄輔
-const farisM   = "#444444;"; // ﾌｪｲﾘｽ母、ちかね
-const farisF   = "#444444;"; // ﾌｪｲﾘｽ父、幸高
-const kuroki   = "#444444;"; // 黒木
-const naeM     = "#444444;"; // 綯母、今宮綴
-const fubuki   = "#444444;"; // フブキ
-const shin     = "#444444;"; // フブキ兄、ｼﾝｲﾁ
-const kaede    = "#444444;"; // カエデ
-const reyes    = "#444444;"; // レイエス
-const yondoshi = "#444444;"; // 4℃
-const izaki    = "#444444;"; // 井崎
-const kayano   = "#444444;"; // 伽夜乃
+const okabeM      = "#444444;"; // 岡部母、朱美
+const tinaF       = "#444444;"; // 紅莉栖父、中鉢
+const rukaF       = "#444444;"; // ルカ子父、栄輔
+const farisM      = "#444444;"; // ﾌｪｲﾘｽ母、ちかね
+const farisF      = "#444444;"; // ﾌｪｲﾘｽ父、幸高
+const kuroki      = "#444444;"; // 黒木
+const naeM        = "#444444;"; // 綯母、今宮綴
+const fubuki      = "#444444;"; // フブキ
+const shin        = "#444444;"; // フブキ兄、ｼﾝｲﾁ
+const kaede       = "#444444;"; // カエデ
+const reyes       = "#444444;"; // レイエス
+const yondoshi    = "#444444;"; // 4℃
+const izaki       = "#444444;"; // 井崎
+const kayano      = "#444444;"; // 伽夜乃
 // その他のタグ名に色付け
-const valid    = "#000000;"; // 有効
-const invalid  = "#808080;"; // 無効
+const valid       = "#000000;"; // 有効
+const invalid     = "#808080;"; // 無効
+const sobityezjyo = "#4ED158;"; // 措備手著語
 
 // キャラ登録（全てのカテゴリを登録しなければならない。shutage リポジトリと takym.github.io リポジトリを統合したための措置）
 const charnames = [
@@ -432,35 +433,36 @@ const charnames = [
 	////////////////////////////
 	// その他のタグ名に色付け //
 	////////////////////////////
-	{ "name": "未指定",               "color": invalid },
-	{ "name": "実験用",               "color": invalid },
-	{ "name": "SS作品",               "color": valid   },
-	{ "name": "自作",                 "color": valid   },
-	{ "name": "公式",                 "color": valid   },
-	{ "name": "長編",                 "color": valid   },
-	{ "name": "短編",                 "color": valid   },
-	{ "name": "連載",                 "color": valid   },
-	{ "name": "安価",                 "color": valid   },
-	{ "name": "未完成",               "color": invalid },
-	{ "name": "ソース無し",           "color": invalid },
-	{ "name": "ネタ",                 "color": valid   },
-	{ "name": "シリアス",             "color": valid   },
-	{ "name": "その他キャラ",         "color": valid   },
-	{ "name": "まっちょしぃ登場",     "color": mayuri  },
-	{ "name": "サイトの管理方針",     "color": valid   },
-	{ "name": "Article",              "color": invalid },
-	{ "name": "HowTo",                "color": invalid },
-	{ "name": "Sample",               "color": invalid },
-	{ "name": "Test",                 "color": invalid },
-	{ "name": "テスト",               "color": invalid },
-	{ "name": ".NET",                 "color": valid   },
-	{ "name": "低レイヤ",             "color": valid   },
-	{ "name": "アドベントカレンダー", "color": valid   },
-	{ "name": "著作権",               "color": valid   },
-	{ "name": "生成系人工知能",       "color": valid   },
-	{ "name": "架空の言語",           "color": valid   },
-	{ "name": "Sobityezjyo",          "color": valid   },
-	{ "name": "措備手著語",           "color": valid   },
+	{ "name": "未指定",               "color": invalid     },
+	{ "name": "実験用",               "color": invalid     },
+	{ "name": "SS作品",               "color": valid       },
+	{ "name": "自作",                 "color": valid       },
+	{ "name": "公式",                 "color": valid       },
+	{ "name": "長編",                 "color": valid       },
+	{ "name": "短編",                 "color": valid       },
+	{ "name": "連載",                 "color": valid       },
+	{ "name": "安価",                 "color": valid       },
+	{ "name": "未完成",               "color": invalid     },
+	{ "name": "ソース無し",           "color": invalid     },
+	{ "name": "ネタ",                 "color": valid       },
+	{ "name": "シリアス",             "color": valid       },
+	{ "name": "その他キャラ",         "color": valid       },
+	{ "name": "まっちょしぃ登場",     "color": mayuri      },
+	{ "name": "サイトの管理方針",     "color": valid       },
+	{ "name": "Article",              "color": invalid     },
+	{ "name": "HowTo",                "color": invalid     },
+	{ "name": "Sample",               "color": invalid     },
+	{ "name": "Test",                 "color": invalid     },
+	{ "name": "テスト",               "color": invalid     },
+	{ "name": ".NET",                 "color": valid       },
+	{ "name": "低レイヤ",             "color": valid       },
+	{ "name": "アドベントカレンダー", "color": valid       },
+	{ "name": "著作権",               "color": valid       },
+	{ "name": "生成系人工知能",       "color": valid       },
+	{ "name": "架空の言語",           "color": valid       },
+	{ "name": "Sobityezjyo",          "color": sobityezjyo },
+	{ "name": "措備手著語",           "color": sobityezjyo },
+	{ "name": "ソビティエズ語",       "color": sobityezjyo }
 ];
 
 // ページ読み込み処理

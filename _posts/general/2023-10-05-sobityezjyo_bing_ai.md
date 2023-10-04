@@ -7,6 +7,7 @@ tags:
   - 架空の言語
   - Sobityezjyo
   - 措備手著語
+  - ソビティエズ語
 category: general
 ---
 Copyright (C) 2023 Takym.
