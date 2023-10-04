@@ -14,6 +14,7 @@ Copyright (C) 2023 Takym.
 ## 概要
 * 措備手著語を Bing AI に質問してみた結果をまとめる。
 * いずれの出力も例文は含まれていなかった。
+* [次回](../../10/05/sobityezjyo_bing_ai.html)
 
 ## 「site:<https://takym.github.io/blog/general> 措備手著語」を Bing AI に入力した結果１
 ```md
