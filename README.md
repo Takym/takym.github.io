@@ -108,4 +108,4 @@ Copyright (C) 2020-2023 Takym.
 
 ## Terms for this site <a id="en_terms"></a>
 * Please refer [this page](./LICENSE.md). (Japanese)
-* For using softwares, please refer [this page](./THIRD_PARTY_NOTICE.md). (Japanese)
+* For using softwares, please refer [this page](./THIRD_PARTY_NOTICE.md). (English)
