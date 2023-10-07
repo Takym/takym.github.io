@@ -157,7 +157,7 @@ Copyright (C) 2023 Takym.
 * Tiw fesso kpowed letoed tiquont.
 	* 日本語訳：今日は疲れた。
 * Fweop keffop vadwanoap wippaao-remnda edwanlas (hudank tised fesso biver ryantien).
-	* 日本語訳：法的情報（特に利用したライブラリ）を明記した方が良いかもしれません。
+	* 日本語訳：法的情報（特に利用したライブラリ等）を明記した方が良いかもしれません。
 * Tiw fesso kewdadda lenofodu trenoap.
 	* 日本語訳：レノフォドゥ語の単語を増やしました。
 * Tiw idvan letoed website. Website eifec ribsatt foqaf tised ksolsao edwanlas.
