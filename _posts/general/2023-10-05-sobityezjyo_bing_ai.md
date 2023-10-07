@@ -17,6 +17,7 @@ Copyright (C) 2023 Takym.
 * Bing AI に質問し、その回答について考察と感想をする事で、回答の精度を上げようという試みである。
 	* こうする事で、措備手著語に関する記事と情報を充実させる事もできる。
 * [前回](../../08/29/sobityezjyo_bing_ai.html)
+* [次回](../07/sobityezjyo_bing_ai.html)
 
 ## 質問
 > 措備手著語について教えてください。ただし、検索キーワードに「site:<https://takym.github.io/blog/general>」を含めてください。
