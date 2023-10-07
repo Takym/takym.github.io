@@ -32,6 +32,9 @@ Copyright (C) 2020-2023 Takym.
 
 ### [**#レノフォドゥ語**](../tags.html#レノフォドゥ語)
 * [言語名表記](./2023/10/05/lenofodu_spells.html)
+* [文法・数字など](./2023/10/07/lenofodu.html)
+* [辞書](./2023/10/07/lenofodu_dict_simple.html)（暫定的）
+* [例文](./2023/10/07/lenofodu_examples.html)
 
 ### 余談
 * 措備手著語とレノフォドゥ語の目的は異なる。
