@@ -14,6 +14,7 @@ Copyright (C) 2023 Takym.
 ## 概要
 これは[レノフォドゥ語](lenofodu.html)の簡易的な辞書です。
 自分用に書いたため読み難いかもしれません。
+例文も載せています。
 
 ## 辞書表
 |単語          |品詞1 |品詞2     |定義(日本語訳)                        |定義(英語訳)                   |語源                      |
@@ -125,3 +126,39 @@ Copyright (C) 2023 Takym.
 |ribsatt       |名詞  |          |技術                                  |technology                     |                          |
 
 ## 例文
+* Letoed noapled foqaf duffa.
+	* 日本語訳：この人間の言語。
+* Tiw fesso quont skoas vbomma.
+	* 日本語訳：今日はゴリラに出会いました。
+* Tiw fesso eodt ysoe easd.
+	* 日本語訳：昨日は地球について調べました。
+* LENOFODU EIFEC KOWCHOP JOEC?
+	* 日本語訳：レノフォドゥ語とは何？
+* Lenofodu eifec epafo letoed noapled foqaf duffa.
+	* 日本語訳：レノフォドゥ語とは「この人間の言語」の略である。
+* Otot-tifeoc eifec tised feoco foqaf otot.
+	* 日本語訳：数学とは数や量の学問である。
+* Noapled-tifeoc eifec tised feoco foqaf noapled.
+	* 日本語訳：語学とは言語の学問である。
+* Otrep fewols, oesacoap eifec: AAA.
+	* 日本語訳：一つ目の例文：AAA。
+* Tised ksoesa foqaf tiw eifec joire joec?
+	* 日本語訳：僕の例は良いですか？（＝僕の例は分かり易いですか？）
+* Tijoec eifec vodvod josaqu zazvod.
+	* 日本語訳：真偽は真または偽です。
+* Tiw ksof ecoclocpoc!
+	* 日本語訳：ありがとう！（＝感謝する）
+* Fweop ksof ecoclocpoc tiw!
+	* 日本語訳：あなたは僕に感謝します。
+* Tised ksnoap lenofodu eifec ukideo lwetos tifredu.
+	* 日本語訳：作者であってもレノフォドゥ語を書くのは難しい。
+* Tiw yosied eoquru kopdwe joec?
+	* 日本語訳：毎日続けられるかな？
+* Tiw fesso kpowed letoed tiquont.
+	* 日本語訳：今日は疲れた。
+* Fweop keffop vadwanoap wippaao-remnda edwanlas (hudank tised fesso biver ryantien).
+	* 日本語訳：法的情報（特に利用したライブラリ）を明記した方が良いかもしれません。
+* Tiw fesso kewdadda lenofodu trenoap.
+	* 日本語訳：レノフォドゥ語の単語を増やしました。
+* Tiw idvan letoed website. Website eifec ribsatt foqaf tised ksolsao edwanlas.
+	* 日本語訳：このウェブサイトの事を忘れていました。ウェブサイトとは情報を提供する技術の事です。
