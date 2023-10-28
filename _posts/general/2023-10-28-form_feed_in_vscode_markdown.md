@@ -39,3 +39,4 @@ b
 * 同様の内容の HTML ファイルを作成し、Microsoft Edge、Google Chrome、Avast Secure Browser で開いても再現された。
 	* Internet Explorer では再現されなかった。
 * Chromium の不具合なのだろうか。仕様なのだろうか。
+* **追記**：バイナリエディタで「0C」と入力してから、メモ帳で開いても上矢印が表示された。
