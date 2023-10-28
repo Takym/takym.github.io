@@ -6,6 +6,8 @@ tags: "未指定"
 category: general
 ---
 
+<b><i><u>不思議な文字化け</u></i></b>
+
 ## ソースコード
 ```md
 &gt;&#x0C;&#12;
