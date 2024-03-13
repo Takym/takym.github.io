@@ -467,7 +467,8 @@ const charnames = [
 	{ "name": "ソビティエズ語",       "color": sobityezjyo },
 	{ "name": "Lenofodu",             "color": lenofodu    },
 	{ "name": "レノフォドゥ語",       "color": lenofodu    },
-	{ "name": "例埜捕衝語・此人語",   "color": lenofodu    }
+	{ "name": "例埜捕衝語・此人語",   "color": lenofodu    },
+	{ "name": "下劣な記事",           "color": valid       }
 ];
 
 // ページ読み込み処理
