@@ -215,6 +215,11 @@ public sealed class Singletons : ISomeInterface
 }
 ```
 
+## 余談
+この記事は、下記の画像の通り、昨年末から用意していたものをやっと公開できた。
+
+![2024-04-09-delegation.png](https://takym.github.io/assets/images/2024-04-09-delegation.png)
+
 ## 参考文献
 * [【C#】インターフェイスの変換を行うAdapterパターンを学ぶ - はなちるのマイノート](https://www.hanachiru-blog.com/entry/2021/03/18/120000)
 * [プログラマーを惑わせる３種類の委譲(委譲・Delegation／転送・Forwarding／.NET Delegates) #JavaScript - Qiita](https://qiita.com/jesus_isao/items/4b6b7846ccf5eb46b1bc)
