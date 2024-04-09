@@ -216,7 +216,7 @@ public sealed class Singletons : ISomeInterface
 ```
 
 ## 余談
-この記事は、下記の画像（ファイルプロパティのスクリーンショット）の通り、昨年末から用意していたものをやっと公開できた。
+この記事は、下記の画像（ファイルプロパティのスクリーンショット）の通り、昨年末頃から用意していたものをやっと公開できた。
 
 ![Windows 10 のエクスプローラーのプロパティの表示](https://takym.github.io/assets/images/2024-04-09-delegation.png)
 
