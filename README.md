@@ -42,6 +42,7 @@ Copyright (C) 2020-2023 Takym.
 	* 排他的論理和色彩変化画像
 * [shutage](https://github.com/Takym/shutage)
 	* [サイトを表示する](https://takym.github.io/blog/shutage)。
+	* 更新休止中。
 * [CocoaLogViewer](https://github.com/YigtyORG/CocoaLogViewer)
 	* 接触確認アプリのログファイルを表示するツール。
 	* 開発休止中。
@@ -89,21 +90,23 @@ Copyright (C) 2020-2023 Takym.
 
 ## My repositories <a id="en_repos"></a>
 * [TakymLib](https://github.com/YigtyORG/TakymLib)
+	* I am planning to remake<!-- 類義語: recreate, redevelop, reprogram -->.
 * [Gradexor](https://github.com/Takym/Gradexor)
 * [shutage](https://github.com/Takym/shutage)
 	* [View the site](https://takym.github.io/blog/shutage).
+	* Currently, I am not updating.
 * [CocoaLogViewer](https://github.com/YigtyORG/CocoaLogViewer)
-	* I stopped developing.
+	* Currently, I am not developing.
 * [AupLauncher](https://github.com/Takym/AupLauncher)
 	* Launcher for AviUtl & Audacity Project Files
-	* I stopped developing.
+	* Currently, I am not developing.
 * [ExapisSOP](https://github.com/Takym/ExapisSOP)
 	* Extensible APIs for the Service-Oriented Programming.
-	* I stopped developing.
+	* Currently, I am not developing.
 	* [View the site](https://takym.github.io/ExapisSOP).
 * [FastChatProtocolInterface](https://github.com/Takym/FastChatProtocolInterface)
 	* Reference Implementation for "FACHPI: Fast Chat Protocol/Interface"
-	* I stopped developing.
+	* Currently, I am not developing.
 * ~~For more misc repositories, please see [this page](./repos.md).~~
 
 ## Terms for this site <a id="en_terms"></a>
