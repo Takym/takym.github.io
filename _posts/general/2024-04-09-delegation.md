@@ -4,6 +4,7 @@ title: 「委譲」に似ているもの
 authors: Takym
 tags:
   - .NET
+  - 下劣な記事
 category: general
 ---
 Copyright (C) 2024 Takym.
