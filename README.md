@@ -34,6 +34,9 @@ Copyright (C) 2020-2023 Takym.
 	* Lancers: [takym](https://www.lancers.jp/profile/takym)
 	* Discord: [Takym Server](https://discord.gg/ph9sQdY2NA)
 	* Discord: [Takym Server Freedom](https://discord.gg/tUZUNqKJ6r)
+* ジカッキィーくん
+	* [LINEスタンプ](https://line.me/S/shop/sticker/author/197955/new?lang=ja&utm_source=gnsh_staut)
+	* [公式アカウント](https://lin.ee/5sJ1DQ9)
 
 ## リポジトリ一覧 <a id="ja_repos"></a>
 * [TakymLib](https://github.com/YigtyORG/TakymLib)
@@ -87,6 +90,9 @@ Copyright (C) 2020-2023 Takym.
 	* Lancers: [takym](https://www.lancers.jp/profile/takym)
 	* Discord: [Takym Server](https://discord.gg/ph9sQdY2NA)
 	* Discord: [Takym Server Freedom](https://discord.gg/tUZUNqKJ6r)
+* Mr.Jikkaky
+	* [LINE Stickers](https://line.me/S/shop/sticker/author/197955/new?lang=en&utm_source=gnsh_staut)
+	* [The Official Account](https://lin.ee/5sJ1DQ9) (Japanese)
 
 ## My repositories <a id="en_repos"></a>
 * [TakymLib](https://github.com/YigtyORG/TakymLib)
