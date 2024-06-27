@@ -6,4 +6,4 @@ permalink: /blog/:categories/:year/:month/:day/:title:output_ext
 timezone: Asia/Tokyo
 markdown: GFM
 plugins:
-	- jekyll-sitemap
+  - jekyll-sitemap
