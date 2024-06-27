@@ -468,7 +468,9 @@ const charnames = [
 	{ "name": "Lenofodu",             "color": lenofodu    },
 	{ "name": "レノフォドゥ語",       "color": lenofodu    },
 	{ "name": "例埜捕衝語・此人語",   "color": lenofodu    },
-	{ "name": "下劣な記事",           "color": valid       }
+	{ "name": "下劣な記事",           "color": valid       },
+	{ "name": "声明記事",             "color": valid       },
+	{ "name": "Slack",                "color": valid       }
 ];
 
 // ページ読み込み処理
