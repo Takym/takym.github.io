@@ -4,6 +4,7 @@ title: そういえば、このウェブサイト（takym.github.io）の名前�
 authors: Takym
 tags:
   - サイトの管理方針
+  - 下劣な記事
 category: general
 ---
 Copyright (C) 2023 Takym.
