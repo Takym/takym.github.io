@@ -1,3 +1,6 @@
+---
+not_wiki: not_wiki
+---
 # ウィキ一覧
 Copyright (C) 2020-2023 Takym.
 
