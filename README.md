@@ -30,13 +30,20 @@ Copyright (C) 2020-2023 Takym.
 	* <https://takymsystems.blog.fc2.com/>
 	* <https://takym-program.hateblo.jp/>
 * SNS
+	* GitHub: [@Takym](https://github.com/Takym)
 	* Twitter: [@takym0818](https://twitter.com/takym0818)
 	* Lancers: [takym](https://www.lancers.jp/profile/takym)
 	* Discord: [Takym Server](https://discord.gg/ph9sQdY2NA)
 	* Discord: [Takym Server Freedom](https://discord.gg/tUZUNqKJ6r)
+	* Wikipedia: [利用者:Takym](https://ja.wikipedia.org/wiki/利用者:Takym)
+	* osdev-jp
+		* <https://osdev.jp/wiki/Takym>
+		* <https://github.com/osdev-jp/osdev-jp.github.io/wiki/Takym>
 * ジカッキィーくん
 	* [LINEスタンプ](https://line.me/S/shop/sticker/author/197955/new?lang=ja&utm_source=gnsh_staut)
 	* [公式アカウント](https://lin.ee/5sJ1DQ9)
+	* シリーズ・キャラクター共に正式名称は「ジカッキィー」。「ジカッキィー・シリーズ」と「ジカッキィーくん」は曖昧さ回避の為の便宜的な呼称。
+* [サブモジュールを用いて新しいカテゴリを追加する](./add_new_cat.md)
 
 ## リポジトリ一覧 <a id="ja_repos"></a>
 * [TakymLib](https://github.com/YigtyORG/TakymLib)
@@ -86,13 +93,20 @@ Copyright (C) 2020-2023 Takym.
 	* <https://takymsystems.blog.fc2.com/>
 	* <https://takym-program.hateblo.jp/>
 * SNS
+	* GitHub: [@Takym](https://github.com/Takym)
 	* Twitter: [@takym0818](https://twitter.com/takym0818)
 	* Lancers: [takym](https://www.lancers.jp/profile/takym)
 	* Discord: [Takym Server](https://discord.gg/ph9sQdY2NA)
 	* Discord: [Takym Server Freedom](https://discord.gg/tUZUNqKJ6r)
+	* Wikipedia: [User:Takym](https://ja.wikipedia.org/wiki/User:Takym)
+	* osdev-jp
+		* <https://osdev.jp/wiki/Takym>
+		* <https://github.com/osdev-jp/osdev-jp.github.io/wiki/Takym>
 * Mr.Jikkaky
 	* [LINE Stickers](https://line.me/S/shop/sticker/author/197955/new?lang=en&utm_source=gnsh_staut)
 	* [The Official Account](https://lin.ee/5sJ1DQ9) (Japanese)
+	* The official names of the series and the main character is both "Jikkaky". "Jikkaky Series" and "Mr.Jikkaky" are convenient names for disambiguation.
+* [Adding a new category with a git submodule](./add_new_cat.md) (Japanese)
 
 ## My repositories <a id="en_repos"></a>
 * [TakymLib](https://github.com/YigtyORG/TakymLib)

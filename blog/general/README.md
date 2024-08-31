@@ -1,3 +1,8 @@
+---
+authors: Takym
+category: general
+cat_main: cat_main
+---
 # general: 一般的な記事
 Copyright (C) 2020-2023 Takym.
 
