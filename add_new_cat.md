@@ -1,19 +1,13 @@
 # サブモジュールを用いて新しいカテゴリを追加する
 Copyright (C) 2024 Takym.
 
-## 手順1
-* `/_posts/***` に `https://github.com/Takym/***.git` へのサブモジュールを追加する。
+このページの内容は[こちら](./blog/general/2024/09/07/add_new_cat.md)へ移動しました。
+約 10 秒後にページが切り替わります。
 
-## 手順2
-* `/blog/***` に `https://github.com/Takym/***.git` へのサブモジュールを追加する。
-* `/_posts/***` とは異なるブランチに設定する。
-
-## 手順3
-* `/wiki/***` に `https://github.com/Takym/***.wiki.git` へのサブモジュールを追加する。
-
-## 手順4
-* `/README.md` を更新する。
-* `/wiki/README.md` を更新する。
-
-## 手順5
-* `/_includes/repo_url.html` を更新する。
+<script>
+window.onload = function() {
+	setTimeout(function() {
+		location.href = "./blog/general/2024/09/07/add_new_cat.md";
+	}, 10000);
+}
+</script>
