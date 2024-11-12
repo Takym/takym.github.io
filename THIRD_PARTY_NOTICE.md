@@ -1,3 +1,6 @@
+---
+lang: en-US
+---
 # THE THIRD PARTY NOTICES
 Copyright (C) 2020-2024 Takym.
 

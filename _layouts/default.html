@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "ja-JP" }}">
+{% if post.lang %}
+	{% assign lang = post.lang %}
+{% elsif page.lang %}
+	{% assign lang = page.lang %}
+{% else %}
+	{% assign lang = site.lang %}
+{% endif %}
+<html lang="{{ lang | default: "ja-JP" }}">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
@@ -63,10 +70,6 @@
 			b.tag > a {
 				color: inherit;
 			}
-			footer.site-footer {
-				margin: 0 auto;
-				width: 75vw;
-			}
 			footer.site-footer > div {
 				margin: 0;
 				padding: 0;
@@ -76,16 +79,26 @@
 				overflow: hidden;
 				white-space: nowrap;
 			}
-			@media (max-width: 42em) {
-				a[href="#content"].btn {
-					display: block;
-					visibility: visible;
-				}
-			}
 			@media (min-width: 42em) {
+				footer.site-footer {
+					margin: 0 auto;
+					padding: 0 auto;
+					width: 75vw;
+				}
 				a[href="#content"].btn {
 					display: none;
 					visibility: hidden;
+				}
+			}
+			@media (max-width: 42em) {
+				footer.site-footer {
+					margin: 0;
+					padding: 0;
+					width: 100vw;
+				}
+				a[href="#content"].btn {
+					display: block;
+					visibility: visible;
 				}
 			}
 		</style>
@@ -220,19 +233,19 @@
 			{% endif %}
 			<span class="site-footer-credits">
 				<br />
-				<small><a href="{{ site.baseurl }}/LICENSE.html">利用規約 / Terms of the website (Japanese)</a></small>
-				<span>&emsp;&emsp;<wbr /></span>
-				<small><a href="{{ site.baseurl }}/THIRD_PARTY_NOTICE.html">利用ソフトウェア一覧 (英語) / The third party notices</a></small>
-				<span>&emsp;&emsp;<wbr /></span>
-				<small><a href="{{ site.baseurl }}/blog/shutage/charname.html">charname.html (カテゴリの色付け確認用ページ)</a></small>
-				<span>&emsp;&emsp;<wbr /></span>
-				<small><a href="{{ site.baseurl }}/blog/shutage/gen_charname.html">charname.html 生成器</a></small>
+				<small><a href="{{ site.baseurl }}/LICENSE.html">利用規約 /<wbr /> Terms of the website (Japanese)</a></small>
+				<span><wbr /></span>
+				<small><a href="{{ site.baseurl }}/THIRD_PARTY_NOTICE.html">利用ソフトウェア一覧 (英語) /<wbr /> The third party notices</a></small>
+				<span><wbr /></span>
+				<small><a href="{{ site.baseurl }}/blog/shutage/charname.html">charname.html<wbr /> (カテゴリの色付け確認用ページ)</a></small>
+				<span><wbr /></span>
+				<small><a href="{{ site.baseurl }}/blog/shutage/gen_charname.html">charname.html<wbr /> 生成器</a></small>
 				<br />
-				<small>無断転載禁止 / Unauthorized Reproduction Prohibited</small>
-				<span>&emsp;&emsp;<wbr /></span>
+				<small>無断転載禁止 /<wbr /> Unauthorized Reproduction Prohibited.</small>
+				<span><wbr /></span>
 				<small>Copyright (C) 2020-2024 Takym.</small>
-				<span>&emsp;&emsp;<wbr /></span>
-				<small>Hosted on GitHub Pages, using Jekyll and Rouge.</small>
+				<span><wbr /></span>
+				<small>Hosted on GitHub Pages,<wbr /> using Jekyll and Rouge.</small>
 			</span>
 		</footer>
 	</body>
