@@ -63,7 +63,11 @@
 			b.tag > a {
 				color: inherit;
 			}
-			main#content.main-content > footer.site-footer > div {
+			footer.site-footer {
+				margin: 0 auto;
+				width: 75vw;
+			}
+			footer.site-footer > div {
 				margin: 0;
 				padding: 0;
 			}
@@ -76,7 +80,7 @@
 		<!-- seo end -->
 		<!-- Google Analytics begin -->
 		{% if site.google_analytics %}
-		<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+		<script async="async" src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
@@ -89,8 +93,8 @@
 		<!-- copied from: https://github.com/KaTeX/KaTeX -->
 		<!-- 参考：https://katex.org/docs/autorender.html -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" crossorigin="anonymous" />
-		<script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js" crossorigin="anonymous"></script>
-		<script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+		<script defer="defer" src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js" crossorigin="anonymous"></script>
+		<script defer="defer" src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
 				renderMathInElement(document.body, {
@@ -134,7 +138,7 @@
 			<h1 class="project-name">
 				<a href="{{ "/" | absolute_url }}">
 					<!-- ブラウザ画面上に不要な空白が入ってしまう為、改行してはならない。 -->
-					<span>http</span><bold style="color:#CC22CC">s</bold><span>://</span><img src="https://takym.github.io/assets/images/TakymLogo.png" width="144" height="72" alt="Takym" title="Takym" style="vertical-align:bottom" /><span>.GITHUB.IO/</span>
+					<span>http</span><bold style="color:#CC22CC">s</bold><span>://</span><img src="{{ site.baseurl }}/assets/images/TakymLogo.png" width="144" height="72" alt="Takym" title="Takym" style="vertical-align:bottom" /><span>.GITHUB.IO/</span>
 					<!--<span>{{ site.title | default: site.github.repository_name }}</span>-->
 				</a>
 			</h1>
@@ -199,6 +203,10 @@
 			<span class="site-footer-credits">
 				<br />
 				<small>無断転載禁止 / Unauthorized Reproduction Prohibited</small>
+				<br />
+				<small><a href="{{ site.baseurl }}/LICENSE.html">利用規約 / Terms of the website (Japanese)</a></small>
+				<span>&emsp;&emsp;</span>
+				<small><a href="{{ site.baseurl }}/THIRD_PARTY_NOTICE.html">利用ソフトウェア一覧 (英語) / The third party notices</a></small>
 				<br />
 				<small>Copyright (C) 2020-2024 Takym.</small>
 				<br />

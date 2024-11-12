@@ -1,10 +1,11 @@
-# Terms for takym.github.io
-Copyright (C) 2020-2023 Takym.
+# <https://Takym.GITHUB.IO/> 利用規約
+Copyright (C) 2020-2024 Takym.
 
 * This page is written in Japanese only.
 
 ## 目的
 * 自分で作成したリポジトリの情報を集約しています。
+* このウェブサイトの所有者及び管理者は [@Takym](https://github.com/Takym) です。
 
 ## 適用
 * 常に最新の規約が適用されるものとします。下記のリンクから最新版を探してください。
@@ -23,3 +24,6 @@ Copyright (C) 2020-2023 Takym.
 
 ## 翻訳
 * 他の言語へ翻訳する事により内容の差異を生じさせない為に、本規約の翻訳は行いません。
+
+## 改正
+* 管理者は何時でもこの利用規約を改正できるものとします。

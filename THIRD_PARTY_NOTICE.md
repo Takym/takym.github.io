@@ -1,5 +1,5 @@
 # THE THIRD PARTY NOTICES
-Copyright (C) 2020-2023 Takym.
+Copyright (C) 2020-2024 Takym.
 
 ## GitHub Pages
 * The site: <https://pages.github.com/>
