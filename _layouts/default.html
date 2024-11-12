@@ -76,6 +76,18 @@
 				overflow: scroll;
 				white-space: nowrap;
 			}
+			@media (max-width: 42em) {
+				a[href="#content"].btn {
+					display: block;
+					visibility: visible;
+				}
+			}
+			@media (min-width: 42em) {
+				a[href="#content"].btn {
+					display: none;
+					visibility: hidden;
+				}
+			}
 		</style>
 		<!-- rouge begin -->
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/rouge-syntax-highlighter.css" />
@@ -152,6 +164,7 @@
 				{{ page.description | default: "" }}
 			</p>
 			<div>
+				<a href="#content" class="btn">内容へ</a>
 				{% include repo_url.html %}
 				<a href="{{ repo_url }}" class="btn">GitHub リポジトリ</a>
 				<a href="{{ site.github.owner_url }}" class="btn">管理者：{{ site.github.owner_name | default: "Takym" }}</a>
