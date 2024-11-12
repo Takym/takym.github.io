@@ -71,7 +71,7 @@
 				margin: 0;
 				padding: 0;
 			}
-			footer.site-footer > span.site-footer-credits > small > a[href] {
+			footer.site-footer > span.site-footer-credits > small {
 				display: inline-block;
 				overflow: hidden;
 				white-space: nowrap;
@@ -220,8 +220,6 @@
 			{% endif %}
 			<span class="site-footer-credits">
 				<br />
-				<small>無断転載禁止 / Unauthorized Reproduction Prohibited</small>
-				<br />
 				<small><a href="{{ site.baseurl }}/LICENSE.html">利用規約 / Terms of the website (Japanese)</a></small>
 				<span>&emsp;&emsp;<wbr /></span>
 				<small><a href="{{ site.baseurl }}/THIRD_PARTY_NOTICE.html">利用ソフトウェア一覧 (英語) / The third party notices</a></small>
@@ -230,8 +228,10 @@
 				<span>&emsp;&emsp;<wbr /></span>
 				<small><a href="{{ site.baseurl }}/blog/shutage/gen_charname.html">charname.html 生成器</a></small>
 				<br />
+				<small>無断転載禁止 / Unauthorized Reproduction Prohibited</small>
+				<span>&emsp;&emsp;<wbr /></span>
 				<small>Copyright (C) 2020-2024 Takym.</small>
-				<br />
+				<span>&emsp;&emsp;<wbr /></span>
 				<small>Hosted on GitHub Pages, using Jekyll and Rouge.</small>
 			</span>
 		</footer>
