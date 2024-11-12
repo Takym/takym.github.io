@@ -160,51 +160,51 @@
 		</header>
 		<main id="content" class="main-content" role="main">
 			{{ content }}
-			<footer class="site-footer">
-				<hr />
-				{% if category %}
-				<div>
-					<span>カテゴリ：</span>
-					<b><a href="{{ site.baseurl }}/blog/{{ category }}/README.html">{{ category }}</a></b>
-					<span>（<a href="{{ site.baseurl }}/blog/{{ category }}/posts.html">記事一覧</a>）</span>
-					<br />
-				</div>
-				{% endif %}
-				{% if tags %}
-				<div>
-					<span>タグ：|</span>
-					{% for tag in tags %}
-					<b class="tag">#<a href="{{ site.baseurl }}/blog/tags.html#{{ tag }}">{{ tag }}</a></b>
-					<span>|</span>
-					{% endfor %}
-					<br />
-				</div>
-				{% endif %}
-				{% if authors %}
-				<div>
-					<span>編集者：|</span>
-					{% for author in authors %}
-					<b>@<a href="https://github.com/{{ author }}">{{ author }}</a></b>
-					<span>|</span>
-					{% endfor %}
-					<br />
-					<span>
-						※「編集者」は本サイト内の記事の編集者のみを表します。
-						他サイトの記事へのリンクのみで構成されている場合でも同様です。
-					</span>
-					<br />
-				</div>
-				{% endif %}
-				<span class="site-footer-credits">
-					<br />
-					<small>無断転載禁止 / Unauthorized Reproduction Prohibited</small>
-					<br />
-					<small>Copyright (C) 2020-2023 Takym.</small>
-					<br />
-					<small>Hosted on GitHub Pages, using Jekyll and Rouge.</small>
-				</span>
-			</footer>
 		</main>
+		<footer class="site-footer">
+			<hr />
+			{% if category %}
+			<div>
+				<span>カテゴリ：</span>
+				<b><a href="{{ site.baseurl }}/blog/{{ category }}/README.html">{{ category }}</a></b>
+				<span>（<a href="{{ site.baseurl }}/blog/{{ category }}/posts.html">記事一覧</a>）</span>
+				<br />
+			</div>
+			{% endif %}
+			{% if tags %}
+			<div>
+				<span>タグ：|</span>
+				{% for tag in tags %}
+				<b class="tag">#<a href="{{ site.baseurl }}/blog/tags.html#{{ tag }}">{{ tag }}</a></b>
+				<span>|</span>
+				{% endfor %}
+				<br />
+			</div>
+			{% endif %}
+			{% if authors %}
+			<div>
+				<span>編集者：|</span>
+				{% for author in authors %}
+				<b>@<a href="https://github.com/{{ author }}">{{ author }}</a></b>
+				<span>|</span>
+				{% endfor %}
+				<br />
+				<span>
+					※「編集者」は本サイト内の記事の編集者のみを表します。
+					他サイトの記事へのリンクのみで構成されている場合でも同様です。
+				</span>
+				<br />
+			</div>
+			{% endif %}
+			<span class="site-footer-credits">
+				<br />
+				<small>無断転載禁止 / Unauthorized Reproduction Prohibited</small>
+				<br />
+				<small>Copyright (C) 2020-2024 Takym.</small>
+				<br />
+				<small>Hosted on GitHub Pages, using Jekyll and Rouge.</small>
+			</span>
+		</footer>
 	</body>
 </html>
 {% comment %}
