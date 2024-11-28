@@ -151,19 +151,21 @@
 	</head>
 	<body>
 		{% if post %}
-			{% assign date     = post.date %}
-			{% assign category = post.category %}
-			{% assign tags     = post.tags %}
-			{% assign authors  = post.authors %}
-			{% assign cat_main = post.cat_main %}
-			{% assign not_wiki = post.not_wiki %}
+			{% assign date       = post.date       %}
+			{% assign category   = post.category   %}
+			{% assign tags       = post.tags       %}
+			{% assign authors    = post.authors    %}
+			{% assign cat_main   = post.cat_main   %}
+			{% assign not_wiki   = post.not_wiki   %}
+			{% assign file_lines = post.file_lines %}
 		{% else %}
-			{% assign date     = page.date %}
-			{% assign category = page.category %}
-			{% assign tags     = page.tags %}
-			{% assign authors  = page.authors %}
-			{% assign cat_main = page.cat_main %}
-			{% assign not_wiki = page.not_wiki %}
+			{% assign date       = page.date       %}
+			{% assign category   = page.category   %}
+			{% assign tags       = page.tags       %}
+			{% assign authors    = page.authors    %}
+			{% assign cat_main   = page.cat_main   %}
+			{% assign not_wiki   = page.not_wiki   %}
+			{% assign file_lines = page.file_lines %}
 		{% endif %}
 		<header class="page-header" role="banner">
 			<h1 class="project-name">
@@ -186,7 +188,7 @@
 				{% if wiki_mode!="wiki_mode" %}
 				<a href="{{ repo_url }}/edit/{{ repo_branch }}/{{ repo_page_path }}" class="btn">編集</a>
 				<a href="{{ repo_url }}/new/{{ repo_branch }}/" class="btn">新規作成</a>
-				<a href="{{ repo_url }}/issues/new/?title=About%20{{ repo_page_path }}&body=%3C%21%2D%2D%20Write%20your%20issue%20here%2E%20%2D%2D%3E%0D%0A%0D%0A---%0D%0APlease%20do%20not%20remove%20the%20below%2E%0D%0A{{ repo_url }}/blob/{{ repo_build_rev }}/{{ repo_page_path }}%23L1-L5" class="btn">問題提起</a>
+				<a href="{{ repo_url }}/issues/new/?title=About%20{{ repo_page_path }}&body=%3C%21%2D%2D%20Write%20your%20issue%20here%2E%20%2D%2D%3E%0D%0A%0D%0A---%0D%0APlease%20do%20not%20remove%20the%20below%2E%0D%0A{{ repo_url }}/blob/{{ repo_build_rev }}/{{ repo_page_path }}%23L1-L{{ file_lines | default: "5" }}" class="btn">問題提起</a>
 				{% endif %}
 			</div>
 			<hr />
