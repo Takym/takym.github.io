@@ -1,6 +1,6 @@
 ---
 layout: post
-title: サブモジュールを用いて新しいカテゴリを追加する【2024年09月版】
+title: サブモジュールを用いて新しいカテゴリを追加する【2024年11月版】
 authors: Takym
 tags:
   - サイトの管理方針
@@ -20,8 +20,12 @@ Copyright (C) 2024 Takym.
 * `/wiki/***` に `https://github.com/Takym/***.wiki.git` へのサブモジュールを追加する。
 
 ## 手順4
-* `/README.md` を更新する。
-* `/wiki/README.md` を更新する。
+* `/LICENSE.md` の「カテゴリ毎の規約」を更新する。
+* `/README.md` の「ブログ記事」と「Blog Articles」を更新する。
+* `/wiki/README.md`（ウィキ一覧）を更新する。
 
 ## 手順5
 * `/_includes/repo_url.html` を更新する。
+
+## コマンド
+GitHub 上にリポジトリを準備した後に [`create_cat_repo.bat <リポジトリ名>`](https://github.com/Takym/takym.github.io/blob/gh-pages/create_cat_repo.bat) を実行する事で、容易に初期化できる。

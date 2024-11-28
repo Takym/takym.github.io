@@ -27,3 +27,10 @@ Copyright (C) 2020-2024 Takym.
 
 ## 改正
 * 管理者は何時でもこの利用規約を改正できるものとします。
+
+## カテゴリ毎の規約
+
+|名称|リポジトリ|ブログサイト|ウィキサイト|規約|
+|:---|:---------|:-----------|:-----------|:---|
+|general: 一般的な記事|<https://github.com/Takym/takym.github.io>|<https://takym.github.io/blog/general>|<https://takym.github.io/wiki/general>|[https://Takym.GITHUB.IO/ 利用規約](https://takym.github.io/LICENSE.html)|
+|shutage: シュタゲ関連の情報|<https://github.com/Takym/shutage>|<https://takym.github.io/blog/shutage>|<https://takym.github.io/wiki/shutage>|[The MIT License](https://takym.github.io/blog/shutage/LICENSE.html)|
