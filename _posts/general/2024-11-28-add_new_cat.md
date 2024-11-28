@@ -28,4 +28,5 @@ Copyright (C) 2024 Takym.
 * `/_includes/repo_url.html` を更新する。
 
 ## コマンド
-GitHub 上にリポジトリを準備した後に [`create_cat_repo.bat <リポジトリ名>`](https://github.com/Takym/takym.github.io/blob/gh-pages/create_cat_repo.bat) を実行する事で、容易に初期化できる。
+* GitHub 上にリポジトリを準備した後に [`create_cat_repo.bat <リポジトリ名>`](https://github.com/Takym/takym.github.io/blob/gh-pages/create_cat_repo.bat) を実行する事で、容易に初期化できる。
+* 上記の「手順3」まで自動で処理できる。
