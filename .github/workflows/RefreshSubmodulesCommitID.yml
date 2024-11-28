@@ -21,9 +21,13 @@ jobs:
               commit_id=$(echo ${line} | sed -e 's/^\s*\([0-9A-Za-z]\+\)\s\+\([0-9A-Za-z/_-]\+\)\s\+([0-9A-Za-z/_-]\+)\s*$/\1/g')
               submoddir=$(echo ${line} | sed -e 's/^\s*\([0-9A-Za-z]\+\)\s\+\([0-9A-Za-z/_-]\+\)\s\+([0-9A-Za-z/_-]\+)\s*$/\2/g')
               submoddir=$(echo ${submoddir} | sed -e 's/[^0-9A-Za-z_]/_/g')
-              echo {% assign commit_id_for_${submoddir}="${commit_id}" %}>>_includes/submod_hashes.html
+              echo {% assign commit_id_for_${submoddir}=\"${commit_id}\" %}>>_includes/submod_hashes.html
             fi
           done
+      - name: "Configure git user information."
+        run: |
+          git config --local user.email "noreply@localhost"
+          git config --local user.name "[BOT] Refresh Submodules Commit ID"
       - name: "Commit & Push"
         run: |
           git add .
