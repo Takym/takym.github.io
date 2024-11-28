@@ -1,5 +1,7 @@
 @echo off
 
+chcp 65001
+
 cd ..
 
 mkdir %1
@@ -8,11 +10,11 @@ git init
 git remote add origin https://github.com/Takym/%1.git
 
 mkdir .vscode
-copy ../takym.github.io/.vscode/settings.json .vscode
+copy ..\takym.github.io\.vscode\settings.json .vscode
 
-copy ../takym.github.io/.editorconfig  .
-copy ../takym.github.io/.gitattributes .
-copy ../takym.github.io/.gitmodules    .
+copy ..\takym.github.io\.editorconfig  .
+copy ..\takym.github.io\.gitattributes .
+copy ..\takym.github.io\.gitmodules    .
 
 echo # %1>README.md
 echo See https://takym.github.io/LICENSE.html>LICENSE.md
@@ -22,7 +24,7 @@ git commit -m "initial commit"
 git push -u origin master
 
 git checkout -b gh-pages/cat_main
-copy ../takym.github.io/index.html .
+copy ..\takym.github.io\index.html .
 echo --->README.md
 echo authors: Takym>>README.md
 echo category: %1>>README.md
@@ -56,17 +58,17 @@ git push -u origin gh-pages/posts
 
 git checkout master
 
-cd ../takym.github.io
+cd ..\takym.github.io
 
 git submodule add https://github.com/Takym/%1.git blog/%1
-cd _posts/%1
+cd _posts\%1
 git checkout gh-pages/cat_main
-cd ../..
+cd ..\..
 
 git submodule add https://github.com/Takym/%1.git _posts/%1
-cd _posts/%1
+cd _posts\%1
 git checkout gh-pages/posts
-cd ../..
+cd ..\..
 
 git submodule add https://github.com/Takym/%1.wiki.git wiki/%1
 
