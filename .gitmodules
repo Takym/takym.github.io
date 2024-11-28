@@ -12,3 +12,14 @@
 [submodule "wiki/shutage"]
 	path = wiki/shutage
 	url = https://github.com/Takym/shutage.wiki.git
+[submodule "blog/primers"]
+	path = blog/primers
+	url = https://github.com/Takym/primers.git
+	branch = gh-pages/cat_main
+[submodule "_posts/primers"]
+	path = _posts/primers
+	url = https://github.com/Takym/primers.git
+	branch = gh-pages/posts
+[submodule "wiki/primers"]
+	path = wiki/primers
+	url = https://github.com/Takym/primers.wiki.git

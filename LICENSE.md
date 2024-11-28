@@ -32,5 +32,6 @@ Copyright (C) 2020-2024 Takym.
 
 |名称|規約|リポジトリ|ブログサイト|ウィキサイト|
 |:---|:---|:---------|:-----------|:-----------|
-|general: 一般的な記事|[https://Takym.GITHUB.IO/ 利用規約](https://takym.github.io/LICENSE.html)|<https://github.com/Takym/takym.github.io>|<https://takym.github.io/blog/general>|<https://takym.github.io/wiki/general>|
-|shutage: シュタゲ関連の情報|[The MIT License](https://takym.github.io/blog/shutage/LICENSE.html)|<https://github.com/Takym/shutage>|<https://takym.github.io/blog/shutage>|<https://takym.github.io/wiki/shutage>|
+|`general`: 一般的な記事|[https://Takym.GITHUB.IO/ 利用規約](https://takym.github.io/LICENSE.html)|<https://github.com/Takym/takym.github.io>|<https://takym.github.io/blog/general>|<https://takym.github.io/wiki/general>|
+|`primers`: プログラミング入門講座＆学習コミュニティ|[未定](https://takym.github.io/blog/primers/LICENSE.html)|<https://github.com/Takym/primers>|<https://takym.github.io/blog/primers>|<https://takym.github.io/wiki/primers>|
+|`shutage`: シュタゲ関連の情報|[The MIT License](https://takym.github.io/blog/shutage/LICENSE.html)|<https://github.com/Takym/shutage>|<https://takym.github.io/blog/shutage>|<https://takym.github.io/wiki/shutage>|

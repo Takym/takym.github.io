@@ -1,5 +1,16 @@
 {% if page.path contains "wiki/" and not_wiki!="not_wiki" %}
 	{% assign wiki_mode="wiki_mode" %}
+{% elsif category=="primers" %}
+	{% assign repo_url="https://github.com/Takym/primers" %}
+	{% if cat_main=="cat_main" %}
+		{% assign repo_page_path_tmp = page.path | split: 'blog/primers/' %}
+		{% assign repo_branch="gh-pages/cat_main" %}
+	{% else %}
+		{% assign repo_page_path_tmp = page.path | split: '_posts/primers/' %}
+		{% assign repo_branch="gh-pages/posts" %}
+	{% endif %}
+	{% assign repo_page_path=repo_page_path_tmp[1] %}
+	{% assign repo_build_rev=repo_branch %}
 {% elsif category=="shutage" %}
 	{% assign repo_url="https://github.com/Takym/shutage" %}
 	{% if cat_main=="cat_main" %}

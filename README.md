@@ -22,6 +22,7 @@ Copyright (C) 2020-2024 Takym.
 * 自分で作成したリポジトリの情報を集約しています。
 * [ブログ記事](https://takym.github.io/blog/tags.html)
 	* [general: 一般的な記事](https://takym.github.io/blog/general)
+	* [primers: プログラミング入門講座＆学習コミュニティ](https://takym.github.io/blog/primers)
 	* [shutage: シュタゲ関連の情報](https://takym.github.io/blog/shutage)
 * [ウィキ記事](https://takym.github.io/wiki/README.html)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
@@ -50,6 +51,9 @@ Copyright (C) 2020-2024 Takym.
 	* 自分向けのライブラリ。大幅に作り直す予定。
 * [Gradexor](https://github.com/Takym/Gradexor)
 	* 排他的論理和色彩変化画像
+* [primers](https://github.com/Takym/primers)
+	* [サイトを表示する](https://takym.github.io/blog/primers)。
+	* 準備中。
 * [shutage](https://github.com/Takym/shutage)
 	* [サイトを表示する](https://takym.github.io/blog/shutage)。
 	* 更新休止中。
@@ -85,6 +89,7 @@ Copyright (C) 2020-2024 Takym.
 * Aggregates and manages my repository information.
 * [Blog Articles](https://takym.github.io/blog/tags.html)
 	* [general](https://takym.github.io/blog/general)
+	* [primers](https://takym.github.io/blog/primers)
 	* [shutage](https://takym.github.io/blog/shutage)
 * [Wiki Articles](https://takym.github.io/wiki/README.html)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
@@ -112,6 +117,9 @@ Copyright (C) 2020-2024 Takym.
 * [TakymLib](https://github.com/YigtyORG/TakymLib)
 	* I am planning to remake<!-- 類義語: recreate, redevelop, reprogram -->.
 * [Gradexor](https://github.com/Takym/Gradexor)
+* [primers](https://github.com/Takym/primers)
+	* [View the site](https://takym.github.io/blog/primers).
+	* Currently, I am preparing.
 * [shutage](https://github.com/Takym/shutage)
 	* [View the site](https://takym.github.io/blog/shutage).
 	* Currently, I am not updating.
