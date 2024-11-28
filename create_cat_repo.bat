@@ -61,21 +61,8 @@ git checkout master
 
 cd ..\takym.github.io
 
-git submodule add https://github.com/Takym/%1.git blog/%1
-cd blog\%1
-git fetch
-git checkout gh-pages/cat_main
-git pull origin gh-pages/cat_main
-cd ..\..
-
-git submodule add https://github.com/Takym/%1.git _posts/%1
-cd _posts\%1
-git fetch
-git checkout gh-pages/posts
-git pull origin gh-pages/posts
-cd ..\..
-
-git submodule add https://github.com/Takym/%1.wiki.git wiki/%1
-
-git submodule sync --recursive
+git submodule add -b gh-pages/cat_main https://github.com/Takym/%1.git      blog/%1
+git submodule add -b gh-pages/posts    https://github.com/Takym/%1.git      _posts/%1
+git submodule add                      https://github.com/Takym/%1.wiki.git wiki/%1
+git submodule sync          --recursive
 git submodule update --init --recursive
