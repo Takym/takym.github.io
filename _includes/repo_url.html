@@ -1,27 +1,31 @@
+{% include submod_hashes.html %}
 {% if page.path contains "wiki/" and not_wiki!="not_wiki" %}
 	{% assign wiki_mode="wiki_mode" %}
+	{% assign repo_url="https://github.com/Takym/takym.github.io/tree/gh-pages/wiki" %}
 {% elsif category=="primers" %}
 	{% assign repo_url="https://github.com/Takym/primers" %}
 	{% if cat_main=="cat_main" %}
 		{% assign repo_page_path_tmp = page.path | split: 'blog/primers/' %}
 		{% assign repo_branch="gh-pages/cat_main" %}
+		{% assign repo_build_rev=commit_id_for_blog_primers %}
 	{% else %}
 		{% assign repo_page_path_tmp = page.path | split: '_posts/primers/' %}
 		{% assign repo_branch="gh-pages/posts" %}
+		{% assign repo_build_rev=commit_id_for__posts_primers %}
 	{% endif %}
 	{% assign repo_page_path=repo_page_path_tmp[1] %}
-	{% assign repo_build_rev=repo_branch %}
 {% elsif category=="shutage" %}
 	{% assign repo_url="https://github.com/Takym/shutage" %}
 	{% if cat_main=="cat_main" %}
 		{% assign repo_page_path_tmp = page.path | split: 'blog/shutage/' %}
 		{% assign repo_branch="main" %}
+		{% assign repo_build_rev=commit_id_for_blog_shutage %}
 	{% else %}
 		{% assign repo_page_path_tmp = page.path | split: '_posts/shutage/' %}
 		{% assign repo_branch="master" %}
+		{% assign repo_build_rev=commit_id_for__posts_shutage %}
 	{% endif %}
 	{% assign repo_page_path=repo_page_path_tmp[1] %}
-	{% assign repo_build_rev=repo_branch %}
 {% else %}
 	{% assign repo_url=site.github.repository_url %}
 	{% assign repo_page_path=page.path %}
