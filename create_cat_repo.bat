@@ -53,6 +53,7 @@ git add .
 git commit -m "prepare cat_main"
 git push -u origin gh-pages/cat_main
 
+git checkout master
 git checkout -b gh-pages/posts
 git push -u origin gh-pages/posts
 
