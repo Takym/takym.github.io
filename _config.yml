@@ -7,4 +7,6 @@ lang: ja-JP
 timezone: Asia/Tokyo
 markdown: GFM
 plugins:
+  - jekyll-feed
+  - jekyll-archives
   - jekyll-sitemap
