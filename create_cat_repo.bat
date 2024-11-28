@@ -62,7 +62,7 @@ git checkout master
 cd ..\takym.github.io
 
 git submodule add https://github.com/Takym/%1.git blog/%1
-cd _posts\%1
+cd blog\%1
 git checkout gh-pages/cat_main
 cd ..\..
 
