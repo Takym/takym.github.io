@@ -14,6 +14,8 @@ jobs:
         run: |
           rm -f _includes/submod_hashes.html
           touch _includes/submod_hashes.html
+      - name: "Print submodules commit IDs."
+        run: git submodule status
       - name: "Fetch submodules commit IDs."
         run: |
           git submodule status | while read line; do
