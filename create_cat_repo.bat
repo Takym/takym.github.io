@@ -14,7 +14,7 @@ copy ..\takym.github.io\.vscode\settings.json .vscode
 
 copy ..\takym.github.io\.editorconfig  .
 copy ..\takym.github.io\.gitattributes .
-copy ..\takym.github.io\.gitmodules    .
+copy ..\takym.github.io\.gitignore     .
 
 echo # %1>README.md
 echo See https://takym.github.io/LICENSE.html>LICENSE.md
@@ -34,7 +34,7 @@ echo # %1: (名称未定)>>README.md
 echo Copyright (C) 2024 Takym.>>README.md
 echo --->posts.md
 echo layout: posts>>posts.md
-echo title: (名称未定)の一覧>>posts.md
+echo title: (名称未定)の記事一覧>>posts.md
 echo authors: Takym>>posts.md
 echo pages_viewmode: table>>posts.md
 echo category: %1>>posts.md
@@ -43,7 +43,7 @@ echo --->>posts.md
 echo 記事一覧を取得できません。>>posts.md
 echo --->postlist.md
 echo layout: posts>>postlist.md
-echo title: (名称未定)の一覧>>postlist.md
+echo title: (名称未定)の記事一覧>>postlist.md
 echo authors: Takym>>postlist.md
 echo category: %1>>postlist.md
 echo cat_main: cat_main>>postlist.md
@@ -64,5 +64,12 @@ cd ..\takym.github.io
 git submodule add -b gh-pages/cat_main https://github.com/Takym/%1.git      blog/%1
 git submodule add -b gh-pages/posts    https://github.com/Takym/%1.git      _posts/%1
 git submodule add                      https://github.com/Takym/%1.wiki.git wiki/%1
+
+cd wiki\%1
+copy ..\general\index.html .
+git add .
+git commit -m "Added index.html"
+git push
+
 git submodule sync          --recursive
 git submodule update --init --recursive
