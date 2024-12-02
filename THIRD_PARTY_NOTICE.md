@@ -2,7 +2,7 @@
 lang: en-US
 ---
 # THE THIRD PARTY NOTICES
-Copyright (C) 2020-2024 Takym.
+Copyright (C) 2019-2024 Takym.
 
 ## GitHub Pages
 * The site: <https://pages.github.com/>
