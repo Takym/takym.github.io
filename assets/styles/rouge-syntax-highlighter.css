@@ -1,6 +1,10 @@
 /* Use the latest style from: https://github.com/pages-themes/minimal/blob/master/_sass/rouge-github.scss */
 @import url(https://raw.githubusercontent.com/pages-themes/minimal/master/_sass/rouge-github.scss);
 
+.highlight {
+	font-family: "IPAGothic";
+}
+
 /* Keyword */
 .highlight .k,
 .highlight .kv {
@@ -16,14 +20,14 @@
 
 /* Class name */
 .highlight .nc {
-	color: #00FF80;
+	color: #11EE55;
 	font-weight: normal;
 }
 
 /* Member name */
 .highlight .n,
 .highlight .nf {
-	color: #FF8080;
+	color: #DD6666;
 	font-weight: normal;
 }
 
