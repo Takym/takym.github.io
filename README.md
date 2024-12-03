@@ -2,7 +2,9 @@
 Copyright (C) 2019-2024 Takym.
 
 [![Takym](./assets/images/TakymLogo.png)](./assets/images/TakymLogo.png)
+[![Dependabot Updates](https://github.com/Takym/takym.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/dependabot/dependabot-updates)
 [![pages-build-deployment](https://github.com/Takym/takym.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/pages/pages-build-deployment)
+[![Refresh Submodules Commit ID](https://github.com/Takym/takym.github.io/actions/workflows/RefreshSubmodulesCommitID.yml/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/RefreshSubmodulesCommitID.yml)
 
 [English](#en)
 [日本語](#ja)
