@@ -37,7 +37,6 @@ Copyright (C) 2019-2024 Takym.
 	* Twitter: [@takym0818](https://twitter.com/takym0818)
 	* Lancers: [takym](https://www.lancers.jp/profile/takym)
 	* Discord: [Takym Server](https://discord.gg/ph9sQdY2NA)
-	* Discord: [Takym Server Freedom](https://discord.gg/tUZUNqKJ6r)
 	* Wikipedia: [利用者:Takym](https://ja.wikipedia.org/wiki/利用者:Takym)
 	* osdev-jp
 		* <https://osdev.jp/wiki/Takym>
@@ -104,7 +103,6 @@ Copyright (C) 2019-2024 Takym.
 	* Twitter: [@takym0818](https://twitter.com/takym0818)
 	* Lancers: [takym](https://www.lancers.jp/profile/takym)
 	* Discord: [Takym Server](https://discord.gg/ph9sQdY2NA)
-	* Discord: [Takym Server Freedom](https://discord.gg/tUZUNqKJ6r)
 	* Wikipedia: [User:Takym](https://ja.wikipedia.org/wiki/User:Takym)
 	* osdev-jp
 		* <https://osdev.jp/wiki/Takym>
