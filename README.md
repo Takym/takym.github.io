@@ -34,8 +34,7 @@ Copyright (C) 2019-2024 Takym.
 	* <https://takym-program.hateblo.jp/>
 * SNS
 	* GitHub: [@Takym](https://github.com/Takym)
-	* Twitter: [@takym0818](https://twitter.com/takym0818)
-		* [超簡易的なリンク集の呟](https://x.com/takym0818/status/1886836890952925302)
+	* Twitter: [@takym0818](https://twitter.com/takym0818) ([超簡易的なリンク集の呟](https://x.com/takym0818/status/1886836890952925302))
 	* Lancers: [takym](https://www.lancers.jp/profile/takym)
 	* Discord: [Takym Server](https://discord.gg/ph9sQdY2NA)
 	* Wikipedia: [利用者:Takym](https://ja.wikipedia.org/wiki/利用者:Takym)
@@ -101,8 +100,7 @@ Copyright (C) 2019-2024 Takym.
 	* <https://takym-program.hateblo.jp/>
 * SNS
 	* GitHub: [@Takym](https://github.com/Takym)
-	* Twitter: [@takym0818](https://twitter.com/takym0818)
-		* [STRAIGHTFORWARD: The very simple link list tweet](https://x.com/takym0818/status/1886836890952925302)
+	* Twitter: [@takym0818](https://twitter.com/takym0818) ([STRAIGHTFORWARD: The very simple link list tweet](https://x.com/takym0818/status/1886836890952925302))
 	* Lancers: [takym](https://www.lancers.jp/profile/takym)
 	* Discord: [Takym Server](https://discord.gg/ph9sQdY2NA)
 	* Wikipedia: [User:Takym](https://ja.wikipedia.org/wiki/User:Takym)
