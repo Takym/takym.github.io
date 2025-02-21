@@ -1,5 +1,5 @@
 # <https://Takym.GITHUB.IO/>
-Copyright (C) 2019-2024 Takym.
+Copyright (C) 2019-2025 Takym.
 
 [![Takym](./assets/images/TakymLogo.png)](./assets/images/TakymLogo.png)
 [![Dependabot Updates](https://github.com/Takym/takym.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/dependabot/dependabot-updates)

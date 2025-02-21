@@ -1,5 +1,5 @@
 # <https://Takym.GITHUB.IO/> 利用規約
-Copyright (C) 2019-2024 Takym.
+Copyright (C) 2019-2025 Takym.
 
 * This page is written in Japanese only.
 
