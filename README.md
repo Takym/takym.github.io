@@ -30,6 +30,7 @@ Copyright (C) 2019-2024 Takym.
 	* [shutage: シュタゲ関連の情報](https://takym.github.io/blog/shutage)
 * [ウィキ記事](https://takym.github.io/wiki/README.html)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
+* [寄付・献金](https://github.com/YigtyORG/Yigty.ORG/blob/tentatives/2020/DONATION.md)
 * 古いブログ
 	* <https://takym.code.blog/>
 	* <https://takymsystems.blog.fc2.com/>
@@ -43,7 +44,7 @@ Copyright (C) 2019-2024 Takym.
 	* osdev-jp
 		* <https://osdev.jp/wiki/Takym>
 		* <https://github.com/osdev-jp/osdev-jp.github.io/wiki/Takym>
-* ジカッキィーくん
+* ジカッキィー
 	* [LINEスタンプ](https://line.me/S/shop/sticker/author/197955/new?lang=ja&utm_source=gnsh_staut)
 	* [公式アカウント](https://lin.ee/5sJ1DQ9)
 	* シリーズ・キャラクター共に正式名称は「ジカッキィー」。「ジカッキィー・シリーズ」と「ジカッキィーくん」は曖昧さ回避の為の便宜的な呼称。
@@ -96,6 +97,7 @@ Copyright (C) 2019-2024 Takym.
 	* [shutage](https://takym.github.io/blog/shutage)
 * [Wiki Articles](https://takym.github.io/wiki/README.html)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
+* [Donation](https://github.com/YigtyORG/Yigty.ORG/blob/tentatives/2020/DONATION.md)
 * Old Blogs
 	* <https://takym.code.blog/>
 	* <https://takymsystems.blog.fc2.com/>
@@ -109,7 +111,7 @@ Copyright (C) 2019-2024 Takym.
 	* osdev-jp
 		* <https://osdev.jp/wiki/Takym>
 		* <https://github.com/osdev-jp/osdev-jp.github.io/wiki/Takym>
-* Mr.Jikkaky
+* Jikkaky
 	* [LINE Stickers](https://line.me/S/shop/sticker/author/197955/new?lang=en&utm_source=gnsh_staut)
 	* [The Official Account](https://lin.ee/5sJ1DQ9) (Japanese)
 	* The official names of the series and the main character is both "Jikkaky". "Jikkaky Series" and "Mr.Jikkaky" are convenient names for disambiguation.
