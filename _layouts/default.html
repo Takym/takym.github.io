@@ -151,6 +151,20 @@
 		<!-- charname.js begin -->
 		<script src="{{ site.baseurl }}/assets/scripts/charname.js"></script>
 		<!-- charname.js end -->
+		<!-- GitHub Sponsors begin -->
+		<script>
+			const ghsp = document.querySelector("div#ghsp");
+			if (ghsp) {
+				const frameElem           = document.createElement("iframe");
+				frameElem.src             = "https://github.com/sponsors/Takym/card";
+				frameElem.title           = "Sponsor Takym";
+				frameElem.width           = 600;
+				frameElem.height          = 225;
+				frameElem.style["border"] = 0;
+				ghsp.append(frameElem);
+			}
+		</script>
+		<!-- GitHub Sponsors end -->
 	</head>
 	<body>
 		{% if post %}

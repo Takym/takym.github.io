@@ -13,7 +13,7 @@ Copyright (C) 2019-2024 Takym.
 * **Attention:** please do not fork or clone this repository.
 * **注意：** このリポジトリをフォークまたはクローンしないでください。
 
-<iframe src="https://github.com/sponsors/Takym/card" title="Sponsor Takym" height="225" width="600" style="border: 0;"></iframe>
+<div id="ghsp"></div>
 
 # 日本語 <a id="ja"></a>
 ## 目次
