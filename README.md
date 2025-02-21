@@ -1,4 +1,4 @@
-# takym.github.io
+# https://Takym.GITHUB.IO/
 Copyright (C) 2019-2024 Takym.
 
 [![Takym](./assets/images/TakymLogo.png)](./assets/images/TakymLogo.png)
