@@ -1,0 +1,26 @@
+# ローカルファイル
+/!L_*
+*.local.*
+
+# ウェブサイト（Jekyll の出力データ）
+_site/
+
+# 一時ファイル
+[Tt]emp/
+[Tt]mp/
+[Cc]ache/
+*.temp
+*.tmp
+*.cache
+*.lock
+
+# OS 設定ファイル
+[Dd]esktop.ini
+[Tt]humbs.db
+.DS_Store
+*.DS_Store
+._*
+*._*
+
+# IDE 設定ファイル
+.vs/

@@ -1,0 +1,33 @@
+{
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.renderWhitespace": "all",
+	"editor.renderControlCharacters": true,
+
+	"files.autoGuessEncoding": false,
+	"files.encoding": "utf8",
+	"files.eol": "\r\n",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+
+	"files.associations": {
+		"*.sh": "shellscript",
+		"*.bat": "bat",
+		"*.cmd": "bat",
+	},
+
+	"[shellscript]": {
+		"files.eol": "\n"
+	},
+
+	"[bat]": {
+		"files.encoding": "shiftjis"
+	},
+
+	// https://github.com/ros2/ros2/issues/1406#issuecomment-1795750318
+	"terminal.integrated.env.linux": {
+		"GTK_PATH": ""
+	},
+}

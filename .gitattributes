@@ -1,0 +1,9 @@
+*      text=auto eol=crlf encoding=utf-8
+*.md   text      eol=crlf encoding=utf-8
+*.sh   text      eol=lf   encoding=utf-8
+*.bat  text      eol=crlf encoding=sjis
+*.cmd  text      eol=crlf encoding=sjis
+*.json text      eol=crlf encoding=utf-8
+*.yml  text      eol=crlf encoding=utf-8
+*.zip  binary
+*.ttf  binary
