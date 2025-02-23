@@ -6,7 +6,7 @@ Copyright (C) 2019-2025 Takym.
 
 ## GitHub Pages
 * The site: <https://pages.github.com/>
-* The copyright: &copy; 2019 GitHub, Inc.
+* The copyright: &copy; 2025 GitHub, Inc.
 * The license: [GitHub Terms of Service](https://help.github.com/en/articles/github-terms-of-service)
 
 ## Jekyll
@@ -31,7 +31,13 @@ Copyright (C) 2019-2025 Takym.
 * The author: @[orderedlist](https://github.com/orderedlist)
 * The license: [CC0 1.0 Universal](https://github.com/pages-themes/minimal/blob/master/LICENSE)
 
+## KaTeX
+* The site: <https://katex.org/>
+* The repository: https://github.com/KaTeX/KaTeX>
+* The copyright: Copyright (c) 2013-2020 Khan Academy and other contributors
+* The license: [The MIT License (MIT)](https://github.com/KaTeX/KaTeX/blob/main/LICENSE)
+
 ## IPA Gothic
 * The site: <https://moji.or.jp/ipafont/>
-* The repository: Copyright &copy; Information-technology Promotion Agency, Japan. All rights reserved 2012
+* The copyright: Copyright &copy; Information-technology Promotion Agency, Japan. All rights reserved 2012
 * The license: [IPA Font License Agreement v1.0](https://moji.or.jp/ipafont/license/)
