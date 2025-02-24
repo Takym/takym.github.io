@@ -20,6 +20,7 @@ Copyright (C) 2025 Takym.
 	* [`.editorconfig` ファイル](../.editorconfig)
 	* [`.gitattributes` ファイル](../.gitattributes)
 	* [`.gitignore` ファイル](../.gitignore)
+	* [`.gitmodules` ファイル](../.gitmodules)
 	* [`build.cmd` ファイル](../build.cmd)
 	* [`build.sh` ファイル](../build.sh)
 	* [`debug.md` ファイル](../debug.md)
