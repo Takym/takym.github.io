@@ -61,6 +61,9 @@ Copyright (C) 2019-2025 Takym.
 * [shutage](https://github.com/Takym/shutage)
 	* [サイトを表示する](https://takym.github.io/blog/shutage)。
 	* 更新休止中。
+* [Nitdefgai](https://github.com/Takym/Nitdefgai)
+	* [サイトを表示する](https://takym.github.io/Nitdefgai)。
+	* 準備中。
 * [CocoaLogViewer](https://github.com/YigtyORG/CocoaLogViewer)
 	* 接触確認アプリのログファイルを表示するツール。
 	* 開発休止中。
@@ -127,6 +130,9 @@ Copyright (C) 2019-2025 Takym.
 * [shutage](https://github.com/Takym/shutage)
 	* [View the site](https://takym.github.io/blog/shutage).
 	* Currently, I am not updating.
+* [Nitdefgai](https://github.com/Takym/Nitdefgai)
+	* [View the site](https://takym.github.io/Nitdefgai).
+	* Currently, I am preparing.
 * [CocoaLogViewer](https://github.com/YigtyORG/CocoaLogViewer)
 	* Currently, I am not developing.
 * [AupLauncher](https://github.com/Takym/AupLauncher)
