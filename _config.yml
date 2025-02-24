@@ -1,6 +1,6 @@
 title: "Nitdefgai: 生成系人工知能に適した日本語情報技術資料集"
-description: "日本人向けの情報技術資料集です。現在はまだ準備中です。"
-copyright: "Copyright (C) 2025 Takym."
+description: "日本人向けの情報技術資料集です。現在はまだ準備中です。（https://Takym.GITHUB.IO/ の移行先として検討しています。）"
+copyright: "Copyright (C) 2019-2025 Takym."
 permalink: /blog/:categories/:year/:month/:day/:title:output_ext
 lang: ja-JP
 timezone: Asia/Tokyo

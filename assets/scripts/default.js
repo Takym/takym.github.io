@@ -28,4 +28,18 @@ window.addEventListener("load", function() {
 	if (rightButton && rightMenu) {
 		initToggleButton(rightButton, rightMenu, "２");
 	}
+
+	const ghsp = document.querySelectorAll("div.ghsp");
+	if (ghsp) {
+		for (let i = 0; i < ghsp.length; ++i) {
+			const ccontainerElem      = ghsp[i];
+			const frameElem           = document.createElement("iframe");
+			frameElem.src             = "https://github.com/sponsors/Takym/card";
+			frameElem.title           = "Sponsor Takym";
+			frameElem.width           = 600;
+			frameElem.height          = 130;
+			frameElem.style["border"] = 0;
+			ccontainerElem.append(frameElem);
+		}
+	}
 });

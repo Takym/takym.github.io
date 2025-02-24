@@ -1,0 +1,64 @@
+---
+layout: post
+---
+{% if site.posts %}
+<p>
+	<a href="{{ site.baseurl }}/blog/{{ page.category }}/README.html">カテゴリページへ</a>
+	<hr />
+</p>
+{% assign posts = site.posts %}
+{% include posts_core.html %}
+<p>
+	{% if page.posts_viewmode == "table" %}
+	<a href="{{ site.baseurl }}/blog/{{ page.category }}/postlist.html?no_redirect">箇条書き形式</a>
+	{% else %}
+	<a href="{{ site.baseurl }}/blog/{{ page.category }}/postable.html?no_redirect">表形式</a>
+	{% endif %}
+</p>
+{% else %}
+記事一覧を取得できません。
+{% endif %}
+
+<script>
+	window.addEventListener("load", function() {
+		if (location.search !== "?no_redirect") {
+			let ua = navigator.userAgent;
+			{% if page.posts_viewmode == "table" %}
+			if (ua.indexOf("Phone") !== -1 || ua.indexOf("Mobile") !== -1) {
+				location.href = "{{ site.baseurl }}/blog/{{ page.category }}/postlist.html" + location.hash;
+			}
+			{% else %}
+			if (ua.indexOf("Phone") === -1 && ua.indexOf("Mobile") === -1) {
+				location.href = "{{ site.baseurl }}/blog/{{ page.category }}/postable.html" + location.hash;
+			}
+			{% endif %}
+		}
+
+		if (location.hash && location.hash !== "#") {
+			const postsElem = document.getElementById("posts_data");
+			if (postsElem) {
+				const posts = postsElem.children;
+				for (let i = 0; i < posts.length; ++i) {
+					const elem     = posts[i];
+					const hashtags = elem.children;
+					let   hidden   = true;
+					for (let j = 0; j < hashtags.length; ++j) {
+						const hashtag = hashtags[j];
+						if (hashtag.className === "hashtag" && hashtag.innerText === decodeURI(location.hash)) {
+							hidden = false;
+							break;
+						}
+					}
+					if (hidden) {
+						elem.style["display"         ] = "none";
+						elem.style["visibility-color"] = "hidden";
+					}
+				}
+			}
+		}
+	});
+
+	window.addEventListener("hashchange", function() {
+		location.reload();
+	});
+</script>

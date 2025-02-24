@@ -24,3 +24,7 @@
 {% assign repo_branch    = "master"                   %}
 {% assign repo_page_path = page.path                  %}
 {% assign repo_build_rev = site.github.build_revision %}
+
+{% if category == "general" or category == "debug" %}
+	{% assign do_not_distribute = true %}
+{% endif %}

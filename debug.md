@@ -1,5 +1,5 @@
 ---
-debug: true
+category: debug
 ---
 # デバッグ用ページ
 

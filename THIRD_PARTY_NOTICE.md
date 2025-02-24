@@ -1,5 +1,5 @@
 # 第三者製の利用ソフトウェアの一覧
-Copyright (C) 2025 Takym.
+Copyright (C) 2019-2025 Takym.
 
 ## GitHub Pages
 * ウェブサイト：<https://pages.github.com/>

@@ -100,8 +100,39 @@ nav > section > hr {
 	border: 2px solid #000000;
 }
 
+main h1, main h2, main h3 {
+	display:             block;
+	margin-top:          2px;
+	margin-bottom:       4px;
+	background-color:    #EEEEEE;
+	border-left-style:   solid;
+	border-bottom-style: dashed;
+	border-bottom-width: 3px;
+}
+
+main h1 {
+	font-size:           250%;
+	border-left-width:   10px;
+	border-left-color:   #FF8000;
+	border-bottom-color: #0080FF;
+}
+
+main h2 {
+	font-size:           175%;
+	border-left-width:   6px;
+	border-left-color:   #40CC40;
+	border-bottom-color: #800080;
+}
+
+main h3 {
+	font-size:           150%;
+	border-left-width:   4px;
+	border-left-color:   #CCCC45;
+	border-bottom-color: #20A080;
+}
+
 a, a:link {
-	color:           #00FF00;
+	color:           #00AA00;
 	text-decoration: underline;
 }
 
@@ -114,11 +145,26 @@ a:hover, a:active {
 }
 
 a:hover {
-	color:           #00AA00;
+	color:           #00FF00;
 	text-decoration: overline;
 }
 
 a:active {
 	color:           #EE9900;
 	text-decoration: none;
+}
+
+div.center {
+	text-align: center;
+	width:      100%;
+}
+
+span.important {
+	color:     #EE2060;
+	font-size: 120%;
+}
+
+#posts_data > * > .hashtag {
+	display:    none;
+	visibility: hidden;
 }

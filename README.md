@@ -1,5 +1,5 @@
 # Nitdefgai: 生成系人工知能に適した日本語情報技術資料集
-Copyright (C) 2025 Takym.
+Copyright (C) 2019-2025 Takym.
 
 [![pages-build-deployment](https://github.com/Takym/Nitdefgai/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Takym/Nitdefgai/actions/workflows/pages/pages-build-deployment)
 [![Dependabot Updates](https://github.com/Takym/Nitdefgai/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Takym/Nitdefgai/actions/workflows/dependabot/dependabot-updates)

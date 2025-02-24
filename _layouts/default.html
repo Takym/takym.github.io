@@ -72,7 +72,7 @@
 
 		<!-- 既定のスタイルシート -->
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/default.css" />
-		{% if page.debug %}
+		{% if page.category == "debug" %}
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/debug.css" />
 		{% else %}
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/release.css" />
@@ -87,6 +87,19 @@
 			<h1><a href="{{ site.baseurl }}/index.html">{{ site.title }}</a></h1>
 			<p>{{ site.description }}</p>
 			<p>{{ page.description }}</p>
+			<div class="center">
+				{% if do_not_distribute %}
+				<span class="important">
+					<strong>無断転載禁止</strong>
+					<wbr />
+					<strong>DO NOT DISTRIBUTE</strong>
+				</span>
+				<br />
+				{% endif %}
+				<iframe src="https://github.com/sponsors/Takym/button" title="Sponsor Takym" height="32" width="114" style="border:0;border-radius:6px">
+					<a href="https://github.com/sponsors/Takym">GitHub Sponsors</a>
+				</iframe>
+			</div>
 		</header>
 		<nav id="left_toggle"></nav>
 		<nav id="left" class="hidden">
@@ -97,9 +110,10 @@
 				</strong>
 				<hr />
 			</section>
+			{% include catlist.html %}
 			<section>
 				<h3>管理者</h3>
-				<span>@<a href="{{ repo_owner_url }}">{{ repo_owner_name }}</a></span>
+				<span><a href="{{ repo_owner_url }}">@{{ repo_owner_name }}</a></span>
 				<hr />
 			</section>
 			<section>
@@ -108,11 +122,11 @@
 				<hr />
 			</section>
 			<section>
-				<h3>編集者</h3>
+				<h3>投稿者</h3>
 				{% if authors %}
 				<ul>
 					{% for author in authors %}
-					<li>@<a href="https://github.com/{{ author }}">{{ author }}</a></li>
+					<li><a href="https://github.com/{{ author }}">@{{ author }}</a></li>
 					{% endfor %}
 				</ul>
 				{% else %}
@@ -120,18 +134,24 @@
 				{% endif %}
 				<hr />
 			</section>
-			{% if page.debug %}
+			{% if wiki != "wiki" %}
 			<section>
-				<h3>カテゴリ</h3>
-				<span>{{ category | default: "無し" }}</span>
+				<h3>この記事のカテゴリ</h3>
+				{% if category %}
+				<b><a href="{{ site.baseurl }}/blog/{{ category }}/README.html">{{ category }}</a></b>
+				<br />
+				<span>（<a href="{{ site.baseurl }}/blog/{{ category }}/postlist.html">記事一覧</a>）</span>
+				{% else %}
+				<span>無し</span>
+				{% endif %}
 				<hr />
 			</section>
 			<section>
-				<h3>タグ</h3>
+				<h3>この記事のタグ</h3>
 				{% if tags %}
 				<ul>
 					{% for tag in tags %}
-					<li>{{ tag }}</li>
+					<li><b><a href="{{ site.baseurl }}/blog/{{ category }}/postlist.html#{{ tag }}">#{{ tag }}</a></b></li>
 					{% endfor %}
 				</ul>
 				{% else %}
@@ -139,8 +159,6 @@
 				{% endif %}
 				<hr />
 			</section>
-			{% endif %}
-			{% if wiki != "wiki" %}
 			<section>
 				<h3>操作</h3>
 				<ul>
@@ -151,29 +169,18 @@
 				<hr />
 			</section>
 			{% endif %}
-			<section>
-				<h3>リンク集</h3>
-				<ul>
-					<li><a href="{{ site.baseurl }}/index.html">トップページ</a></li>
-					<li><a href="{{ site.baseurl }}/LICENSE.html">利用規約</a></li>
-					<li><a href="{{ site.baseurl }}/THIRD_PARTY_NOTICE.html">第三者製利用ソフトウェア</a></li>
-					<li><a href="{{ site.baseurl }}/debug.html">デバッグページ</a></li>
-					<li><a href="https://takym.github.io/README.html">https://Takym.GITHUB.IO/</a></li>
-					<li>
-						<span>このサイトを支援する</span>
-						<ul>
-							<li><a href="https://github.com/sponsors/Takym">GitHub Sponsors</a></li>
-							<li><a href="https://github.com/YigtyORG/Yigty.ORG/blob/tentatives/2020/DONATION.md">暗号資産</a></li>
-						</ul>
-					</li>
-				</ul>
-			</section>
 		</nav>
 		<nav id="right_toggle"></nav>
 		<nav id="right" class="hidden">{% include sidebar.html %}</nav>
 		<main>{{ content }}</main>
 		<footer>
+			{% if do_not_distribute %}
+			<small>無断転載禁止 /<wbr /> Unauthorized Reproduction Prohibited.</small>
+			<span><wbr /></span>
+			{% endif %}
 			<small>{{ site.copyright }}</small>
+			<span><wbr /></span>
+			<small>Hosted on GitHub Pages,<wbr /> using Jekyll.</small>
 		</footer>
 	</body>
 </html>

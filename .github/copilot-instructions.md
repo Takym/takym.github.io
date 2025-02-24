@@ -1,5 +1,5 @@
 # GitHub Copilot 指示書
-Copyright (C) 2025 Takym.
+Copyright (C) 2019-2025 Takym.
 
 ## 原則
 * 回答は全て日本語で行ってください。
@@ -16,6 +16,9 @@ Copyright (C) 2025 Takym.
 		* ただし[このファイル（`.github/copilot-instructions.md`）](./copilot-instructions.md)は除外しないでください。
 	* [`.vscode` ディレクトリ](../.vscode)
 	* [`assets` ディレクトリ](../assets)
+	* [`blog/all` ディレクトリ](../blog/all)
+	* [`blog/debug` ディレクトリ](../blog/debug)
+	* [`blog/index.html` ファイル](../blog/index.html)
 	* [`_config.yml` ファイル](../_config.yml)
 	* [`.editorconfig` ファイル](../.editorconfig)
 	* [`.gitattributes` ファイル](../.gitattributes)
