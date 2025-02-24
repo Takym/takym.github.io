@@ -1,6 +1,9 @@
 # Nitdefgai: 生成系人工知能に適した日本語情報技術資料集
 Copyright (C) 2025 Takym.
 
+[![pages-build-deployment](https://github.com/Takym/Nitdefgai/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Takym/Nitdefgai/actions/workflows/pages/pages-build-deployment)
+[![Dependabot Updates](https://github.com/Takym/Nitdefgai/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Takym/Nitdefgai/actions/workflows/dependabot/dependabot-updates)
+
 ## 概要
 このリポジトリ内で [GitHub Copilot](https://github.com/features/copilot) へ質問する事で、情報技術に関する詳しい回答を得られる資料集の構築を目指しています。
 回答は日本語で生成する様に指示してあります。
