@@ -1,0 +1,124 @@
+
+* {
+	font-family: "IPAゴシック", monospace, sans-serif;
+}
+
+html, body, header, footer, nav {
+	margin: 0;
+}
+
+header, footer {
+	left:      0;
+	max-width: 100vw;
+}
+
+body {
+	padding: 0;
+}
+
+header {
+	padding: 0.5rem 1.5rem;
+}
+
+footer {
+	padding: 0.5rem;
+}
+
+main {
+	margin: 1rem 2rem;
+}
+
+@media (min-width: 768px) {
+	header {
+		min-height: 8vh;
+	}
+
+	footer {
+		clear:      both;
+		text-align: center;
+	}
+
+	nav#left, nav#right {
+		width:      16vw;
+		overflow-x: auto;
+	}
+
+	nav#left {
+		float: left;
+	}
+
+	nav#right {
+		float: right;
+	}
+
+	nav#left_toggle, nav#right_toggle {
+		display:    none;
+		visibility: hidden;
+	}
+
+	nav#left > section {
+		padding-left: 0.8rem;
+	}
+
+	main {
+		padding: 1rem 16vw;
+	}
+}
+
+@media (max-width: 768px) {
+	nav#left_toggle, nav#right_toggle {
+		padding    : 0;
+		user-select: none;
+		font-weight: bold;
+		font-size  : 200%;
+	}
+
+	nav#left.hidden, nav#right.hidden {
+		display:    none;
+		visibility: hidden;
+	}
+
+	main {
+		padding: 1rem 0;
+	}
+}
+
+header > h1 > a,
+header > h1 > a:link,
+header > h1 > a:visited,
+header > h1 > a:hover,
+header > h1 > a:active {
+	color:           #000066;
+	text-decoration: none;
+}
+
+nav > section > h3 {
+	border-bottom: 2px dashed #808080;
+}
+
+nav > section > hr {
+	border: 2px solid #000000;
+}
+
+a, a:link {
+	color:           #00FF00;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #008000;
+}
+
+a:hover, a:active {
+	background-color: #DD99DD;
+}
+
+a:hover {
+	color:           #00AA00;
+	text-decoration: overline;
+}
+
+a:active {
+	color:           #EE9900;
+	text-decoration: none;
+}

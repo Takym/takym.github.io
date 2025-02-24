@@ -1,0 +1,30 @@
+
+header {
+	background-color: #FF8080;
+}
+
+nav#left {
+	background-color: #80FF80;
+}
+
+nav#right {
+	background-color: #FFFF80;
+}
+
+main {
+	background-color: #8080FF;
+}
+
+footer {
+	background-color: #80FFFF;
+}
+
+body {
+	background-color: #FF80FF;
+}
+
+@media (min-width: 768px) {
+	nav#left, nav#right {
+		min-height: 100vh;
+	}
+}

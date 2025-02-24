@@ -1,14 +1,17 @@
 title: "Nitdefgai: 生成系人工知能に適した日本語情報技術資料集"
-description: "日本人向けの情報技術資料集です。"
-include: [ README.md, LICENSE.md, THIRD_PARTY_NOTICE.md ]
+description: "日本人向けの情報技術資料集です。現在はまだ準備中です。"
+copyright: "Copyright (C) 2025 Takym."
 permalink: /blog/:categories/:year/:month/:day/:title:output_ext
 lang: ja-JP
 timezone: Asia/Tokyo
 markdown: GFM
-kramdown:
-  syntax_highlighter_opts:
-    disable : true
+include:
+  - README.md
+  - LICENSE.md
+  - THIRD_PARTY_NOTICE.md
+  - .github
 plugins:
   - jekyll-feed
   - jekyll-archives
   - jekyll-sitemap
+google_analytics: UA-99298946-3

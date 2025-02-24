@@ -1,5 +1,5 @@
-# 第三者製ソフトウェアの一覧
-Copyright (C) 2019-2025 Takym.
+# 第三者製の利用ソフトウェアの一覧
+Copyright (C) 2025 Takym.
 
 ## GitHub Pages
 * ウェブサイト：<https://pages.github.com/>
@@ -35,3 +35,8 @@ Copyright (C) 2019-2025 Takym.
 	* 独立行政法人情報処理推進機構
 	* 一般社団法人文字情報技術促進協議会
 * 利用規約：[IPAフォントライセンスv1.0](https://moji.or.jp/ipafont/license/)
+
+## Google Analytics
+* ウェブサイト：<https://developers.google.com/analytics>
+* 開発元：Google LLC
+* 利用規約：[Google アナリティクスの利用規約](https://www.google.com/analytics/terms/)

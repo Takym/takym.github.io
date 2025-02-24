@@ -1,0 +1,26 @@
+
+{% assign repo_url        = site.github.repository_url %}
+{% assign repo_owner_url  = site.github.owner_url      %}
+{% assign repo_owner_name = site.github.owner_name     %}
+
+{% if post %}
+	{% assign date       = post.date       %}
+	{% assign authors    = post.authors    %}
+	{% assign category   = post.category   %}
+	{% assign tags       = post.tags       %}
+	{% assign file_lines = post.file_lines %}
+{% else %}
+	{% assign date       = page.date       %}
+	{% assign authors    = page.authors    %}
+	{% assign category   = page.category   %}
+	{% assign tags       = page.tags       %}
+	{% assign file_lines = page.file_lines %}
+{% endif %}
+
+{% if page.path contains "wiki/" %}
+	{% assign wiki = "wiki" %}
+{% endif %}
+
+{% assign repo_branch    = "master"                   %}
+{% assign repo_page_path = page.path                  %}
+{% assign repo_build_rev = site.github.build_revision %}

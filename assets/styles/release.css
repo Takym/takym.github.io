@@ -1,0 +1,33 @@
+
+header {
+	background-color: #E5E5FF;
+	border-bottom:    4px solid #882244;
+}
+
+nav#left_toggle, nav#right_toggle, nav#left, nav#right {
+	background-color: #C7C7EE;
+}
+
+nav#left, nav#right {
+	border-bottom: 2px dotted #882244;
+}
+
+@media (min-width: 768px) {
+	nav#left {
+		border-right: 2px dotted #882244;
+	}
+
+	nav#right {
+		border-left: 2px dotted #882244;
+	}
+}
+
+@media (max-width: 768px) {
+	nav#left_toggle:hover, nav#right_toggle:hover {
+		background-color: #D1D1EE;
+	}
+
+	nav#left_toggle:active, nav#right_toggle:active {
+		background-color: #BEBEE5;
+	}
+}

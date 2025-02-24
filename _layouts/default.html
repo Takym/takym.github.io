@@ -59,12 +59,120 @@
 				font-family: "IPAex明朝";
 				src: url({{ site.baseurl }}/assets/fonts/ipaexm.ttf) format('truetype');
 			}
-			* {
-				font-family: "IPAゴシック", monospace, sans-serif;
-			}
 		</style>
+
+		<!-- Google Analytics -->
+		<script async="async" src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', '{{ site.google_analytics }}');
+		</script>
+
+		<!-- 既定のスタイルシート -->
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/default.css" />
+		{% if page.debug %}
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/debug.css" />
+		{% else %}
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/release.css" />
+		{% endif %}
+
+		<!-- 既定のスクリプト -->
+		<script src="{{ site.baseurl }}/assets/scripts/default.js"></script>
 	</head>
 	<body>
-		{{ content }}
+		{% include fetchdata.html %}
+		<header>
+			<h1><a href="{{ site.baseurl }}/index.html">{{ site.title }}</a></h1>
+			<p>{{ site.description }}</p>
+			<p>{{ page.description }}</p>
+		</header>
+		<nav id="left_toggle"></nav>
+		<nav id="left" class="hidden">
+			<section>
+				<br />
+				<strong>
+					<a href="{{ repo_url }}">GitHub リポジトリ</a>
+				</strong>
+				<hr />
+			</section>
+			<section>
+				<h3>管理者</h3>
+				<span>@<a href="{{ repo_owner_url }}">{{ repo_owner_name }}</a></span>
+				<hr />
+			</section>
+			<section>
+				<h3>更新日</h3>
+				<time datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%Y/%m/%d" | default: "不明" }}</time>
+				<hr />
+			</section>
+			<section>
+				<h3>編集者</h3>
+				{% if authors %}
+				<ul>
+					{% for author in authors %}
+					<li>@<a href="https://github.com/{{ author }}">{{ author }}</a></li>
+					{% endfor %}
+				</ul>
+				{% else %}
+				<span>不明</span>
+				{% endif %}
+				<hr />
+			</section>
+			{% if page.debug %}
+			<section>
+				<h3>カテゴリ</h3>
+				<span>{{ category | default: "無し" }}</span>
+				<hr />
+			</section>
+			<section>
+				<h3>タグ</h3>
+				{% if tags %}
+				<ul>
+					{% for tag in tags %}
+					<li>{{ tag }}</li>
+					{% endfor %}
+				</ul>
+				{% else %}
+				<span>無し</span>
+				{% endif %}
+				<hr />
+			</section>
+			{% endif %}
+			{% if wiki != "wiki" %}
+			<section>
+				<h3>操作</h3>
+				<ul>
+					<li><a href="{{ repo_url }}/new/{{ repo_branch }}/">新規作成</a></li>
+					<li><a href="{{ repo_url }}/edit/{{ repo_branch }}/{{ repo_page_path }}">編集</a></li>
+					<li><a href="{{ repo_url }}/issues/new/?title={{ "「" | append: page.title | append: "」（" | append: repo_page_path | append: "）について" | uri_escape }}&body={{ "<!-- ここに問題を入力してください -->" | uri_escape }}%0D%0A%0D%0A{{ "ページファイル：" | uri_escape }}%0D%0A{{ repo_url }}/blob/{{ repo_build_rev }}/{{ repo_page_path }}%23L1-L{{ file_lines | default: "5" }}%0D%0A">問題提起</a></li>
+				</ul>
+				<hr />
+			</section>
+			{% endif %}
+			<section>
+				<h3>リンク集</h3>
+				<ul>
+					<li><a href="{{ site.baseurl }}/index.html">トップページ</a></li>
+					<li><a href="{{ site.baseurl }}/LICENSE.html">利用規約</a></li>
+					<li><a href="{{ site.baseurl }}/THIRD_PARTY_NOTICE.html">第三者製利用ソフトウェア</a></li>
+					<li><a href="{{ site.baseurl }}/debug.html">デバッグページ</a></li>
+					<li>
+						<span>このサイトを支援する</span>
+						<ul>
+							<li><a href="https://github.com/sponsors/Takym">GitHub Sponsors</a></li>
+							<li><a href="https://github.com/YigtyORG/Yigty.ORG/blob/tentatives/2020/DONATION.md">暗号資産</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</nav>
+		<nav id="right_toggle"></nav>
+		<nav id="right" class="hidden">{% include sidebar.html %}</nav>
+		<main>{{ content }}</main>
+		<footer>
+			<small>{{ site.copyright }}</small>
+		</footer>
 	</body>
 </html>
