@@ -7,7 +7,7 @@ Copyright (C) 2025 Takym.
 ## 概要
 このリポジトリ内で [GitHub Copilot](https://github.com/features/copilot) へ質問する事で、情報技術に関する詳しい回答を得られる資料集の構築を目指しています。
 回答は日本語で生成する様に指示してあります。
-具体的な指示の内容は、[GitHub Copilot 指示書](./.github/copilot-instructions.md)を確認してください。
+具体的な指示の内容は、[GitHub Copilot 指示書](https://github.com/Takym/Nitdefgai/blob/master/.github/copilot-instructions.md)を確認してください。
 
 ## 予定
 準備中の別サイト「[primers: プログラミング入門講座＆学習コミュニティ](https://takym.github.io/blog/primers/README.html)」と似通っている気もしますが、このサイトは僕が編集するのではなくコミュニティに信任しようかと思います。
