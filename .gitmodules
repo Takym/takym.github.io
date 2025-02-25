@@ -1,25 +1,12 @@
+[submodule "wiki/Nitdefgai"]
+	path = wiki/Nitdefgai
+	url = https://github.com/Takym/Nitdefgai.wiki.git
 [submodule "wiki/general"]
 	path = wiki/general
 	url = https://github.com/Takym/takym.github.io.wiki.git
-[submodule "_posts/shutage"]
-	path = _posts/shutage
-	url = https://github.com/Takym/shutage.git
-	branch = master
-[submodule "blog/shutage"]
-	path = blog/shutage
-	url = https://github.com/Takym/shutage.git
-	branch = main
 [submodule "wiki/shutage"]
 	path = wiki/shutage
 	url = https://github.com/Takym/shutage.wiki.git
-[submodule "blog/primers"]
-	path = blog/primers
-	url = https://github.com/Takym/primers.git
-	branch = gh-pages/cat_main
-[submodule "_posts/primers"]
-	path = _posts/primers
-	url = https://github.com/Takym/primers.git
-	branch = gh-pages/posts
 [submodule "wiki/primers"]
 	path = wiki/primers
 	url = https://github.com/Takym/primers.wiki.git

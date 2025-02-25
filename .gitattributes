@@ -1,15 +1,16 @@
-*         text=auto eol=crlf encoding=utf-8
-*.cs      text      eol=crlf encoding=utf-8 diff=csharp
-*.csx     text      eol=crlf encoding=utf-8 diff=csharp
-*.cmd     text      eol=crlf encoding=utf-8
-*.sh      text      eol=lf   encoding=utf-8
-*.html    text      eol=crlf encoding=utf-8 diff=html
-*.md      text      eol=crlf encoding=utf-8 diff=markdown
-*.js      text      eol=crlf encoding=utf-8
-*.json    text      eol=crlf encoding=utf-8
-*.css     text      eol=crlf encoding=utf-8 diff=css
-*.yml     text      eol=crlf encoding=utf-8
-*.ttf     binary -text -eol -encoding -diff
+*      text=auto eol=crlf encoding=utf-8
+*.cs   text      eol=crlf encoding=utf-8 diff=csharp
+*.csx  text      eol=crlf encoding=utf-8 diff=csharp
+*.md   text      eol=crlf encoding=utf-8
+*.html text      eol=crlf encoding=utf-8
+*.css  text      eol=crlf encoding=utf-8
+*.js   text      eol=crlf encoding=utf-8
+*.json text      eol=crlf encoding=utf-8
+*.xml  text      eol=crlf encoding=utf-8
+*.yml  text      eol=crlf encoding=utf-8
+*.sh   text      eol=lf   encoding=utf-8
+*.bat  text      eol=crlf encoding=sjis
+*.cmd  text      eol=crlf encoding=sjis
 
 # プロジェクトファイル
 *.sln       merge=binary
@@ -25,20 +26,24 @@
 *.sqlproj   merge=binary
 *.wwaproj   merge=binary
 
+# バイナリファイル
+*.zip binary
+*.ttf binary
+
 # 画像ファイル
-*.bmp    binary -text -eol -encoding -diff
-*.png    binary -text -eol -encoding -diff
-*.jpg    binary -text -eol -encoding -diff
-*.gif    binary -text -eol -encoding -diff
+*.bmp binary
+*.png binary
+*.jpg binary
+*.gif binary
 
 # 文書ファイル
-*.doc   diff=astextplain
-*.DOC   diff=astextplain
-*.docx  diff=astextplain
-*.DOCX  diff=astextplain
-*.dot   diff=astextplain
-*.DOT   diff=astextplain
-*.pdf   diff=astextplain
-*.PDF   diff=astextplain
-*.rtf   diff=astextplain
-*.RTF   diff=astextplain
+*.doc  diff=astextplain
+*.DOC  diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot  diff=astextplain
+*.DOT  diff=astextplain
+*.pdf  diff=astextplain
+*.PDF  diff=astextplain
+*.rtf  diff=astextplain
+*.RTF  diff=astextplain

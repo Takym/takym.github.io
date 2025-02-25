@@ -2,8 +2,8 @@
 Copyright (C) 2019-2025 Takym.
 
 [![Takym](./assets/images/TakymLogo.png)](./assets/images/TakymLogo.png)
-[![Dependabot Updates](https://github.com/Takym/takym.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/dependabot/dependabot-updates)
 [![pages-build-deployment](https://github.com/Takym/takym.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/pages/pages-build-deployment)
+[![Dependabot Updates](https://github.com/Takym/takym.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/dependabot/dependabot-updates)
 [![Refresh Submodules Commit ID](https://github.com/Takym/takym.github.io/actions/workflows/RefreshSubmodulesCommitID.yml/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/RefreshSubmodulesCommitID.yml)
 
 [English](#en)
@@ -23,12 +23,17 @@ Copyright (C) 2019-2025 Takym.
 
 ## 概要 <a id="ja_summary"></a>
 * 「Takym」は「たかやま」と読みます。
-* 自分で作成したリポジトリの情報を集約しています。
-* [ブログ記事](https://takym.github.io/blog/tags.html)
+* 自分で作成したリポジトリや開発したソフトウェアの情報を集約したり、僕の趣味に基いた様々な記事を発信しています。
+	* その他のプロジェクトも公開しています。
+* このウェブサイトのリポジトリでは [GitHub Copilot](https://github.com/features/copilot) へ質問する事で、情報技術に関する詳しい回答を得られる資料集の構築を目指しています。
+	* 回答は日本語で生成する様に指示してあります。
+	* 具体的な指示の内容は、[GitHub Copilot 指示書](https://github.com/Takym/takym.github.io/blob/master/.github/copilot-instructions.md)を確認してください。
+* [ブログ記事](https://takym.github.io/blog)
 	* [general: 一般的な記事](https://takym.github.io/blog/general)
 	* [primers: プログラミング入門講座＆学習コミュニティ](https://takym.github.io/blog/primers)
 	* [shutage: シュタゲ関連の情報](https://takym.github.io/blog/shutage)
-* [ウィキ記事](https://takym.github.io/wiki/README.html)
+* [ウィキ記事](https://takym.github.io/wiki)
+* [サイトシステム名の由来](https://takym.github.io/docs/naming.html)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
 * [寄付・献金](https://github.com/YigtyORG/Yigty.ORG/blob/tentatives/2020/DONATION.md)
 * 古いブログ
@@ -80,8 +85,9 @@ Copyright (C) 2019-2025 Takym.
 * ~~その他の情報は[こちらのページ](./repos.md)にまとめています。~~
 
 ## このサイトの規約について <a id="ja_terms"></a>
-* [こちらのページ](./LICENSE.md)をご覧ください。
-* 利用ソフトウェア一覧は[こちらのページ](./THIRD_PARTY_NOTICE.md)をご覧ください。
+* 利用規約は[こちらのページ](./LICENSE.md)をご覧ください。
+* 全ての読者はこれに従うものとします。
+* このリポジトリで利用している第三者製のソフトウェアの一覧は[こちら](./THIRD_PARTY_NOTICE.md)で確認できます。
 
 ---
 
@@ -93,12 +99,17 @@ Copyright (C) 2019-2025 Takym.
 
 ## Summary <a id="en_summary"></a>
 * Please pronounce "Takym" as TA-KA-YA-MA.
-* Aggregates and manages my repository information.
-* [Blog Articles](https://takym.github.io/blog/tags.html)
+* This website aggregates my repositories and software. Also, I publish blog articles based on my hobby.
+	* Other projects are available!
+* Another goal of the website repository is to build a collection of documents and be a learning source for [GitHub Copilot](https://github.com/features/copilot). So, you can ask advanced questions to AI to get detailed information technology answers.
+	* I commanded to answer in Japanese always.
+	* Please see [GitHub Copilot Instructions](https://github.com/Takym/takym.github.io/blob/master/.github/copilot-instructions.md) for more information. (Japanese)
+* [Blog Articles](https://takym.github.io/blog/tags.html) (Japanese)
 	* [general](https://takym.github.io/blog/general)
 	* [primers](https://takym.github.io/blog/primers)
 	* [shutage](https://takym.github.io/blog/shutage)
 * [Wiki Articles](https://takym.github.io/wiki/README.html)
+* [Site system name](https://takym.github.io/docs/naming.html) (Japanese)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
 * [Donation](https://github.com/YigtyORG/Yigty.ORG/blob/tentatives/2020/DONATION.md)
 * Old Blogs
@@ -148,5 +159,6 @@ Copyright (C) 2019-2025 Takym.
 * ~~For more misc repositories, please see [this page](./repos.md).~~
 
 ## Terms for this site <a id="en_terms"></a>
-* Please refer [this page](./LICENSE.md). (Japanese)
-* For using softwares, please refer [this page](./THIRD_PARTY_NOTICE.md). (English)
+* Please refer to [this page](./LICENSE.md). (Japanese)
+* All readers are expected to comply with this.
+* For using third-party software, please refer to [this page](./THIRD_PARTY_NOTICE.md). (Japanese)
