@@ -1,6 +1,6 @@
 *      text=auto eol=crlf encoding=utf-8
-*.cs   text      eol=crlf encoding=utf-8 diff=csharp
-*.csx  text      eol=crlf encoding=utf-8 diff=csharp
+*.cs   text      eol=crlf encoding=utf-8
+*.csx  text      eol=crlf encoding=utf-8
 *.md   text      eol=crlf encoding=utf-8
 *.html text      eol=crlf encoding=utf-8
 *.css  text      eol=crlf encoding=utf-8
