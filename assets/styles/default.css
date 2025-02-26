@@ -181,6 +181,10 @@ b.tag a:hover {
 	background-color: transparent;
 }
 
+b.tag a:active {
+	background-color: #EECCFF;
+}
+
 div.center {
 	text-align: center;
 	width     : 100%;
