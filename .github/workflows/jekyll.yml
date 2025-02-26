@@ -29,8 +29,13 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Load Wiki Submodules
+        run: git submodule update --init --recursive
       - name: Copy GitHub Copilot Instructions
-        run: cp ./.github/copilot-instructions.md ./docs/copilot-instructions.md
+        run: |
+          cp ./.github/copilot-instructions.md ./docs/copilot-instructions.md
+          ls -al ./docs/
+          head ./docs/copilot-instructions.md
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
