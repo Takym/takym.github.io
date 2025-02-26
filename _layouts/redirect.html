@@ -1,0 +1,29 @@
+---
+layout: empty
+---
+{% if page.redirect_target %}
+	{% assign redirect_target_mod = true %}
+{% else %}
+	{% assign page.redirect_target = "./README.html" %}
+{% endif %}
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja-JP">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="refresh" content="0; URL={{ page.redirect_target }}" />
+		<title>転送中 . . .</title>
+		<script>
+			window.onload = (function() {
+				window.location.href = "{{ page.redirect_target }}";
+			});
+		</script>
+	</head>
+	<body>
+		<h1>転送しています . . .</h1>
+		<p>自動的にページが切り替わらない場合、<a href="{{ page.redirect_target }}">このリンク</a>をクリックし、手動で遷移してください。</p>
+		{% if redirect_target_mod %}
+		<p>デバッグ情報：転送先が<code>{{ page.redirect_target }}</code>に書き換えられています。</p>
+		{% endif %}
+	</body>
+</html>

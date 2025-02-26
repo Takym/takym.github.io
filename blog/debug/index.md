@@ -1,4 +1,3 @@
 ---
-layout: empty
+layout: redirect
 ---
-{% include redirect.html %}

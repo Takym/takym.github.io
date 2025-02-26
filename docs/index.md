@@ -1,5 +1,4 @@
 ---
-layout: empty
+layout: redirect
+redirect_target: "./naming.html"
 ---
-{% assign redirect_target = "./naming.html" %}
-{% include redirect.html %}
