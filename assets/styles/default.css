@@ -97,9 +97,10 @@ header > h1 > a > span {
 }
 
 header > h1 > a > img[alt="Takym"][title="Takym"] {
-	width         : 144px;
-	height        :  72px;
-	vertical-align: bottom;
+	width          : 144px;
+	height         :  72px;
+	vertical-align : bottom;
+	image-rendering: pixelated;
 }
 
 nav > section > h3 {
