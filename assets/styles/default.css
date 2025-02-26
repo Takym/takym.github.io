@@ -177,6 +177,10 @@ b.tag a:active {
 	filter: invert(100%);
 }
 
+b.tag a:hover {
+	background-color: transparent;
+}
+
 div.center {
 	text-align: center;
 	width     : 100%;

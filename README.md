@@ -12,7 +12,7 @@ Copyright (C) 2019-2025 Takym.
 * **Attention:** please do not fork or clone this repository.
 * **注意：** このリポジトリをフォークまたはクローンしないでください。
 
-<div id="ghsp"></div>
+<div class="ghsp"></div>
 
 # 日本語 <a id="ja"></a>
 ## 目次
