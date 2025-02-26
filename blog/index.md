@@ -1,2 +1,5 @@
+---
+layout: empty
+---
 {% assign redirect_target = "./all/README.html" %}
 {% include redirect.html %}
