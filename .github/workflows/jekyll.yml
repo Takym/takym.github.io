@@ -30,7 +30,9 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Set Origin URL
-        run: git remote set-url origin "${{ github.repositoryUrl }}"
+        run: |
+          git remote -v
+          git remote set-url origin "${{ github.server_url }}/${{ github.repository }}.git"
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
