@@ -92,6 +92,10 @@ header > h1 > a:active {
 	text-decoration: none;
 }
 
+header > h1 > a > span {
+	font-size: 3.4rem;
+}
+
 header > h1 > a > img[alt="Takym"][title="Takym"] {
 	width         : 144px;
 	height        :  72px;
