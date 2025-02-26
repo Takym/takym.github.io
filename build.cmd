@@ -1,2 +1,2 @@
 @echo off
-wsl ./build.sh
+wsl -d Ubuntu-24.04 ./build.sh

@@ -1,14 +1,13 @@
 ---
 authors: Takym
 category: general
-cat_main: cat_main
 ---
-# general: 一般的な記事
+# `general`: 一般的な記事
 Copyright (C) 2019-2025 Takym.
 
 ## 概要
 * 他のカテゴリに分類できない記事の為のカテゴリです。
-* [ブログ記事一覧](./posts.md)
+* [ブログ記事一覧](./postlist.md)
 * [ウィキ表示](https://takym.github.io/wiki/general)
 * [ウィキ編集](https://github.com/Takym/takym.github.io/wiki)
 

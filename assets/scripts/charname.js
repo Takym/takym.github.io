@@ -1,41 +1,50 @@
-// キャラ色 (Mは母親(Mother)、Fは父親(Father))
-const okabe       = "#884444;"; // 岡部
-const mayuri      = "#6677EE;"; // まゆり
-const daru        = "#BBCC22;"; // ダル
-const tina        = "#F53333;"; // 紅莉栖
-const moeka       = "#EAA522;"; // 桐生萌郁
-const ruka        = "#336666;"; // ルカ子
-const faris       = "#FF0080;"; // ﾌｪｲﾘｽ
-const suzu        = "#1111BB;"; // 鈴羽
-const maho        = "#446633;"; // 真帆
-const kagari      = "#AA2266;"; // かがり
-const yuki        = "#8F65FF;"; // 由季
-const brown       = "#989800;"; // 天王寺
-const nae         = "#FF44CC;"; // 綯
-const leskinen    = "#AA7766;"; // ﾚｽｷﾈﾝ
-// 以下、色未決定
-const okabeM      = "#444444;"; // 岡部母、朱美
-const tinaF       = "#444444;"; // 紅莉栖父、中鉢
-const rukaF       = "#444444;"; // ルカ子父、栄輔
-const farisM      = "#444444;"; // ﾌｪｲﾘｽ母、ちかね
-const farisF      = "#444444;"; // ﾌｪｲﾘｽ父、幸高
-const kuroki      = "#444444;"; // 黒木
-const naeM        = "#444444;"; // 綯母、今宮綴
-const fubuki      = "#444444;"; // フブキ
-const shin        = "#444444;"; // フブキ兄、ｼﾝｲﾁ
-const kaede       = "#444444;"; // カエデ
-const reyes       = "#444444;"; // レイエス
-const yondoshi    = "#444444;"; // 4℃
-const izaki       = "#444444;"; // 井崎
-const kayano      = "#444444;"; // 伽夜乃
-// その他のタグ名に色付け
-const valid       = "#000000;"; // 有効
-const invalid     = "#808080;"; // 無効
-const sobityezjyo = "#4ED158;"; // 措備手著語
-const lenofodu    = "#7B4B9D;"; // レノフォドゥ語
+/*
+	タグとキャラの名前の色指定
+	末尾の「M」は母親、「F」は父親を意味する。
+	「XXXXXXXX」は未指定である事を表す。
+	このファイルで登録しなかった場合の色は、
+	スタイルシートの設定によって不安定になる。
+	このファイルは JSON ではなく JavaScript である。
+*/
+const XXXXXXXX    = "444444"; // 未指定
+const valid       = "000000"; // 有効
+const invalid     = "808080"; // 無効
+const sobityezjyo = "4ED158"; // 措備手著語
+const lenofodu    = "7B4B9D"; // レノフォドゥ語
+const okabe       = "884444"; // 岡部
+const mayuri      = "6677EE"; // まゆり
+const daru        = "BBCC22"; // ダル
+const tina        = "F53333"; // 紅莉栖
+const moeka       = "EAA522"; // 桐生萌郁
+const ruka        = "336666"; // ルカ子
+const faris       = "FF0080"; // ﾌｪｲﾘｽ
+const suzu        = "1111BB"; // 鈴羽
+const maho        = "446633"; // 真帆
+const kagari      = "AA2266"; // かがり
+const yuki        = "8F65FF"; // 由季
+const brown       = "989800"; // 天王寺
+const nae         = "FF44CC"; // 綯
+const leskinen    = "AA7766"; // ﾚｽｷﾈﾝ
+const okabeM      = XXXXXXXX; // 岡部母、朱美
+const tinaF       = XXXXXXXX; // 紅莉栖父、中鉢
+const rukaF       = XXXXXXXX; // ルカ子父、栄輔
+const farisM      = XXXXXXXX; // ﾌｪｲﾘｽ母、ちかね
+const farisF      = XXXXXXXX; // ﾌｪｲﾘｽ父、幸高
+const kuroki      = XXXXXXXX; // 黒木
+const naeM        = XXXXXXXX; // 綯母、今宮綴
+const fubuki      = XXXXXXXX; // フブキ
+const shin        = XXXXXXXX; // フブキ兄、ｼﾝｲﾁ
+const kaede       = XXXXXXXX; // カエデ
+const reyes       = XXXXXXXX; // レイエス
+const yondoshi    = XXXXXXXX; // 4℃
+const izaki       = XXXXXXXX; // 井崎
+const kayano      = XXXXXXXX; // 伽夜乃
 
-// キャラ登録（全てのカテゴリを登録しなければならない。shutage リポジトリと takym.github.io リポジトリを統合したための措置）
+// 実際のタグ名と色識別子の関連付け
 const charnames = [
+	////////////////////////////////
+	// シュタゲのキャラ名に色付け //
+	////////////////////////////////
 	{ "name": "岡部倫太郎",                         "color": okabe    }, // 岡部
 	{ "name": "岡部",                               "color": okabe    },
 	{ "name": "倫太郎",                             "color": okabe    },
@@ -431,9 +440,9 @@ const charnames = [
 	{ "name": "よんどし",                           "color": yondoshi },
 	{ "name": "井崎",                               "color": izaki    }, // 井崎
 	{ "name": "伽夜乃",                             "color": kayano   }, // 伽夜乃
-	////////////////////////////
-	// その他のタグ名に色付け //
-	////////////////////////////
+	//////////////////////////
+	// 通常のタグ名に色付け //
+	//////////////////////////
 	{ "name": "未指定",                 "color": invalid     },
 	{ "name": "実験用",                 "color": invalid     },
 	{ "name": "charname.html",          "color": invalid     },
@@ -476,13 +485,13 @@ const charnames = [
 
 // ページ読み込み処理
 window.addEventListener("load", _ => {
-	apply(document.getElementsByTagName("h2"));
-	apply(document.getElementsByTagName("b"));
+	apply(document.getElementsByTagName("h2"    ));
+	apply(document.getElementsByTagName("b"     ));
 	apply(document.getElementsByTagName("strong"));
 
 	function apply(tags)
 	{
-		const prefix = "font-weight: bold; color: ";
+		const prefix = "font-weight:bold;color:#";
 		for (let i = 0; i < tags.length; ++i) {
 			let tag  = tags[i];
 			let text = tag.innerText;

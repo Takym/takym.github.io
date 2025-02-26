@@ -7,113 +7,61 @@
 {% else %}
 	{% assign lang = site.lang %}
 {% endif %}
-<html lang="{{ lang | default: "ja-JP" }}">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ lang | default: "ja-JP" }}">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-		<!-- Cayman begin -->
-		<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-		<!-- Cayman end -->
+		{% seo %}
+
+		<!-- Highlight.js -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+		<script>hljs.highlightAll();</script>
+
+		<!-- KaTeX -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous" />
+		<script defer="defer" src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+		<script defer="defer" src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				renderMathInElement(document.body, {
+					"delimiters": [
+						{ "left": "$$", "right": "$$", "display": true  },
+						{ "left": "$",  "right": "$",  "display": false }
+					]
+				});
+			});
+		</script>
+
+		<!-- IPAフォント -->
 		<style>
 			@font-face {
-				font-family: "IPAGothic";
+				font-family: "IPAゴシック";
 				src: url({{ site.baseurl }}/assets/fonts/ipag.ttf) format('truetype');
 			}
-			* {
-				font-family: "IPAGothic", monospace, sans-serif;
+			@font-face {
+				font-family: "IPA明朝";
+				src: url({{ site.baseurl }}/assets/fonts/ipam.ttf) format('truetype');
 			}
-			a, a:link, a:visited {
-				text-decoration: underline;
+			@font-face {
+				font-family: "IPA Pゴシック";
+				src: url({{ site.baseurl }}/assets/fonts/ipagp.ttf) format('truetype');
 			}
-			a:hover {
-				text-decoration: overline;
+			@font-face {
+				font-family: "IPA P明朝";
+				src: url({{ site.baseurl }}/assets/fonts/ipamp.ttf) format('truetype');
 			}
-			a:active {
-				color: #444444;
-				background-color: #EEEEEE;
-				text-decoration: none;
+			@font-face {
+				font-family: "IPAexゴシック";
+				src: url({{ site.baseurl }}/assets/fonts/ipaexg.ttf) format('truetype');
 			}
-			h1.project-name > a,
-			h1.project-name > a:link,
-			h1.project-name > a:visited,
-			h1.project-name > a:hover,
-			h1.project-name > a:active {
-				color: #FFFFFF;
-				background-color: transparent;
-				text-decoration: none;
-				/* user-select: none; */
-			}
-			h1.project-name::selection,
-			h1.project-name::-moz-selection {
-				color: inherit;
-				background-color: #008080;
-			}
-			th, td {
-				border-style: solid;
-				border-color: #C0C0C0;
-				border-width: 1px;
-			}
-			th {
-				border-bottom-style: double;
-				border-bottom-color: #404040;
-				border-bottom-width: 3px;
-			}
-			td {
-				border-bottom-style: dashed;
-				border-bottom-color: #808080;
-				border-bottom-width: 1px;
-			}
-			code.highlighter-rouge {
-				color: #CC424B;
-				background-color: #F0F0F0;
-			}
-			b.tag > a {
-				color: inherit;
-			}
-			header.page-header {
-				padding: 1.5rem 0.8rem;
-			}
-			footer.site-footer > div {
-				margin: 0;
-				padding: 0;
-			}
-			header.page-header > span > strong,
-			footer.site-footer > span.site-footer-credits > small {
-				display: inline-block;
-				overflow: hidden;
-				white-space: nowrap;
-			}
-			@media (min-width: 42em) {
-				footer.site-footer {
-					margin: 0 auto;
-					padding: 0 auto;
-					width: 75vw;
-				}
-				a[href="#content"].btn {
-					display: none;
-					visibility: hidden;
-				}
-			}
-			@media (max-width: 42em) {
-				footer.site-footer {
-					margin: 0;
-					padding: 0;
-					width: 100vw;
-				}
-				a[href="#content"].btn {
-					display: block;
-					visibility: visible;
-				}
+			@font-face {
+				font-family: "IPAex明朝";
+				src: url({{ site.baseurl }}/assets/fonts/ipaexm.ttf) format('truetype');
 			}
 		</style>
-		<!-- rouge begin -->
-		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/rouge-syntax-highlighter.css" />
-		<!-- rouge end -->
-		<!-- seo begin -->
-		{% seo %}
-		<!-- seo end -->
-		<!-- Google Analytics begin -->
-		{% if site.google_analytics %}
+
+		<!-- Google Analytics -->
 		<script async="async" src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -121,172 +69,146 @@
 			gtag('js', new Date());
 			gtag('config', '{{ site.google_analytics }}');
 		</script>
+
+		<!-- 既定のスタイルシート -->
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/default.css" />
+		{% if page.category == "debug" %}
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/debug.css" />
+		{% else %}
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/release.css" />
 		{% endif %}
-		<!-- Google Analytics end -->
-		<!-- KaTeX begin -->
-		<!-- copied from: https://github.com/KaTeX/KaTeX -->
-		<!-- 参考：https://katex.org/docs/autorender.html -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" crossorigin="anonymous" />
-		<script defer="defer" src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js" crossorigin="anonymous"></script>
-		<script defer="defer" src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				renderMathInElement(document.body, {
-					"delimiters": [
-						{ // ブロック（区画）
-							"left": "$$",
-							"right": "$$",
-							"display": true
-						},
-						{ // インライン（行内）
-							"left": "$",
-							"right": "$",
-							"display": false
-						}
-					]
-				});
-			});
-		</script>
-		<!-- KaTeX end-->
-		<!-- charname.js begin -->
+
+		<!-- 既定のスクリプト -->
+		<script src="{{ site.baseurl }}/assets/scripts/default.js"></script>
 		<script src="{{ site.baseurl }}/assets/scripts/charname.js"></script>
-		<!-- charname.js end -->
-		<!-- GitHub Sponsors begin -->
-		<script>
-			window.addEventListener("load", function() {
-				const ghsp = document.querySelector("div#ghsp");
-				if (ghsp) {
-					const frameElem           = document.createElement("iframe");
-					frameElem.src             = "https://github.com/sponsors/Takym/card";
-					frameElem.title           = "Sponsor Takym";
-					frameElem.width           = 600;
-					frameElem.height          = 130;
-					frameElem.style["border"] = 0;
-					ghsp.append(frameElem);
-				}
-			});
-		</script>
-		<!-- GitHub Sponsors end -->
 	</head>
 	<body>
-		{% if post %}
-			{% assign date       = post.date       %}
-			{% assign category   = post.category   %}
-			{% assign tags       = post.tags       %}
-			{% assign authors    = post.authors    %}
-			{% assign cat_main   = post.cat_main   %}
-			{% assign not_wiki   = post.not_wiki   %}
-			{% assign file_lines = post.file_lines %}
-		{% else %}
-			{% assign date       = page.date       %}
-			{% assign category   = page.category   %}
-			{% assign tags       = page.tags       %}
-			{% assign authors    = page.authors    %}
-			{% assign cat_main   = page.cat_main   %}
-			{% assign not_wiki   = page.not_wiki   %}
-			{% assign file_lines = page.file_lines %}
-		{% endif %}
-		<header class="page-header" role="banner">
-			<h1 class="project-name">
+		{% include fetchdata.html %}
+		<header>
+			<h1>
 				<a href="{{ "/" | absolute_url }}">
-					<!-- ブラウザ画面上に不要な空白が入ってしまう為、改行してはならない。 -->
-					<span>http</span><bold style="color:#CC22CC">s</bold><span>://</span><img src="{{ site.baseurl }}/assets/images/TakymLogo.png" width="144" height="72" alt="Takym" title="Takym" style="vertical-align:bottom" /><span>.GITHUB.IO/</span>
+					<!-- ブラウザ画面上に余計な空白が入ってしまう為、改行してはならない。 -->
+					<span>http</span><span class="security_appealing">s</span><span>://</span><img src="{{ site.baseurl }}/assets/images/TakymLogo.png" alt="Takym" title="Takym" /><span>.GITHUB.IO/</span>
 					<!--<span>{{ site.title | default: site.github.repository_name }}</span>-->
 				</a>
 			</h1>
-			<p>
-				{{ site.description | default: "[DESCRIPTION IN HERE]" }}<br />
-				{{ page.description | default: "" }}
-			</p>
-			<div>
-				<a href="#content" class="btn">本文へ</a>
-				{% include repo_url.html %}
-				<a href="{{ repo_url }}" class="btn">GitHub リポジトリ</a>
-				<a href="{{ site.github.owner_url }}" class="btn">管理者：{{ site.github.owner_name | default: "Takym" }}</a>
-				<time datetime="{{ date | date_to_xmlschema }}" class="btn">更新日：{{ date | date: "%Y/%m/%d" | default: "取得できません。" }}</time>
-				{% if wiki_mode!="wiki_mode" %}
-				<a href="{{ repo_url }}/edit/{{ repo_branch }}/{{ repo_page_path }}" class="btn">編集</a>
-				<a href="{{ repo_url }}/new/{{ repo_branch }}/" class="btn">新規作成</a>
-				<a href="{{ repo_url }}/issues/new/?title=About%20{{ repo_page_path }}&body=%3C%21%2D%2D%20Write%20your%20issue%20here%2E%20%2D%2D%3E%0D%0A%0D%0A---%0D%0APlease%20do%20not%20remove%20the%20below%2E%0D%0A{{ repo_url }}/blob/{{ repo_build_rev }}/{{ repo_page_path }}%23L1-L{{ file_lines | default: "5" }}" class="btn">問題提起</a>
-				{% endif %}
-			</div>
-			<hr />
-			<span style="color:#EE2060;font-size:120%">
-				<strong>無断転載禁止</strong>
-				<wbr />
-				<strong>DO NOT DISTRIBUTE</strong>
+			<p>{{ site.description }}</p>
+			<p>{{ page.description }}</p>
+			<div class="center">
+				{% if do_not_distribute %}
+				<span class="important">
+					<strong>無断転載禁止</strong>
+					<wbr />
+					<strong>DO NOT DISTRIBUTE</strong>
+				</span>
 				<br />
-				<iframe src="https://github.com/sponsors/Takym/button" title="Sponsor Takym" height="32" width="114" style="border:0;border-radius:6px">
+				{% endif %}
+				<iframe src="https://github.com/sponsors/Takym/button" title="Sponsor Takym">
 					<a href="https://github.com/sponsors/Takym">GitHub Sponsors</a>
 				</iframe>
-			</span>
+			</div>
 		</header>
-		<main id="content" class="main-content" role="main">
-			{{ content }}
-		</main>
-		<footer class="site-footer">
-			<hr />
-			{% if category %}
-			<div>
-				<span>カテゴリ：</span>
-				<b><a href="{{ site.baseurl }}/blog/{{ category }}/README.html">{{ category }}</a></b>
-				<span>（<a href="{{ site.baseurl }}/blog/{{ category }}/posts.html">記事一覧</a>）</span>
+		<nav id="left_toggle"></nav>
+		<nav id="left" class="hidden">
+			<section>
 				<br />
-			</div>
-			{% endif %}
-			{% if tags %}
-			<div>
-				<span>タグ：|</span>
-				{% for tag in tags %}
-				<b class="tag">#<a href="{{ site.baseurl }}/blog/tags.html#{{ tag }}">{{ tag }}</a></b>
-				<span>|</span>
-				{% endfor %}
-				<br />
-			</div>
-			{% endif %}
-			{% if authors %}
-			<div>
-				<span>編集者：|</span>
-				{% for author in authors %}
-				<b>@<a href="https://github.com/{{ author }}">{{ author }}</a></b>
-				<span>|</span>
-				{% endfor %}
-				<br />
+				<strong>
+					<a href="{{ repo_url }}">GitHub リポジトリ</a>
+				</strong>
+				<hr />
+			</section>
+			{% include catlist.html %}
+			<section>
+				<h3>管理者</h3>
+				<span><a href="{{ repo_owner_url }}">@{{ repo_owner_name }}</a></span>
+				<hr />
+			</section>
+			<section>
+				<h3>更新日</h3>
+				<time datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%Y/%m/%d" | default: "不明" }}</time>
+				<hr />
+			</section>
+			<section>
+				<h3>編集者</h3>
+				{% if authors %}
+				<ul>
+					{% for author in authors %}
+					<li><a href="https://github.com/{{ author }}">@{{ author }}</a></li>
+					{% endfor %}
+				</ul>
+				{% else %}
+				<span>不明</span>
+				{% endif %}
 				<span>
 					※「編集者」は本サイト内の記事の編集者のみを表します。
 					他サイトの記事へのリンクのみで構成されている場合でも同様です。
 				</span>
+				<hr />
+			</section>
+			{% if wiki != "wiki" %}
+			<section>
+				<h3>この記事のカテゴリ</h3>
+				{% if category %}
+				<b><a href="{{ site.baseurl }}/blog/{{ category }}/README.html">{{ category }}</a></b>
 				<br />
-			</div>
+				<span>（<a href="{{ site.baseurl }}/blog/{{ category }}/postlist.html">記事一覧</a>）</span>
+				{% else %}
+				<span>無し</span>
+				{% endif %}
+				<hr />
+			</section>
+			<section>
+				<h3>この記事のタグ</h3>
+				{% if tags %}
+				<ul>
+					{% for tag in tags %}
+					<li><b class="tag"><a href="{{ site.baseurl }}/blog/{{ category }}/postlist.html#{{ tag }}">#{{ tag }}</a></b></li>
+					{% endfor %}
+				</ul>
+				{% else %}
+				<span>無し</span>
+				{% endif %}
+				<hr />
+			</section>
+			<section>
+				<h3>操作</h3>
+				<ul>
+					<li><a href="{{ repo_url }}/new/{{ repo_branch }}/">新規作成</a></li>
+					<li><a href="{{ repo_url }}/edit/{{ repo_branch }}/{{ repo_page_path }}">編集</a></li>
+					<li><a href="{{ repo_url }}/issues/new/?title={{ "「" | append: page.title | append: "」（" | append: repo_page_path | append: "）について" | uri_escape }}&body={{ "<!-- ここに問題を入力してください -->" | uri_escape }}%0D%0A%0D%0A{{ "ページファイル：" | uri_escape }}%0D%0A{{ repo_url }}/blob/{{ repo_build_rev }}/{{ repo_page_path }}%23L1-L{{ file_lines | default: "5" }}%0D%0A">問題提起</a></li>
+					<li>
+						<span>カテゴリ・タグ関連</span>
+						<ul>
+							<li><a href="{{ site.baseurl }}/add_new_cat.html">カテゴリ追加方法</a></li>
+							<li><b>タグ・キャラ名色付け</b>（<code>charname.html</code>）</li>
+							<li><a href="{{ site.baseurl }}/blog/shutage/charname.html">確認ページ</a></li>
+							<li><a href="{{ site.baseurl }}/blog/shutage/gen_charname.html">生成器</li>
+						</ul>
+					</li>
+				</ul>
+				<hr />
+			</section>
 			{% endif %}
-			<span class="site-footer-credits">
-				<br />
-				<small><a href="https://github.com/sponsors/Takym">このサイトを支援する<wbr /> - GitHub Sponsors</a></small>
-				<span><wbr /></span>
-				<small><a href="{{ site.baseurl }}/LICENSE.html">利用規約 /<wbr /> Terms of the website (Japanese)</a></small>
-				<span><wbr /></span>
-				<small><a href="{{ site.baseurl }}/THIRD_PARTY_NOTICE.html">利用ソフトウェア一覧 (英語) /<wbr /> The third party notices</a></small>
-				<span><wbr /></span>
-				<small><a href="{{ site.baseurl }}/blog/shutage/charname.html">charname.html<wbr /> (カテゴリの色付け確認用ページ)</a></small>
-				<span><wbr /></span>
-				<small><a href="{{ site.baseurl }}/blog/shutage/gen_charname.html">charname.html<wbr /> 生成器</a></small>
-				<span><wbr /></span>
-				<small><a href="{{ site.baseurl }}/add_new_cat.html">add_new_cat.html</a></small>
-				<br />
-				<small>無断転載禁止 /<wbr /> Unauthorized Reproduction Prohibited.</small>
-				<span><wbr /></span>
-				<small>Copyright (C) 2019-2025 Takym.</small>
-				<span><wbr /></span>
-				<small>Hosted on GitHub Pages,<wbr /> using Jekyll and Rouge.</small>
-			</span>
+		</nav>
+		<nav id="right_toggle"></nav>
+		<nav id="right" class="hidden">{% include sidebar.html %}</nav>
+		<main>{{ content }}</main>
+		<footer>
+			{% if do_not_distribute %}
+			<small>無断転載禁止 /<wbr /> Unauthorized Reproduction Prohibited.</small>
+			<span><wbr /></span>
+			{% endif %}
+			<small>{{ site.copyright }}</small>
+			<span><wbr /></span>
+			<small>Hosted on GitHub Pages,<wbr /> using Jekyll and others.</small>
 		</footer>
 	</body>
 </html>
 {% comment %}
-<!-- Jekyll参考:
-https://genjiapp.com/blog/2013/11/21/simple-tags-page-for-jekyll.html
-https://qiita.com/mnishiguchi/items/fa1e8fd2e893ea801ce8
-http://jekyllrb-ja.github.io/docs/variables/
+<!-- Jekyll 参考:
 https://github.com/jekyll/github-metadata/tree/main/docs
+http://jekyllrb-ja.github.io/docs/variables/
+https://qiita.com/mnishiguchi/items/fa1e8fd2e893ea801ce8
+https://genjiapp.com/blog/2013/11/21/simple-tags-page-for-jekyll.html
 -->
 {% endcomment %}

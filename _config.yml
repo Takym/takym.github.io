@@ -1,12 +1,16 @@
-title: takym.github.io
-theme: jekyll-theme-cayman
-google_analytics: UA-99298946-3
-include: [ README.md, LICENSE.md, THIRD_PARTY_NOTICE.md ]
+title: "https://Takym.GITHUB.IO/"
+description: "現在はまだシステム移行準備中です。説明文候補：自分で作成したリポジトリの情報を集約しています。また、日本人向けの情報技術資料の収集を目指しています。"
+copyright: "Copyright (C) 2019-2025 Takym."
 permalink: /blog/:categories/:year/:month/:day/:title:output_ext
 lang: ja-JP
 timezone: Asia/Tokyo
 markdown: GFM
+include:
+  - README.md
+  - LICENSE.md
+  - THIRD_PARTY_NOTICE.md
 plugins:
   - jekyll-feed
   - jekyll-archives
   - jekyll-sitemap
+google_analytics: UA-99298946-3
