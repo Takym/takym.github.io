@@ -33,10 +33,12 @@ jobs:
         run: |
           git remote -v
           git remote set-url origin "${{ github.server_url }}/${{ github.repository }}.git"
+          git remote -v
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+          PAGES_REPO_NWO: ${{ github.repository }}
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
   report-build-status:
