@@ -177,10 +177,10 @@
 					<li><a href="{{ repo_url }}/edit/{{ repo_branch }}/{{ repo_page_path }}">編集</a></li>
 					<li><a href="{{ repo_url }}/issues/new/?title={{ "「" | append: page.title | append: "」（" | append: repo_page_path | append: "）について" | uri_escape }}&body={{ "<!-- ここに問題を入力してください -->" | uri_escape }}%0D%0A%0D%0A{{ "ページファイル：" | uri_escape }}%0D%0A{{ repo_url }}/blob/{{ repo_build_rev }}/{{ repo_page_path }}%23L1-L{{ file_lines | default: "5" }}%0D%0A">問題提起</a></li>
 					<li>
-						<span>カテゴリ関連</span>
+						<span>カテゴリ・タグ関連</span>
 						<ul>
-							<li><a href="{{ site.baseurl }}/add_new_cat.html">追加方法</a></li>
-							<li><b>色付け</b>（<code>charname.html</code>）</li>
+							<li><a href="{{ site.baseurl }}/add_new_cat.html">カテゴリ追加方法</a></li>
+							<li><b>タグ・キャラ名色付け</b>（<code>charname.html</code>）</li>
 							<li><a href="{{ site.baseurl }}/blog/shutage/charname.html">確認ページ</a></li>
 							<li><a href="{{ site.baseurl }}/blog/shutage/gen_charname.html">生成器</li>
 						</ul>
