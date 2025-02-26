@@ -29,16 +29,12 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Set Origin URL
-        run: |
-          git remote -v
-          git remote set-url origin "${{ github.server_url }}/${{ github.repository }}.git"
-          git remote -v
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
           PAGES_REPO_NWO: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
   report-build-status:
@@ -50,6 +46,8 @@ jobs:
           gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" \
             -F github_run_id="$GITHUB_RUN_ID"                       \
             -F conclusion="$CONCLUSION"
+        env:
+          GH_TOKEN: ${{ github.token }}
   deploy:
     environment:
       name: github-pages
