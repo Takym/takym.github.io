@@ -9,8 +9,8 @@ Copyright (C) 2019-2025 Takym.
 [日本語](#ja)
 [編集/Edit](https://github.com/Takym/takym.github.io/)
 
-* **Attention:** please do not fork or clone this repository.
-* **注意：** このリポジトリをフォークまたはクローンしないでください。
+* **Attention:** Terms for this website depend on a category.
+* **注意：** このウェブサイトの規約はカテゴリによって異なります。
 
 <div class="ghsp"></div>
 
@@ -157,7 +157,7 @@ Copyright (C) 2019-2025 Takym.
 	* Currently, I am not developing.
 * ~~For more misc repositories, please see [this page](./repos.md).~~
 
-## Terms for this site <a id="en_terms"></a>
+## Terms for this website <a id="en_terms"></a>
 * Please refer to [this page](./LICENSE.md). (Japanese)
 * All readers are expected to comply with this.
 * For using third-party software, please refer to [this page](./THIRD_PARTY_NOTICE.md). (Japanese)
