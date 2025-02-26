@@ -2,7 +2,7 @@
 authors: Takym
 category: general
 ---
-# general: 一般的な記事
+# `general`: 一般的な記事
 Copyright (C) 2019-2025 Takym.
 
 ## 概要

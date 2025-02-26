@@ -2,7 +2,7 @@
 authors: Takym
 category: debug
 ---
-# debug: デバッグ用の記事
+# `debug`: デバッグ用の記事
 Copyright (C) 2019-2025 Takym.
 
 ## 概要
