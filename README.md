@@ -1,3 +1,6 @@
+# <strong style="color:red"><u>システム移行前の [`Takym/takym.github.io`](https://github.com/Takym/takym.github.io) を表示しています。</u></strong>
+---
+
 # <https://Takym.GITHUB.IO/>
 Copyright (C) 2019-2025 Takym.
 
