@@ -2,6 +2,9 @@
 {% assign repo_url        = site.github.repository_url %}
 {% assign repo_owner_url  = site.github.owner_url      %}
 {% assign repo_owner_name = site.github.owner_name     %}
+{% assign repo_branch     = "master"                   %}
+{% assign repo_page_path  = page.path                  %}
+{% assign repo_build_rev  = site.github.build_revision %}
 
 {% if post %}
 	{% assign date       = post.date       %}
@@ -21,10 +24,10 @@
 	{% assign wiki = "wiki" %}
 {% endif %}
 
-{% assign repo_branch    = "master"                   %}
-{% assign repo_page_path = page.path                  %}
-{% assign repo_build_rev = site.github.build_revision %}
-
-{% if category == "general" or category == "debug" %}
+{% if category == "general" or category == "debug"
+	or repo_page_path == "LICENSE.md"
+	or repo_page_path == "README.md"
+	or repo_page_path == "THIRD_PARTY_NOTICE.md"
+%}
 	{% assign do_not_distribute = true %}
 {% endif %}
