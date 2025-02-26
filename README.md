@@ -26,7 +26,7 @@ Copyright (C) 2019-2025 Takym.
 	* その他のプロジェクトも公開しています。
 * このウェブサイトのリポジトリでは [GitHub Copilot](https://github.com/features/copilot) へ質問する事で、情報技術に関する詳しい回答を得られる資料集の構築を目指しています。
 	* 回答は日本語で生成する様に指示してあります。
-	* 具体的な指示の内容は、[GitHub Copilot 指示書](https://github.com/Takym/takym.github.io/blob/master/.github/copilot-instructions.md)を確認してください。
+	* 具体的な指示の内容は、[GitHub Copilot 指示書](https://takym.github.io/docs/copilot-instructions.html)を確認してください。
 * [ブログ記事](https://takym.github.io/blog)
 	* [general: 一般的な記事](https://takym.github.io/blog/general)
 	* [primers: プログラミング入門講座＆学習コミュニティ](https://takym.github.io/blog/primers)
@@ -102,7 +102,7 @@ Copyright (C) 2019-2025 Takym.
 	* Other projects are available!
 * Another goal of the website repository is to build a collection of documents and be a learning source for [GitHub Copilot](https://github.com/features/copilot). So, you can ask advanced questions to AI to get detailed information technology answers.
 	* I commanded to answer in Japanese always.
-	* Please see [GitHub Copilot Instructions](https://github.com/Takym/takym.github.io/blob/master/.github/copilot-instructions.md) for more information. (Japanese)
+	* Please see [GitHub Copilot Instructions](https://takym.github.io/docs/copilot-instructions.html) for more information. (Japanese)
 * [Blog Articles](https://takym.github.io/blog/tags.html) (Japanese)
 	* [general](https://takym.github.io/blog/general)
 	* [primers](https://takym.github.io/blog/primers)

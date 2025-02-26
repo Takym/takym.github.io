@@ -10,7 +10,7 @@ Copyright (C) 2019-2025 Takym.
 
 ## 適用
 * 常に最新の規約が適用されるものとします。下記のリンクから最新版を探してください。
-	* <https://Takym.GITHUB.IO/docs/LICENSE.TAKYM.md>
+	* <https://Takym.GITHUB.IO/docs/license.takym.html>
 * このウェブサイトを閲覧した場合、常に同意したものと見做されます。
 
 ## 制限
