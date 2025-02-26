@@ -1,6 +1,6 @@
 <p>
 	<!-- ブラウザ画面上に余計な空白が入ってしまう為、改行してはならない。 -->
-	<span>{% if page.category == "all" %}サイト内の全{% else %}同一カテゴリ内の{% endif %}記事数：</span><code>{{ pages.size }}</code>
+	<span>{% if page.category == "all" %}サイト内の全{% else %}同一カテゴリ内の{% endif %}記事数：</span><code>{{ posts.size }}</code>
 </p>
 {% if page.posts_viewmode == "table" %}
 <table border="1">
