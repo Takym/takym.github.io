@@ -32,7 +32,8 @@ Copyright (C) 2019-2025 Takym.
 	* [primers: プログラミング入門講座＆学習コミュニティ](https://takym.github.io/blog/primers)
 	* [shutage: シュタゲ関連の情報](https://takym.github.io/blog/shutage)
 * [ウィキ記事](https://takym.github.io/wiki)
-* [サイトシステム名の由来](https://takym.github.io/docs/naming.html)
+* [サイトシステム名の由来](./docs/naming.md)
+* [歴代のロゴ](./docs/logos.md)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
 * [寄付・献金](https://github.com/YigtyORG/Yigty.ORG/blob/tentatives/2020/DONATION.md)
 * 古いブログ
@@ -108,7 +109,8 @@ Copyright (C) 2019-2025 Takym.
 	* [primers](https://takym.github.io/blog/primers)
 	* [shutage](https://takym.github.io/blog/shutage)
 * [Wiki Articles](https://takym.github.io/wiki/README.html)
-* [Site system name](https://takym.github.io/docs/naming.html) (Japanese)
+* [Site system name](./docs/naming.md) (Japanese)
+* [Site logos](./docs/logos.md) (Japanese)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
 * [Donation](https://github.com/YigtyORG/Yigty.ORG/blob/tentatives/2020/DONATION.md)
 * Old Blogs
