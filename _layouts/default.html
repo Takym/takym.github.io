@@ -81,6 +81,9 @@
 		<!-- 既定のスクリプト -->
 		<script src="{{ site.baseurl }}/assets/scripts/default.js"></script>
 		<script src="{{ site.baseurl }}/assets/scripts/charname.js"></script>
+
+		<!-- ファビコン -->
+		<link rel="icon" href="{{ site.baseurl }}/assets/images/TakymLogo.ico" />
 	</head>
 	<body>
 		{% include fetchdata.html %}
@@ -88,7 +91,7 @@
 			<h1>
 				<a href="{{ site.baseurl }}/index.html">
 					<!-- ブラウザ画面上に余計な空白が入ってしまう為、改行してはならない。 -->
-					<span>http</span><span class="security_appealing">s</span><span>://</span><img src="{{ site.baseurl }}/assets/images/TakymLogo.png" alt="Takym" title="Takym" /><span>.GITHUB.IO/</span>
+					<span>http</span><span class="security_appealing">s</span><span>://</span><img src="{{ site.baseurl }}/assets/images/TakymLogo.png" alt="Takym" title="Takym" /><span>.GITHUB<wbr />.IO/</span>
 					<!--<span>{{ site.title | default: site.github.repository_name }}</span>-->
 				</a>
 			</h1>
