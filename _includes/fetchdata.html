@@ -1,10 +1,10 @@
 
-{% assign repo_url        = site.github.repository_url %}
-{% assign repo_owner_url  = site.github.owner_url      %}
-{% assign repo_owner_name = site.github.owner_name     %}
-{% assign repo_branch     = "master"                   %}
-{% assign repo_page_path  = page.path                  %}
-{% assign repo_build_rev  = site.github.build_revision %}
+{% assign repo_url        = site.github.repository_url                     %}
+{% assign repo_owner_url  = site.github.owner_url                          %}
+{% assign repo_owner_name = site.github.owner_name     | default: "Takym"  %}
+{% assign repo_branch     = site.github.default_branch | default: "master" %}
+{% assign repo_page_path  = page.path                                      %}
+{% assign repo_build_rev  = site.github.build_revision                     %}
 
 {% if post %}
 	{% assign date       = post.date       %}
