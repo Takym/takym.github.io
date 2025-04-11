@@ -20,7 +20,7 @@
 	{% assign file_lines = page.file_lines %}
 {% endif %}
 
-{% if page.path contains "wiki/" %}
+{% if page.path contains "wiki/" and not_wiki != "not_wiki" %}
 	{% assign wiki = "wiki" %}
 {% endif %}
 
