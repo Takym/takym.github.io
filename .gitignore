@@ -5,6 +5,10 @@
 # ウェブサイト（Jekyll の出力データ）
 _site/
 
+# .NET の出力データ
+[Bb]in/
+[Oo]bj/
+
 # 一時ファイル
 [Tt]emp/
 [Tt]mp/

@@ -24,10 +24,13 @@
 	{% assign wiki = "wiki" %}
 {% endif %}
 
-{% if category == "general" or category == "debug" or wiki == "wiki"
+{% if wiki == "wiki" or page.layout == "game"
+	or category == "general"
+	or category == "debug"
 	or repo_page_path == "LICENSE.md"
 	or repo_page_path == "README.md"
 	or repo_page_path == "THIRD_PARTY_NOTICE.md"
+	or repo_page_path == "wiki/README.md"
 %}
 	{% assign do_not_distribute = true %}
 {% endif %}

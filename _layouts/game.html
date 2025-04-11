@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% if page.title %}
+<h1 class="game_title">{{ page.title }}</h1>
+<div><div><hr/><hr/><hr/></div></div>
+{% endif %}
+<div id="game_root">{{ content }}</div>
+{% if page.entrypoint %}
+<script>System.import("{{ page.entrypoint }}");</script>
+<!-- <script type="systemjs-module" src="import:{{ page.entrypoint }}"></script> -->
+{% endif %}

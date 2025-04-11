@@ -1,0 +1,31 @@
+name: Build "The Board & Cards"
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 9.0.x
+      - name: Enter the game directory
+        run: cd game
+      - name: Build
+        run: dotnet build -c Release
+      - name: Configure git user information
+        run: |
+          git config --local user.email "noreply.tagb@localhost"
+          git config --local user.name "[BOT] The Automatic Game Builder"
+      - name: Commit & Push
+        run: |
+          git add .
+          git commit -m "Update the Board & Cards script file"
+          git push

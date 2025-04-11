@@ -73,6 +73,43 @@ main h1 {
 	border-bottom-color: #0080FF;
 }
 
+main h1.game_title {
+	font-size       : 300%;
+	background-color: transparent;
+	text-align      : center;
+	border          : 0 none transparent;
+}
+
+main h1.game_title + div {
+	background: linear-gradient(to right,
+		#000080,
+		#0080FF,
+		#800080,
+		#8080F0,
+		#FF8080,
+		#8080F0,
+		#800080,
+		#0080FF,
+		#000080
+	);
+}
+
+main h1.game_title + div > div {
+	background: radial-gradient(
+		rgba(000, 000, 128, 0.5),
+		rgba(000, 128, 255, 0.5),
+		rgba(128, 000, 128, 0.5),
+		rgba(128, 128, 255, 0.5),
+		rgba(255, 128, 128, 0.5)
+	);
+}
+
+main h1.game_title + div > div > hr {
+	margin : 1px;
+	padding: 1px;
+	border : 4px dotted rgba(135, 101, 67, 0.3333); /* #876543 */
+}
+
 main h2 {
 	font-size          : 175%;
 	border-left-width  : 6px;

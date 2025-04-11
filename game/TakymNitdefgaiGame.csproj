@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net9.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+		<NoWarn>$(NoWarn);IDE0290</NoWarn>
+		<TypeScriptAlwaysStrict>true</TypeScriptAlwaysStrict>
+		<TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+		<TypeScriptSourceMap>true</TypeScriptSourceMap>
+		<TypeScriptTarget>ES2024</TypeScriptTarget>
+		<TypeScriptModuleKind>system</TypeScriptModuleKind>
+		<TypeScriptOutFile>../assets/scripts/game.board_and_cards.js</TypeScriptOutFile>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
+		<Optimize>false</Optimize>
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<Optimize>true</Optimize>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.TypeScript.MSBuild" Version="5.8.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<Compile Remove="**/*.old.cs" />
+		<None Include="**/*.old.cs" />
+	</ItemGroup>
+</Project>
