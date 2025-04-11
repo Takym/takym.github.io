@@ -20,11 +20,11 @@
 	{% assign file_lines = page.file_lines %}
 {% endif %}
 
-{% if page.path contains "wiki/" and not_wiki != "not_wiki" %}
+{% if page.path contains "wiki/" and page.not_wiki != "not_wiki" %}
 	{% assign wiki = "wiki" %}
 {% endif %}
 
-{% if category == "general" or category == "debug"
+{% if category == "general" or category == "debug" or wiki == "wiki"
 	or repo_page_path == "LICENSE.md"
 	or repo_page_path == "README.md"
 	or repo_page_path == "THIRD_PARTY_NOTICE.md"
