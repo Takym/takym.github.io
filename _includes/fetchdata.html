@@ -34,3 +34,15 @@
 %}
 	{% assign do_not_distribute = true %}
 {% endif %}
+
+{% if tags %}
+	{% for tag in tags %}
+		{% if tag == "下劣な記事" %}
+			{% assign low_quality = true %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
+{% if category == "debug" %}
+	{% assign low_quality = true %}
+{% endif %}

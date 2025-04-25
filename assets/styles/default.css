@@ -183,6 +183,11 @@ span.important {
 	font-size: 120%;
 }
 
+span.notice {
+	color          : #6020EE;
+	text-decoration: double underline overline;
+}
+
 code {
 	color           : #441166;
 	background-color: #E2E6FF;
