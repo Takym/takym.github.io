@@ -6,7 +6,7 @@ tags:
   - .NET
   - 生成系人工知能
   - 下劣な記事
-category: general
+category: primers
 ---
 Copyright (C) 2025 Takym.
 
