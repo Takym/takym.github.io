@@ -185,7 +185,7 @@ span.important {
 
 span.notice {
 	color          : #6020EE;
-	text-decoration: double underline overline;
+	text-decoration: double underline;
 }
 
 code {
