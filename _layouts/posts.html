@@ -4,6 +4,12 @@ layout: post
 {% if site.posts %}
 <p>
 	<a href="{{ site.baseurl }}/blog/{{ page.category }}/README.html">カテゴリページへ</a>
+	{% if page.category != "all" %}
+	<a href="{{ site.baseurl }}/blog/all/postlist.html" id="all_posts_link">全記事一覧へ</a>
+	{% endif %}
+	<br />
+	<span>絞り込み：</span>
+	<span id="filter_label">（無し）</span>
 	<hr />
 </p>
 {% assign posts = site.posts %}
@@ -22,7 +28,7 @@ layout: post
 <script>
 	window.addEventListener("load", function() {
 		if (location.search !== "?no_redirect") {
-			let ua = navigator.userAgent;
+			const ua = navigator.userAgent;
 			{% if page.posts_viewmode == "table" %}
 			if (ua.indexOf("Phone") !== -1 || ua.indexOf("Mobile") !== -1) {
 				location.href = "{{ site.baseurl }}/blog/{{ page.category }}/postlist.html" + location.hash;
@@ -35,6 +41,20 @@ layout: post
 		}
 
 		if (location.hash && location.hash !== "#") {
+			let selectedHashtag = location.hash;
+
+			const aplElem = document.getElementById("all_posts_link");
+			if (aplElem) {
+				aplElem.href += selectedHashtag;
+			}
+
+			selectedHashtag = decodeURI(selectedHashtag);
+
+			const filterLblElem = document.getElementById("filter_label");
+			if (filterLblElem) {
+				filterLblElem.innerText = `タグ「${selectedHashtag}」が付いている記事`;
+			}
+
 			const postsElem = document.getElementById("posts_data");
 			if (postsElem) {
 				const posts = postsElem.children;
@@ -44,7 +64,7 @@ layout: post
 					let   hidden   = true;
 					for (let j = 0; j < hashtags.length; ++j) {
 						const hashtag = hashtags[j];
-						if (hashtag.className === "hashtag" && hashtag.innerText === decodeURI(location.hash)) {
+						if (hashtag.className === "hashtag" && hashtag.innerText === selectedHashtag) {
 							hidden = false;
 							break;
 						}
