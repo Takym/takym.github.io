@@ -54,7 +54,7 @@ Copyright (C) 2019-2025 Takym.
 	* [LINEスタンプ](https://line.me/S/shop/sticker/author/197955/new?lang=ja&utm_source=gnsh_staut)
 	* [公式アカウント](https://lin.ee/5sJ1DQ9)
 	* シリーズ・キャラクター共に正式名称は「ジカッキィー」。「ジカッキィー・シリーズ」と「ジカッキィーくん」は曖昧さ回避の為の便宜的な呼称。
-* [サブモジュールを用いて新しいカテゴリを追加する](./add_new_cat.html)
+* [新しいカテゴリを追加する](./add_new_cat.html)
 
 ## リポジトリ一覧 <a id="ja_repos"></a>
 * [TakymLib](https://github.com/YigtyORG/TakymLib)
@@ -131,7 +131,7 @@ Copyright (C) 2019-2025 Takym.
 	* [LINE Stickers](https://line.me/S/shop/sticker/author/197955/new?lang=en&utm_source=gnsh_staut)
 	* [The Official Account](https://lin.ee/5sJ1DQ9) (Japanese)
 	* The official names of the series and the main character is both "Jikkaky". "Jikkaky Series" and "Mr.Jikkaky" are convenient names for disambiguation.
-* [Adding a new category with a git submodule](./add_new_cat.html) (Japanese)
+* [Adding a new category](./add_new_cat.html) (Japanese)
 
 ## My repositories <a id="en_repos"></a>
 * [TakymLib](https://github.com/YigtyORG/TakymLib)
