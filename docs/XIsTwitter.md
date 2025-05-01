@@ -30,4 +30,5 @@ Copyright (C) 2025 Takym.
 * [Linux](https://www.linuxfoundation.org/) → LinuTwitter
 * [SpaceX](https://www.spacex.com/) → SpaceTwitter
 * [XVIDEOS](https://en.wikipedia.org/wiki/XVideos)<!-- DO NOT ADD LINK TO https://www.xvideos.com/ FOR USER SAFETY --> → TwitterVIDEOS.COM
+* [UI/UX](https://en.wikipedia.org/wiki/User_experience) → UI/UTwitter
 * ...and please open an [issue](https://github.com/Takym/takym.github.io/issues/new?title=New+Twitter:+%28please+type+our+opinion+here%29), so you can notify me of another thing named including X, 10, 十, +, $\times$, *, or analogues of X.
