@@ -35,6 +35,7 @@ Copyright (C) 2019-2025 Takym.
 * [ウィキ記事](https://takym.github.io/wiki)
 * [サイトシステム名の由来](./docs/naming.md)
 * [歴代のロゴ](./docs/logos.md)
+* [ツイッター諷刺](./docs/XIsTwitter.md) (英語)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
 * [寄付・献金](https://github.com/YigtyORG/Yigty.ORG/blob/tentatives/2020/DONATION.md)
 * 古いブログ
@@ -112,6 +113,7 @@ Copyright (C) 2019-2025 Takym.
 * [Wiki Articles](https://takym.github.io/wiki/README.html)
 * [Site system name](./docs/naming.md) (Japanese)
 * [Site logos](./docs/logos.md) (Japanese)
+* [X is Twitter.](./docs/XIsTwitter.md)
 * [Yigty.ORG](https://github.com/YigtyORG/Yigty.ORG)
 * [Donation](https://github.com/YigtyORG/Yigty.ORG/blob/tentatives/2020/DONATION.md)
 * Old Blogs
