@@ -42,7 +42,7 @@ Copyright (C) 2019-2025 Takym.
 	* <https://takym.code.blog/>
 	* <https://takymsystems.blog.fc2.com/>
 	* <https://takym-program.hateblo.jp/>
-* SNS
+* SNS等
 	* GitHub: [@Takym](https://github.com/Takym)
 	* Twitter: [@takym0818](https://twitter.com/takym0818)
 	* Lancers: [takym](https://www.lancers.jp/profile/takym)
@@ -51,6 +51,7 @@ Copyright (C) 2019-2025 Takym.
 	* osdev-jp
 		* <https://osdev.jp/wiki/Takym>
 		* <https://github.com/osdev-jp/osdev-jp.github.io/wiki/Takym>
+	* Qiita: [@Takym0818](https://qiita.com/Takym0818)
 * ジカッキィー
 	* [LINEスタンプ](https://line.me/S/shop/sticker/author/197955/new?lang=ja&utm_source=gnsh_staut)
 	* [公式アカウント](https://lin.ee/5sJ1DQ9)
@@ -120,7 +121,7 @@ Copyright (C) 2019-2025 Takym.
 	* <https://takym.code.blog/>
 	* <https://takymsystems.blog.fc2.com/>
 	* <https://takym-program.hateblo.jp/>
-* SNS
+* Social media and so on
 	* GitHub: [@Takym](https://github.com/Takym)
 	* Twitter: [@takym0818](https://twitter.com/takym0818)
 	* Lancers: [takym](https://www.lancers.jp/profile/takym)
@@ -129,6 +130,7 @@ Copyright (C) 2019-2025 Takym.
 	* osdev-jp
 		* <https://osdev.jp/wiki/Takym>
 		* <https://github.com/osdev-jp/osdev-jp.github.io/wiki/Takym>
+	* Qiita: [@Takym0818](https://qiita.com/Takym0818)
 * Jikkaky
 	* [LINE Stickers](https://line.me/S/shop/sticker/author/197955/new?lang=en&utm_source=gnsh_staut)
 	* [The Official Account](https://lin.ee/5sJ1DQ9) (Japanese)
