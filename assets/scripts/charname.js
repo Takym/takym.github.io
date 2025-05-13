@@ -518,8 +518,8 @@ window.addEventListener("load", _ => {
 		}
 		code.innerText = newText;
 
-		// 構文ハイライトを最適用
-		if (hljs && hljs.highlightElement) {
+		// 構文ハイライトを最適用 - 上手く行かなかったので諦める
+		/* if (hljs && hljs.highlightElement) {
 			//code.setAttribute("class",            "language-md");
 			//code.setAttribute("data-highlighted", "no"         );
 
@@ -527,6 +527,6 @@ window.addEventListener("load", _ => {
 			code.classList.add("language-md");
 			delete code.dataset.highlighted;
 			hljs.highlightElement(code.parentElement);
-		}
+		} //*/
 	}
 });
