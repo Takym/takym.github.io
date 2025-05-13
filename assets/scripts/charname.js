@@ -512,9 +512,11 @@ window.addEventListener("load", _ => {
 	// gen_charname.md の為のコード
 	const code = document.getElementById("code_of_charname_md");
 	if (code) {
+		let newText = code.innerText;
 		for (let i = 0; i < charnames.length; ++i) {
-			code.innerText += "**^" + charnames[i].name + "**\r\n";
+			newText += "**^" + charnames[i].name + "**\r\n";
 		}
+		code.innerText = newText;
 
 		// 構文ハイライトを最適用
 		if (hljs && hljs.highlightElement) {
@@ -524,7 +526,7 @@ window.addEventListener("load", _ => {
 			code.classList.remove(...code.classList);
 			code.classList.add("language-md");
 			delete code.dataset.highlighted;
-			hljs.highlightElement(code);
+			hljs.highlightElement(code.parentElement);
 		}
 	}
 });
