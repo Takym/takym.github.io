@@ -515,5 +515,10 @@ window.addEventListener("load", _ => {
 		for (let i = 0; i < charnames.length; ++i) {
 			code.innerText += "**^" + charnames[i].name + "**\r\n";
 		}
+
+		// 構文ハイライトを最適用
+		if (hljs && hljs.highlightAll) {
+			hljs.highlightAll();
+		}
 	}
 });
