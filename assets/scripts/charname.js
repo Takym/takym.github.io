@@ -517,9 +517,14 @@ window.addEventListener("load", _ => {
 		}
 
 		// 構文ハイライトを最適用
-		if (hljs && hljs.highlightAll) {
-			code.setAttribute("data-highlighted", "no");
-			hljs.highlightAll();
+		if (hljs && hljs.highlightElement) {
+			//code.setAttribute("class",            "language-md");
+			//code.setAttribute("data-highlighted", "no"         );
+
+			code.classList.remove(...code.classList);
+			code.classList.add("language-md");
+			delete code.dataset.highlighted;
+			hljs.highlightElement(code);
 		}
 	}
 });
