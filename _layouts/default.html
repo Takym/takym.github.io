@@ -84,11 +84,19 @@
 		<script src="{{ site.baseurl }}/assets/scripts/charname.js"></script>
 
 		<!-- ファビコン -->
+		{% if page.category == "jikkaky" %}
+		<link rel="shortcut icon"    href="{{ site.baseurl }}/assets/images/Jikkaky.ico"      type="image/vnd.microsoft.icon" sizes="16x16 96x96 256x256" />
+		<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/Jikkaky.x016.png" type="image/png"                sizes="16x16"               />
+		<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/Jikkaky.x096.png" type="image/png"                sizes="96x96"               />
+		<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/Jikkaky.x256.png" type="image/png"                sizes="256x256"             />
+		<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/Jikkaky.x512.png" type="image/png"                sizes="512x512"             />
+		{% else %}
 		<link rel="shortcut icon"    href="{{ site.baseurl }}/assets/images/TakymLogo.ico"      type="image/vnd.microsoft.icon" sizes="16x16 48x24 48x48 96x96" />
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/TakymLogo16x16.png" type="image/png"                sizes="16x16"                   />
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/TakymLogo.png"      type="image/png"                sizes="48x24"                   />
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/TakymLogo48x48.png" type="image/png"                sizes="48x48"                   />
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/TakymLogoFive.png"  type="image/png"                sizes="96x96"                   />
+		{% endif %}
 
 		<!-- ゲーム -->
 		{% if page.layout == "game" %}

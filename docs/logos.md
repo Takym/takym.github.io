@@ -20,6 +20,13 @@ Copyright (C) 2019-2025 Takym.
 * 96x96: <img src="../assets/images/TakymLogo.ico" width="96" height="96" /> <img src="../assets/images/TakymLogoFive.png" width="96" height="96" />
 * 環境によっては正しく表示されず、左側のアイコン（ICO）は右側の画像（PNG）と一致しない場合があります。
 
+## ジカッキィー
+* auto: ![](../assets/images/Jikkaky.ico)
+* 16x16: <img src="../assets/images/Jikkaky.x016.png" width="16" height="16" />
+* 96x96: <img src="../assets/images/Jikkaky.x096.png" width="96" height="96" />
+* 256x256: <img src="../assets/images/Jikkaky.x256.png" width="256" height="256" />
+* 512x512: <img src="../assets/images/Jikkaky.x512.png" width="512" height="512" />
+
 ## `syswiki` 時代
 ![](../assets/images/logos/00.png)
 
