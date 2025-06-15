@@ -93,8 +93,8 @@ LINE アプリ内から当サイトへアクセスしたい場合は「公式ブ
 ## おまけの画像
 
 ### 「ジカッキィーくん -Colored-」の発売時期に描いた絵
-<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/1st.colored.png" style="max-width:1200px" />
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/1st.colored.png" style="max-width:480px" />
 
 ### 「ジカッキィーくん 2nd II 弐世」の発売時期に描いた絵
-<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/2nd.png" style="max-width:1200px" />
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/2nd.png" style="max-width:480px" />
 ※新キャラはジカッキィーの進化形態であるダイヤ・ジカッキィーなので、厳密には新キャラではありません。
