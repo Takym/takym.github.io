@@ -66,8 +66,10 @@ Copyright (C) 2025 Takym.
 	* 新キャラの「佐島才男」（SUGAR&SALT）が登場しました。なんと人型です。
 	* 英語名称：「Mr.Jikkaky -Fourth Blazes-」
 	* 却下された名称
-		* ジカッキィーくん 4th IV 肆世
-		* Mr.Jikkaky 4th IV FOUR
+		* ジカッキィーくん 4th IV 肆世 / Mr.Jikkaky 4th IV FOUR
+		* ジカッキィーくん 4th IIII 亖世 / Mr.Jikkaky 4th IIII FOUR
+		* ジカッキィーくん ④ ～ゴールド～ / Mr.Jikkaky (4) -GOLD-
+		* 第四のジカッキィーくん / The Fourth Mr.Jikkaky
 	* 販売開始日：2025年04月25日
 	* 販売価格：250円
 
