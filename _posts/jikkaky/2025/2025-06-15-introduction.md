@@ -15,35 +15,44 @@ Copyright (C) 2025 Takym.
 なお、スクリーンショット画像は LINE Official Account Manager を用いて生成したものです。
 
 対応していないキーワードを入力すると、公式アカウントの簡単な説明文を返します。
-![](https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_default.jpg)
+
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_default.jpg" style="max-width:480px" />
 
 「新作」と入力すると、最新のスタンプ情報を提供します。
-![](https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_new.jpg)
 
-「新作」と入力すると、第一弾から第三弾までのスタンプ情報を提供します。
-![](https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_old.jpg)
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_new.jpg" style="max-width:480px" />
+
+「旧作」と入力すると、第一弾から第三弾までのスタンプ情報を提供します。
+
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_old.jpg" style="max-width:480px" />
 
 「全部」と入力すると、全てのスタンプ情報をカード形式で提供します。
-![](https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_all.jpg)
+
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_all.jpg" style="max-width:1200px" />
 
 また、実は、「新作ではなく旧作」「旧作なのか？」「旧作だってば！」などと入力すると、第四弾発売前の時点のスタンプ情報を提供します。
-![](https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_not_all.jpg)
+
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_not_all.jpg" style="max-width:1200px" />
 
 ただし、「新作じゃない・・・・・・」などと入力してしまうと、「[ジカッキィーくんぢゃない…](https://line.me/S/sticker/26513429)」の情報しか提供してくれません。間違えてしまわない様に充分ご注意ください。
-![](https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_not_new.jpg)
+
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_not_new.jpg" style="max-width:480px" />
 
 キャラクター名を誤って入力すると、その誤りを指摘してくれます。
-![](https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_name_error.jpg)
+
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_name_error.jpg" style="max-width:480px" />
 
 LINE アプリ内から当サイトへアクセスしたい場合は「公式ブログ」と入力してください。リンクを送ります。
-![](https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_blog.jpg)
+
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_blog.jpg" style="max-width:480px" />
 
 その他にも隠しメッセージがあります。ぜひ探してみてください。
 
 ## 第四の輝き
 次に「[ジカッキィーくん ～第四の輝き～](https://line.me/S/sticker/30561911)」の使い方を説明します。
 公式アカウントに「第四弾の使い方」と入力すれば、説明が表示されるのですが、今回は別のメッセージの書き換え例を紹介します。
-![](https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_4th.jpg)
+
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/chat_4th.jpg" style="max-width:480px" />
 
 なお、以降のスクリーンショット画像は実際の LINE の画面です。
 
@@ -84,8 +93,8 @@ LINE アプリ内から当サイトへアクセスしたい場合は「公式ブ
 ## おまけの画像
 
 ### 「ジカッキィーくん -Colored-」の発売時期に描いた絵
-![](https://takym.github.io/assets/images/Jikkaky/2025-06-15/1st.colored.png)
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/1st.colored.png" style="max-width:1200px" />
 
 ### 「ジカッキィーくん 2nd II 弐世」の発売時期に描いた絵
-![](https://takym.github.io/assets/images/Jikkaky/2025-06-15/2nd.png)
-※新キャラはジカッキィーの進化形態であるダイヤ・ジカッキィーなので、厳密には新キャラではない。
+<img src="https://takym.github.io/assets/images/Jikkaky/2025-06-15/2nd.png" style="max-width:1200px" />
+※新キャラはジカッキィーの進化形態であるダイヤ・ジカッキィーなので、厳密には新キャラではありません。
