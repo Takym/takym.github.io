@@ -31,7 +31,7 @@ tags:
 category: shutage
 ---
 <!-- このファイルはまとめSS用のテンプレートです。 -->
-<!-- 次はここから：https://ssmania.info/category/%e3%82%b7%e3%83%a5%e3%82%bf%e3%82%b2?page=20&sort=s -->
+<!-- 次はここから：https://ssmania.info/category/%e3%82%b7%e3%83%a5%e3%82%bf%e3%82%b2?page=22&sort=s -->
 <!-- ゼロ幅空白：&#x200B; -->
 - 題名：
 - [2ちゃんねる](http://viper.2ch.sc/test/read.cgi/news4vip/xxxxx)
@@ -63,3 +63,4 @@ category: shutage
 - [SS Daydream](http://s2-d2.com/archives/xxxxx.html)
 - [のくす牧場](https://sea-mew.jp/nox/modules/webarc/2ch/ss/xxxxx.html)
 - [SS Spawn](http://ss.spawn.jp/?p=xxxxx)
+- [魔王と勇者のＳＳ物語](http://maoyuss.blog.fc2.com/blog-entry-xxxxx.html)
