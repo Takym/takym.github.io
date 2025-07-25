@@ -17,3 +17,8 @@ Copyright (C) 2019-2025 Takym.
 	* **未定**（現状、必ず管理者に確認を取ってください。）
 * [`jikkaky`: ジカッキィーの公式ブログ](https://takym.github.io/blog/jikkaky/README.html)
 	* [https://Takym.GITHUB.IO/ 利用規約](./docs/license.takym.md)
+
+## プロフィール画像について<span id="profile_icon"></span>
+[プロフィール画像](./assets/images/IPAGothicTakymV2.png)のフォントは「[IPAゴシック](https://moji.or.jp/ipafont/ipa00303/)」を利用させて頂いております。
+
+私のプロフィール画像を無断で使用しないでください。

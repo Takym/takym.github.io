@@ -23,6 +23,7 @@ Copyright (C) 2019-2025 Takym.
 
 ## 概要 <a id="ja_summary"></a>
 * 「Takym」は「たかやま」と読みます。
+	* [プロフィール画像](./assets/images/IPAGothicTakymV2.png)のフォントは「[IPAゴシック](https://moji.or.jp/ipafont/ipa00303/)」を利用させて頂いております。
 * 自分で作成したリポジトリや開発したソフトウェアの情報を集約したり、僕の趣味に基いた様々な記事を発信しています。
 	* その他のプロジェクトも公開しています。
 * このウェブサイトのリポジトリでは [GitHub Copilot](https://github.com/features/copilot) へ質問する事で、情報技術に関する詳しい回答を得られる資料集の構築を目指しています。
@@ -104,6 +105,7 @@ Copyright (C) 2019-2025 Takym.
 
 ## Summary <a id="en_summary"></a>
 * Please pronounce "Takym" as TA-KA-YA-MA.
+	* I am exploiting "[IPA Gothic](https://moji.or.jp/ipafont/ipa00303/)" for [my profile icon](./assets/images/IPAGothicTakymV2.png).
 * This website aggregates my repositories and software. Also, I publish blog articles based on my hobby.
 	* Other projects are available!
 * Another goal of the website repository is to build a collection of documents and be a learning source for [GitHub Copilot](https://github.com/features/copilot). So, you can ask advanced questions to AI to get detailed information technology answers.
