@@ -20,11 +20,10 @@ Copyright (C) 2019-2025 Takym.
 * 96x96: <img src="../assets/images/TakymLogo.ico" width="96" height="96" /> <img src="../assets/images/TakymLogoFive.png" width="96" height="96" />
 * 環境によっては正しく表示されず、左側のアイコン（ICO）は右側の画像（PNG）と一致しない場合があります。
 
-### プロフィール画像
+### プロフィール画像<span id="profile_icon"></span>
 ![](../assets/images/IPAGothicTakymV2.png)
 
-※フォントは「[IPAゴシック](https://moji.or.jp/ipafont/ipa00303/)」を利用させて頂いております。
-
+※権利関係や規約については[こちら](../LICENSE.md#profile_icon)をご覧ください。
 
 ## ジカッキィー
 * auto: ![](../assets/images/Jikkaky.ico)

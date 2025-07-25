@@ -19,6 +19,6 @@ Copyright (C) 2019-2025 Takym.
 	* [https://Takym.GITHUB.IO/ 利用規約](./docs/license.takym.md)
 
 ## プロフィール画像について<span id="profile_icon"></span>
-[プロフィール画像](./assets/images/IPAGothicTakymV2.png)のフォントは「[IPAゴシック](https://moji.or.jp/ipafont/ipa00303/)」を利用させて頂いております。
+[プロフィール画像](./docs/logos.md#profile_icon)のフォントは「[IPAゴシック](https://moji.or.jp/ipafont/ipa00303/)」を利用させて頂いております。
 
 私のプロフィール画像を無断で使用しないでください。
