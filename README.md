@@ -57,6 +57,7 @@ Copyright (C) 2019-2025 Takym.
 * ジカッキィー
 	* [LINEスタンプ](https://line.me/S/shop/sticker/author/197955/new?lang=ja&utm_source=gnsh_staut)
 	* [公式アカウント](https://lin.ee/5sJ1DQ9)
+	* [公式ブログ](https://takym.github.io/blog/jikkaky/README.html)
 	* シリーズ・キャラクター共に正式名称は「ジカッキィー」。「ジカッキィー・シリーズ」と「ジカッキィーくん」は曖昧さ回避の為の便宜的な呼称。
 * [新しいカテゴリを追加する](./add_new_cat.html)
 
@@ -138,6 +139,7 @@ Copyright (C) 2019-2025 Takym.
 * Jikkaky
 	* [LINE Stickers](https://line.me/S/shop/sticker/author/197955/new?lang=en&utm_source=gnsh_staut)
 	* [The Official Account](https://lin.ee/5sJ1DQ9) (Japanese)
+	* [The Official Blog](https://takym.github.io/blog/jikkaky/README.html) (Japanese)
 	* The official names of the series and the main character is both "Jikkaky". "Jikkaky Series" and "Mr.Jikkaky" are convenient names for disambiguation.
 * [Adding a new category](./add_new_cat.html) (Japanese)
 
