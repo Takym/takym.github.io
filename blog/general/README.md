@@ -12,10 +12,9 @@ Copyright (C) 2019-2025 Takym.
 * [ウィキ編集](https://github.com/Takym/takym.github.io/wiki)
 
 ## おすすめ記事
-* [.NET 7 と C# を用いて OS を開発する事はできるのか？](./2022/12/25/osdotnet.html)
-* [本名を公開していない人の著作権はどうなるのか？](./2023/05/02/copyright.html)
-* [措備手著語について Bing AI に質問してみる・その２](./2023/10/05/sobityezjyo_bing_ai.html)
+* [ブートローダーの実装について](./2025/08/01/bootloader.html)
 * [Slack のデータ削除の新方針に関する意見](./2024/06/27/slack-data-removal.html)
+* [.NET 7 と C# を用いて OS を開発する事はできるのか？](./2022/12/25/osdotnet.html)
 
 ## 架空の言語
 * 特に力を入れているわけでもないのでリポジトリやカテゴリは分割しない。
