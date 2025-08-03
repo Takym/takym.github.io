@@ -39,4 +39,14 @@ window.addEventListener("load", function() {
 			ccontainerElem.append(frameElem);
 		}
 	}
+
+	const imgs = document.querySelectorAll("img[alt]");
+	if (imgs) {
+		for (let i = 0; i < imgs.length; ++i) {
+			const img = imgs[i];
+			if (img.title === "") {
+				img.title = img.alt;
+			}
+		}
+	}
 });

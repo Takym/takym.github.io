@@ -194,6 +194,36 @@ code {
 	border-radius   : 0.3rem;
 }
 
+img[alt="ジカッキィー 説明画像 通常"],
+img[alt="ジカッキィー 説明画像 横長"],
+img[alt="ジカッキィー 説明画像 巨大"],
+img[alt="C# + .NET 9.0 + VS Code 環境構築"] {
+	width       : 100%;
+	height      : auto;
+	border-width: 1px;
+	border-style: solid;
+}
+
+img[alt="ジカッキィー 説明画像 通常"],
+img[alt="ジカッキィー 説明画像 横長"],
+img[alt="ジカッキィー 説明画像 巨大"] {
+	border-color: #25DD7A;
+}
+
+img[alt="ジカッキィー 説明画像 通常"] {
+	max-width: 480px;
+}
+
+img[alt="ジカッキィー 説明画像 横長"],
+img[alt="ジカッキィー 説明画像 巨大"] {
+	max-width: 1200px;
+}
+
+img[alt="C# + .NET 9.0 + VS Code 環境構築"] {
+	max-width   : 1088px;
+	border-color: #2222CC;
+}
+
 iframe[title="Sponsor Takym"] {
 	display     : inline  !important;
 	visibility  : visible !important;
