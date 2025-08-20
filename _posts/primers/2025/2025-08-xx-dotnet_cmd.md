@@ -121,9 +121,53 @@ Copyright (C) 2025 Takym.
 ```
 
 ## テンプレートからプロジェクトを生成（`dotnet new`）
+`dotnet new` コマンドは豊富なテンプレートからプロジェクトを生成するコマンドです。コンソールアプリケーションを作成するには、次の様に入力します：
+```cmd
+> dotnet new console
+```
+
+クラスライブラリを作成するには、`console` の部分を `classlib` に書き換えるだけです：
+```cmd
+> dotnet new classlib
+```
+
+インストールされている全てのテンプレートの一覧を表示するには、次のコマンドを用いてください：
+```cmd
+> dotnet new list
+```
+コマンド上では列「短い名前」にある名前を用います。
+
+空ではないディレクトリをテンプレートで上書きする場合は、`--force` オプションを付与します。
+```cmd
+> dotnet new <テンプレート名> --force
+```
+
+より詳細な説明は <https://learn.microsoft.com/ja-jp/dotnet/core/tools/dotnet-new> をご覧ください。
 
 ## ビルド構成
 .NET には、プロジェクト設定を切り替える機能があります。これをビルド構成と呼びます。既定では `Debug` と `Release` の二つが用意されています。改名する事もできますが、基本的には推奨されません。`Debug` はプログラムが正しく動作するか試す為に使われます。最適化を行わなかったり、ソースコードとの対応関係を保持したり、試験時のみに呼び出せるコードを設定したりする事ができます。`Release` はプログラムを利用者に配布する時に使います。最適化が掛かり、効率良く実行させる事ができます。ソースコードとの対応関係は保持されません。
+
+## プロジェクト設定
+`dotnet new console` を用いてプロジェクトを生成した場合、プロジェクトファイル（拡張子が「`*.csproj`」のファイル）は以下の通りとなる筈です：
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
+```
+プロジェクトファイルは XML で記述されています。
+
+`Project` 要素にある `Sdk` 属性は使用する SDK を指定する為に使われます。殆どのプロジェクトでは `Microsoft.NET.Sdk` が選ばれている事が多いです。他の一般的な SDK は <https://learn.microsoft.com/ja-jp/dotnet/core/project-sdk/overview> に記載されています。
+
+`PropertyGroup` 要素ではプロジェクトのプロパティを設定します。`OutputType` 要素は出力ファイルの種類を指定します。既定ではコンソール画面付きの実行可能ファイルになっています。`TargetFramework` 要素は利用するフレームワークを指定します。既定では .NET 9.0 が選択されており、.NET SDK のバージョンと一致している事が確認できます。それ以外のプロパティに関する説明は今回は省きます。
+
+プロジェクト設定に関する詳しい説明は <https://learn.microsoft.com/ja-jp/visualstudio/msbuild/msbuild-reference?view=vs-2022> や <https://learn.microsoft.com/ja-jp/dotnet/core/project-sdk/msbuild-props>、<https://learn.microsoft.com/ja-jp/dotnet/csharp/language-reference/compiler-options/> などをご覧ください。
 
 ## プロジェクトの復元（`dotnet restore`）
 
