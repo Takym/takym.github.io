@@ -120,8 +120,12 @@ Copyright (C) 2025 Takym.
 > dotnet --version
 ```
 
+より詳細な説明は <https://learn.microsoft.com/dotnet/core/tools/dotnet> をご覧ください。
+
 ## テンプレートからプロジェクトを生成（`dotnet new`）
-`dotnet new` コマンドは豊富なテンプレートからプロジェクトを生成するコマンドです。コンソールアプリケーションを作成するには、次の様に入力します：
+`dotnet new` コマンドは、豊富なテンプレートからプロジェクトを生成するコマンドです。
+
+コンソールアプリケーションを作成するには、次の様に入力します：
 ```cmd
 > dotnet new console
 ```
@@ -137,17 +141,14 @@ Copyright (C) 2025 Takym.
 ```
 コマンド上では列「短い名前」にある名前を用います。
 
-空ではないディレクトリをテンプレートで上書きする場合は、`--force` オプションを付与します。
+空ではないディレクトリをテンプレートで上書きする場合は、`--force` オプションを付与します：
 ```cmd
 > dotnet new <テンプレート名> --force
 ```
 
-より詳細な説明は <https://learn.microsoft.com/ja-jp/dotnet/core/tools/dotnet-new> をご覧ください。
+より詳細な説明は <https://learn.microsoft.com/dotnet/core/tools/dotnet-new> をご覧ください。
 
-## ビルド構成
-.NET には、プロジェクト設定を切り替える機能があります。これをビルド構成と呼びます。既定では `Debug` と `Release` の二つが用意されています。改名する事もできますが、基本的には推奨されません。`Debug` はプログラムが正しく動作するか試す為に使われます。最適化を行わなかったり、ソースコードとの対応関係を保持したり、試験時のみに呼び出せるコードを設定したりする事ができます。`Release` はプログラムを利用者に配布する時に使います。最適化が掛かり、効率良く実行させる事ができます。ソースコードとの対応関係は保持されません。
-
-## プロジェクト設定
+## プロジェクト設定とビルド構成
 `dotnet new console` を用いてプロジェクトを生成した場合、プロジェクトファイル（拡張子が「`*.csproj`」のファイル）は以下の通りとなる筈です：
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -163,20 +164,142 @@ Copyright (C) 2025 Takym.
 ```
 プロジェクトファイルは XML で記述されています。
 
-`Project` 要素にある `Sdk` 属性は使用する SDK を指定する為に使われます。殆どのプロジェクトでは `Microsoft.NET.Sdk` が選ばれている事が多いです。他の一般的な SDK は <https://learn.microsoft.com/ja-jp/dotnet/core/project-sdk/overview> に記載されています。
+`Project` 要素にある `Sdk` 属性は使用する SDK を指定する為に使われます。殆どのプロジェクトでは `Microsoft.NET.Sdk` が選ばれている事が多いです。他の一般的な SDK は <https://learn.microsoft.com/dotnet/core/project-sdk/overview> に記載されています。
 
 `PropertyGroup` 要素ではプロジェクトのプロパティを設定します。`OutputType` 要素は出力ファイルの種類を指定します。既定ではコンソール画面付きの実行可能ファイルになっています。`TargetFramework` 要素は利用するフレームワークを指定します。既定では .NET 9.0 が選択されており、.NET SDK のバージョンと一致している事が確認できます。それ以外のプロパティに関する説明は今回は省きます。
 
-プロジェクト設定に関する詳しい説明は <https://learn.microsoft.com/ja-jp/visualstudio/msbuild/msbuild-reference?view=vs-2022> や <https://learn.microsoft.com/ja-jp/dotnet/core/project-sdk/msbuild-props>、<https://learn.microsoft.com/ja-jp/dotnet/csharp/language-reference/compiler-options/> などをご覧ください。
+.NET のプロジェクトファイル（より厳密には MSBuild）には、プロジェクト設定を切り替える機能があります。これをビルド構成と呼びます。既定では `Debug` と `Release` の二つが用意されています。改名する事もできますが、基本的には推奨されません。`Debug` はプログラムが正しく動作するか試す為に使われます。最適化を行わなかったり、ソースコードとの対応関係を保持したり、試験時のみに呼び出せるコードを設定したりする事ができます。`Release` はプログラムを利用者に配布する時に使います。最適化が掛かり、効率良く実行させる事ができます。ソースコードとの対応関係は保持されません。
+
+特定のビルド構成でのみ有効にするには、`Condition` 属性内で `Configuration` の値を判定します。例えば、`PropertyGroup` 要素に条件を加えるには次の様に記述します：
+```xml
+<PropertyGroup Condition="'$(Configuration)'=='Debug'">
+	<!-- Debug 構成で使用する設定 -->
+</PropertyGroup>
+<PropertyGroup Condition="'$(Configuration)'=='Release'">
+	<!-- Release 構成で使用する設定 -->
+</PropertyGroup>
+```
+
+プロジェクト設定とビルド構成に関する詳しい説明は次の説明書をご覧ください。
+* <https://learn.microsoft.com/visualstudio/msbuild/walkthrough-using-msbuild>
+* <https://learn.microsoft.com/visualstudio/msbuild/msbuild-concepts>
+* <https://learn.microsoft.com/visualstudio/msbuild/msbuild-reference>
+* <https://learn.microsoft.com/dotnet/core/project-sdk/msbuild-props>
+* <https://learn.microsoft.com/dotnet/csharp/language-reference/compiler-options>
 
 ## プロジェクトの復元（`dotnet restore`）
+プロジェクトが依存しているライブラリやツールなどの必要なファイルを所定のサーバーからダウンロードする時は、`dotnet restore` コマンドを使います。通常は必要な時に自動的に実行される為、手動では呼び出さない場合が多いです。このブログでは、このコマンドで発生するエラーの事は復元時エラーなどと呼称する事にします。
+
+次の様な単純な記述で呼び出せます：
+```cmd
+> dotnet restore
+```
+
+プロジェクトファイルを明示的に指定する事もできます：
+```cmd
+> dotnet restore Project.csproj
+```
+
+`--force` オプションを付与する事で、復元し直す事ができます：
+```cmd
+> dotnet restore --force
+```
+復元時エラーが発生した時に試してみると良いでしょう。それでもエラーが解決されない場合は、エラーメッセージをよくお読みください。
+
+より詳細な説明は <https://learn.microsoft.com/dotnet/core/tools/dotnet-restore> をご覧ください。
 
 ## プロジェクトの構築（`dotnet build`）
+`dotnet build` コマンドは、プロジェクト設定に基づいてコンパイルやリンク、リソースの埋め込み、ソースコードの自動生成などを行って、実行可能ファイルを作ります。C# ではリンクはコンパイラが行います。このブログでは、このコマンドで発生するエラーの事は構築時エラーなどと呼称する事にします。通常は英語のままビルドエラーと呼ばれる事が多いです。構築時エラーには、コンパイル時エラーやリンク時エラーなどのエラーが含まれます。
+
+何も設定を変更せずに構築（ビルド）する場合は、次の様に記述します：
+```cmd
+> dotnet build
+```
+既定では `Debug` 構成となります。`Release` 構成を用いる場合は明示的に指定しなければなりません：
+```cmd
+> dotnet build -c Release
+```
+
+フレームワークのバージョンを変更する事もできます：
+```cmd
+> dotnet build -f net9.0
+```
+ただし、プロジェクト設定の修正も必要になります。
+
+`dotnet build` コマンドを呼び出すと、自動的に復元されますが、これを抑制する事もできます：
+```cmd
+> dotnet build --no-restore
+```
+既に復元済みの場合は、ビルド時間を短縮できます。
+
+`dotnet restore` コマンドと同様に、プロジェクトファイルを明示的に指定する事もできます：
+```cmd
+> dotnet build Project.csproj
+```
+
+これらの引数を組み合わせる事もできます：
+```cmd
+> dotnet build Project.csproj -c Release -f net9.0 --no-restore
+```
+
+より詳細な説明は <https://learn.microsoft.com/dotnet/core/tools/dotnet-build> をご覧ください。
 
 ## プロジェクトの実行（`dotnet run`）
+`dotnet run` コマンドは、作成した実行可能ファイル（アプリケーション）を起動します。この時のエラーは実行時エラー（ランタイムエラー）などと呼ばれます。
+
+何も引数を付けずに呼び出すと、既定の設定で、アプリケーションに引数を渡さずに起動できます：
+```cmd
+> dotnet run
+```
+
+`dotnet build` コマンドと同様に、ビルド構成やフレームワークを切り替える事ができます：
+```cmd
+> dotnet build -c Release -f net9.0
+```
+
+`dotnet run` コマンドを呼び出すと、自動的に構築されますが、これを抑制する事もできます：
+```cmd
+> dotnet run --no-build
+```
+復元のみ抑制する場合は `--no-restore` オプションを用います：
+```cmd
+> dotnet run --no-restore
+```
+これらのオプションを用いると、起動までに掛かる時間を短縮する事ができます。また、`--no-build` を指定する事で、ソースコードに加えた編集を反映させずにアプリケーションを起動するといった使い方もできます。
+
+やはり `dotnet run` コマンドでも、プロジェクトファイルを明示的に指定する事ができます：
+```cmd
+> dotnet run Project.csproj
+```
+
+アプリケーションにコマンド行引数を渡すには、`--` 以降に引数を書きます：
+```cmd
+> dotnet run -- arg0 arg2 arg3
+```
+「`arg0 arg2 arg3`」がアプリケーションに渡される引数です。`dotnet` コマンドの実行には影響を及ぼしません。
+
+これらの引数を組み合わせる事もできます：
+```cmd
+> dotnet run Project.csproj -c Release -f net9.0 --no-build -- hoge fuga piyo 123456 a1b2 "hello world"
+```
+
+より詳細な説明は <https://learn.microsoft.com/dotnet/core/tools/dotnet-run> をご覧ください。
 
 ## プロジェクトの発行（`dotnet publish`）
+実行可能ファイルを配布できる形式に変換するには、`dotnet restore` コマンドを使います。または、指定した場所へ配置する時にも使います。配布とは、実行可能ファイルを他者へ受け渡す事を意味します。頒布とも言います。販売する場合も含まれます。配置とは、サーバーや自分のコンピュータなど実運用環境へインストールする事を意味します。このブログでは、このコマンドで発生するエラーの事は発行時エラーなどと呼称する事にします。
+
+何も引数を加えずに呼び出す事もできますが、ビルド構成に `Debug` が使われてしまいやや不便です：
+```cmd
+> dotnet publish
+```
+
+`dotnet build` や `dotnet run` コマンドと同様に、ビルド構成やフレームワークを切り替える事ができます：
+```cmd
+> dotnet publish -c Release -f net9.0
+```
+例示はしませんが、`--no-build` と `--no-restore` も指定する事ができます。勿論、プロジェクトの明示的な指定も可能です。
+
+より詳細な説明は <https://learn.microsoft.com/dotnet/core/tools/dotnet-publish> をご覧ください。
 
 ## 次に調べるべき事
-`dotnet` コマンドの使い方が分かったら、次は MSBuild、Roslyn、NuGet などについて調べると良いでしょう。
-内部でどの様な動作が行われているか理解が深まると思います。
+お疲れ様でした。今回の解説はここまでとしますが、`dotnet` コマンドにはまだたくさん機能があります。`dotnet` コマンドの使い方が分かりましたら、次は MSBuild、Roslyn、NuGet などについて調べると良いでしょう。この記事で学んだコマンドの内部でどの様な動作が行われているか理解が深まると思います。最後までお読みいただきありがとうございました。
