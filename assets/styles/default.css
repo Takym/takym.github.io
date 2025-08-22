@@ -188,7 +188,7 @@ span.notice {
 	text-decoration: double underline;
 }
 
-:not(pre) code {
+code:not(pre code) {
 	color           : #441166;
 	background-color: #E2E6FF;
 	border-radius   : 0.3rem;
