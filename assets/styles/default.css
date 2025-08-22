@@ -188,10 +188,14 @@ span.notice {
 	text-decoration: double underline;
 }
 
-code {
+:not(pre) code {
 	color           : #441166;
 	background-color: #E2E6FF;
 	border-radius   : 0.3rem;
+}
+
+pre:has(code) {
+	border: #222222 1px dashed;
 }
 
 img[alt="ジカッキィー 説明画像 通常"],
