@@ -1,13 +1,15 @@
 
-import { sampleConstant } from "./board_and_cards/sample_module";
+import { GetGameRoot } from "../common";
 
-import { InitializeBoard, InitializeCardList } from "./board_and_cards/game_object";
+import { sampleConstant } from "./sample_module";
+
+import { InitializeBoard, InitializeCardList } from "./game_object";
 
 (function() {
 	window.addEventListener("load", function() {
 		// Entry point
 
-		const gameRoot = document.getElementById("game_root");
+		const gameRoot = GetGameRoot();
 		if (gameRoot) {
 			//alert(gameRoot.innerText);
 			gameRoot.innerText = "現在、準備中です。定数値：" + sampleConstant;
