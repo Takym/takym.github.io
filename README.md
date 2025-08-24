@@ -3,7 +3,7 @@ Copyright (C) 2019-2025 Takym.
 
 [![Takym](./assets/images/TakymLogo.png)](./assets/images/TakymLogo.png)
 [![Deploy GitHub Pages with Jekyll and Nitdefgai](https://github.com/Takym/takym.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/jekyll.yml)
-[![Build "The Board & Cards"](https://github.com/Takym/takym.github.io/actions/workflows/game.yml/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/game.yml)
+[![Build Game Script](https://github.com/Takym/takym.github.io/actions/workflows/game.yml/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/game.yml)
 [![Dependabot Updates](https://github.com/Takym/takym.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/dependabot/dependabot-updates)
 
 [English](#en)
