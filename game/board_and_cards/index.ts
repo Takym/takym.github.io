@@ -1,7 +1,7 @@
 
-import { sampleConstant } from "./sample_module";
+import { sampleConstant } from "./board_and_cards/sample_module";
 
-import { InitializeBoard, InitializeCardList } from "./game_object";
+import { InitializeBoard, InitializeCardList } from "./board_and_cards/game_object";
 
 (function() {
 	window.addEventListener("load", function() {

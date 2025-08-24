@@ -1,6 +1,4 @@
 ---
-layout: game
-title: "板札 / The Board & Cards"
-entrypoint: board_and_cards
+title: ゲームなどの一覧
 ---
-Hello, World!!
+* [板札 / The Board & Cards](./board_and_cards/)
