@@ -1,37 +1,7 @@
-System.register("board_and_cards/game_object", [], function (exports_1, context_1) {
+System.register("board_and_cards/game_object_base", [], function (exports_1, context_1) {
     "use strict";
-    var Item, Cell, Card, Board, CardList;
+    var Item;
     var __moduleName = context_1 && context_1.id;
-    function InitializeBoard(width, height) {
-        const cells = Array(height);
-        for (let y = 0; y < height; ++y) {
-            const row = Array(width);
-            for (let x = 0; x < width; ++x) {
-                const cell = new Cell();
-                cell.DisplayName = `(${x}, ${y})`;
-                row[x] = cell;
-            }
-            cells[y] = row;
-        }
-        const board = new Board();
-        board.DisplayName = `${width} x ${height}`;
-        board.Cells = cells;
-        return board;
-    }
-    exports_1("InitializeBoard", InitializeBoard);
-    function InitializeCardList(count) {
-        const cards = Array(count);
-        for (let i = 0; i < count; ++i) {
-            const card = new Card();
-            card.DisplayName = `#${i}`;
-            cards[i] = card;
-        }
-        const cardList = new CardList();
-        cardList.DisplayName = `Count: ${count}`;
-        cardList.Cards = cards;
-        return cardList;
-    }
-    exports_1("InitializeCardList", InitializeCardList);
     return {
         setters: [],
         execute: function () {
@@ -54,6 +24,346 @@ System.register("board_and_cards/game_object", [], function (exports_1, context_
                 }
             };
             exports_1("Item", Item);
+        }
+    };
+});
+System.register("board_and_cards/board", ["board_and_cards/game_object_base"], function (exports_2, context_2) {
+    "use strict";
+    var Base, Board, Cell;
+    var __moduleName = context_2 && context_2.id;
+    function InitializeBoard(width, height) {
+        const cells = Array(height);
+        for (let y = 0; y < height; ++y) {
+            const row = Array(width);
+            for (let x = 0; x < width; ++x) {
+                const cell = new Cell();
+                cell.DisplayName = `(${x}, ${y})`;
+                row[x] = cell;
+            }
+            cells[y] = row;
+        }
+        const board = new Board();
+        board.DisplayName = `${width} x ${height}`;
+        board.Cells = cells;
+        return board;
+    }
+    exports_2("InitializeBoard", InitializeBoard);
+    return {
+        setters: [
+            function (Base_1) {
+                Base = Base_1;
+            }
+        ],
+        execute: function () {
+            Board = class Board {
+                View;
+                DisplayName;
+                Cells;
+                Create(parent) {
+                    if (!this.View && parent) {
+                        const table = document.createElement("table");
+                        const caption = document.createElement("caption");
+                        caption.innerText = this.DisplayName;
+                        table.appendChild(caption);
+                        parent.appendChild(table);
+                        this.View = table;
+                        const cells = this.Cells;
+                        if (cells) {
+                            for (let y = 0; y < cells.length; ++y) {
+                                const row = cells[y];
+                                if (row) {
+                                    const tr = document.createElement("tr");
+                                    table.appendChild(tr);
+                                    for (let x = 0; x < row.length; ++x) {
+                                        const cell = row[x];
+                                        if (cell) {
+                                            cell.Create(tr);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                Update() {
+                    const view = this.View;
+                    if (view) {
+                        let caption = view.getElementsByTagName("caption")[0];
+                        if (!caption) {
+                            caption = document.createElement("caption");
+                            view.appendChild(caption);
+                        }
+                        caption.innerText = this.DisplayName;
+                    }
+                    const cells = this.Cells;
+                    if (cells) {
+                        for (let y = 0; y < cells.length; ++y) {
+                            const row = cells[y];
+                            if (row) {
+                                for (let x = 0; x < row.length; ++x) {
+                                    const cell = row[x];
+                                    if (cell) {
+                                        cell.Update();
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            exports_2("Board", Board);
+            Cell = class Cell extends Base.Item {
+                GetView() {
+                    return this.View;
+                }
+                GetTagName() {
+                    return "td";
+                }
+            };
+            exports_2("Cell", Cell);
+        }
+    };
+});
+System.register("board_and_cards/cards", ["board_and_cards/game_object_base"], function (exports_3, context_3) {
+    "use strict";
+    var Base, CardList, Card;
+    var __moduleName = context_3 && context_3.id;
+    function InitializeCardList(count) {
+        const cards = Array(count);
+        for (let i = 0; i < count; ++i) {
+            const card = new Card();
+            card.DisplayName = `#${i}`;
+            cards[i] = card;
+        }
+        const cardList = new CardList();
+        cardList.DisplayName = `Count: ${count}`;
+        cardList.Cards = cards;
+        return cardList;
+    }
+    exports_3("InitializeCardList", InitializeCardList);
+    return {
+        setters: [
+            function (Base_2) {
+                Base = Base_2;
+            }
+        ],
+        execute: function () {
+            CardList = class CardList {
+                View;
+                DisplayName;
+                Cards;
+                Create(parent) {
+                    if (!this.View && parent) {
+                        const ul = document.createElement("ul");
+                        const li = document.createElement("li");
+                        li.innerHTML = `<b>${this.DisplayName}</b>`;
+                        ul.appendChild(li);
+                        parent.appendChild(ul);
+                        this.View = ul;
+                        const cards = this.Cards;
+                        if (cards) {
+                            for (let i = 0; i < cards.length; ++i) {
+                                const card = cards[i];
+                                if (card) {
+                                    card.Create(ul);
+                                }
+                            }
+                        }
+                    }
+                }
+                Update() {
+                    const view = this.View;
+                    if (view) {
+                        let li = view.getElementsByTagName("li")[0];
+                        if (!li) {
+                            li = document.createElement("li");
+                            view.appendChild(li);
+                        }
+                        li.innerHTML = `<b>${this.DisplayName}</b>`;
+                    }
+                    const cards = this.Cards;
+                    if (cards) {
+                        for (let i = 0; i < cards.length; ++i) {
+                            const card = cards[i];
+                            if (card) {
+                                card.Update();
+                            }
+                        }
+                    }
+                }
+            };
+            exports_3("CardList", CardList);
+            Card = class Card extends Base.Item {
+                GetView() {
+                    return this.View;
+                }
+                GetTagName() {
+                    return "li";
+                }
+            };
+            exports_3("Card", Card);
+        }
+    };
+});
+System.register("board_and_cards/game_object", ["board_and_cards/game_object_base", "board_and_cards/board", "board_and_cards/cards"], function (exports_4, context_4) {
+    "use strict";
+    var __moduleName = context_4 && context_4.id;
+    function exportStar_1(m) {
+        var exports = {};
+        for (var n in m) {
+            if (n !== "default") exports[n] = m[n];
+        }
+        exports_4(exports);
+    }
+    return {
+        setters: [
+            function (game_object_base_1_1) {
+                exportStar_1(game_object_base_1_1);
+            },
+            function (board_1_1) {
+                exportStar_1(board_1_1);
+            },
+            function (cards_1_1) {
+                exportStar_1(cards_1_1);
+            }
+        ],
+        execute: function () {
+        }
+    };
+});
+System.register("version", [], function (exports_5, context_5) {
+    "use strict";
+    var VersionInfo;
+    var __moduleName = context_5 && context_5.id;
+    return {
+        setters: [],
+        execute: function () {
+            exports_5("VersionInfo", VersionInfo = {
+                "version": "0.0.0.0",
+                "authors": [
+                    {
+                        "id": "Takym",
+                        "name": "たかやま"
+                    }
+                ],
+                "license": {
+                    "url": "https://takym.github.io/docs/license.takym.html",
+                    "text": "https://Takym.GITHUB.IO/ 利用規約"
+                }
+            });
+        }
+    };
+});
+System.register("common", ["version"], function (exports_6, context_6) {
+    "use strict";
+    var __moduleName = context_6 && context_6.id;
+    function GetGameRoot() {
+        return document.getElementById("game_root");
+    }
+    exports_6("GetGameRoot", GetGameRoot);
+    return {
+        setters: [
+            function (version_1_1) {
+                exports_6({
+                    "VersionInfo": version_1_1["VersionInfo"]
+                });
+            }
+        ],
+        execute: function () {
+        }
+    };
+});
+System.register("board_and_cards/index", ["common", "board_and_cards/game_object"], function (exports_7, context_7) {
+    "use strict";
+    var Common, GO;
+    var __moduleName = context_7 && context_7.id;
+    return {
+        setters: [
+            function (Common_1) {
+                Common = Common_1;
+            },
+            function (GO_1) {
+                GO = GO_1;
+            }
+        ],
+        execute: function () {
+            (function () {
+                window.addEventListener("load", function () {
+                    const gameRoot = Common.GetGameRoot();
+                    if (gameRoot) {
+                        const btnUpdate = document.createElement("button");
+                        const board = GO.InitializeBoard(8, 12);
+                        const cardList = GO.InitializeCardList(10);
+                        btnUpdate.innerText = "更新";
+                        btnUpdate.addEventListener("click", function () {
+                            board.Update();
+                            cardList.Update();
+                        });
+                        gameRoot.appendChild(btnUpdate);
+                        board.Create(gameRoot);
+                        cardList.Create(gameRoot);
+                    }
+                });
+            })();
+        }
+    };
+});
+System.register("board_and_cards/very_old/game_object", [], function (exports_8, context_8) {
+    "use strict";
+    var Item, Cell, Card, Board, CardList;
+    var __moduleName = context_8 && context_8.id;
+    function InitializeBoard(width, height) {
+        const cells = Array(height);
+        for (let y = 0; y < height; ++y) {
+            const row = Array(width);
+            for (let x = 0; x < width; ++x) {
+                const cell = new Cell();
+                cell.DisplayName = `(${x}, ${y})`;
+                row[x] = cell;
+            }
+            cells[y] = row;
+        }
+        const board = new Board();
+        board.DisplayName = `${width} x ${height}`;
+        board.Cells = cells;
+        return board;
+    }
+    exports_8("InitializeBoard", InitializeBoard);
+    function InitializeCardList(count) {
+        const cards = Array(count);
+        for (let i = 0; i < count; ++i) {
+            const card = new Card();
+            card.DisplayName = `#${i}`;
+            cards[i] = card;
+        }
+        const cardList = new CardList();
+        cardList.DisplayName = `Count: ${count}`;
+        cardList.Cards = cards;
+        return cardList;
+    }
+    exports_8("InitializeCardList", InitializeCardList);
+    return {
+        setters: [],
+        execute: function () {
+            Item = class Item {
+                View;
+                DisplayName;
+                Create(parent) {
+                    if (!this.View && parent) {
+                        const itemElem = document.createElement(this.GetTagName());
+                        itemElem.innerText = this.DisplayName;
+                        parent.appendChild(itemElem);
+                        this.View = itemElem;
+                    }
+                }
+                Update() {
+                    const view = this.View;
+                    if (view) {
+                        view.innerText = this.DisplayName;
+                    }
+                }
+            };
+            exports_8("Item", Item);
             Cell = class Cell extends Item {
                 GetView() {
                     return this.View;
@@ -62,7 +372,7 @@ System.register("board_and_cards/game_object", [], function (exports_1, context_
                     return "td";
                 }
             };
-            exports_1("Cell", Cell);
+            exports_8("Cell", Cell);
             Card = class Card extends Item {
                 GetView() {
                     return this.View;
@@ -71,7 +381,7 @@ System.register("board_and_cards/game_object", [], function (exports_1, context_
                     return "li";
                 }
             };
-            exports_1("Card", Card);
+            exports_8("Card", Card);
             Board = class Board {
                 View;
                 DisplayName;
@@ -129,7 +439,7 @@ System.register("board_and_cards/game_object", [], function (exports_1, context_
                     }
                 }
             };
-            exports_1("Board", Board);
+            exports_8("Board", Board);
             CardList = class CardList {
                 View;
                 DisplayName;
@@ -174,67 +484,25 @@ System.register("board_and_cards/game_object", [], function (exports_1, context_
                     }
                 }
             };
-            exports_1("CardList", CardList);
+            exports_8("CardList", CardList);
         }
     };
 });
-System.register("version", [], function (exports_2, context_2) {
-    "use strict";
-    var VersionInfo;
-    var __moduleName = context_2 && context_2.id;
-    return {
-        setters: [],
-        execute: function () {
-            exports_2("VersionInfo", VersionInfo = {
-                "version": "0.0.0.0",
-                "authors": [
-                    {
-                        "id": "Takym",
-                        "name": "たかやま"
-                    }
-                ],
-                "license": {
-                    "url": "https://takym.github.io/docs/license.takym.html",
-                    "text": "https://Takym.GITHUB.IO/ 利用規約"
-                }
-            });
-        }
-    };
-});
-System.register("common", ["version"], function (exports_3, context_3) {
-    "use strict";
-    var __moduleName = context_3 && context_3.id;
-    function GetGameRoot() {
-        return document.getElementById("game_root");
-    }
-    exports_3("GetGameRoot", GetGameRoot);
-    return {
-        setters: [
-            function (version_1_1) {
-                exports_3({
-                    "VersionInfo": version_1_1["VersionInfo"]
-                });
-            }
-        ],
-        execute: function () {
-        }
-    };
-});
-System.register("board_and_cards/sample_module", [], function (exports_4, context_4) {
+System.register("board_and_cards/very_old/sample_module", [], function (exports_9, context_9) {
     "use strict";
     var sampleConstant;
-    var __moduleName = context_4 && context_4.id;
+    var __moduleName = context_9 && context_9.id;
     return {
         setters: [],
         execute: function () {
-            exports_4("sampleConstant", sampleConstant = "正常にモジュールを読み込めています。");
+            exports_9("sampleConstant", sampleConstant = "正常にモジュールを読み込めています。");
         }
     };
 });
-System.register("board_and_cards/index", ["common", "board_and_cards/sample_module", "board_and_cards/game_object"], function (exports_5, context_5) {
+System.register("board_and_cards/very_old/index", ["common", "board_and_cards/very_old/sample_module", "board_and_cards/very_old/game_object"], function (exports_10, context_10) {
     "use strict";
     var common_1, sample_module_1, game_object_1;
-    var __moduleName = context_5 && context_5.id;
+    var __moduleName = context_10 && context_10.id;
     return {
         setters: [
             function (common_1_1) {
@@ -270,14 +538,14 @@ System.register("board_and_cards/index", ["common", "board_and_cards/sample_modu
         }
     };
 });
-System.register("README", ["common"], function (exports_6, context_6) {
+System.register("README", ["common"], function (exports_11, context_11) {
     "use strict";
     var Common;
-    var __moduleName = context_6 && context_6.id;
+    var __moduleName = context_11 && context_11.id;
     return {
         setters: [
-            function (Common_1) {
-                Common = Common_1;
+            function (Common_2) {
+                Common = Common_2;
             }
         ],
         execute: function () {
