@@ -225,4 +225,4 @@ System.register("board_and_cards", ["sample_module", "game_object"], function (e
         }
     };
 });
-//# sourceMappingURL=game.board_and_cards.js.map
+//# sourceMappingURL=game.js.map

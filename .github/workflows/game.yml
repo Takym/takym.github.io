@@ -15,7 +15,7 @@ jobs:
         with:
           dotnet-version: 9.0.x
       - name: Clean
-        run: del assets\scripts\game.board_and_cards.*
+        run: del assets\scripts\game.*
       - name: Build
         run: dotnet build game -c Release
       - name: Configure git user information

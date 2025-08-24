@@ -12,7 +12,7 @@
 		<TypeScriptSourceMap>true</TypeScriptSourceMap>
 		<TypeScriptTarget>ES2024</TypeScriptTarget>
 		<TypeScriptModuleKind>system</TypeScriptModuleKind>
-		<TypeScriptOutFile>../assets/scripts/game.board_and_cards.js</TypeScriptOutFile>
+		<TypeScriptOutFile>../assets/scripts/game.js</TypeScriptOutFile>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
 		<Optimize>false</Optimize>
