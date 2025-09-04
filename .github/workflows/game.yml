@@ -16,6 +16,10 @@ jobs:
         uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 9.0.x
+      - name: Switch to master branch
+        run: |
+          git fetch origin
+          git checkout master
       - name: Clean
         run: del assets\scripts\game.*
       - name: Build
@@ -29,4 +33,5 @@ jobs:
           git add .
           git commit -m "Update the game script file"
           git push
+
 
