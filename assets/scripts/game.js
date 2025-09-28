@@ -11,7 +11,7 @@ System.register("board_and_cards/game_object_base", [], function (exports_1, con
                 Create(parent) {
                     if (!this.View && parent) {
                         const itemElem = document.createElement(this.GetTagName());
-                        itemElem.innerText = this.DisplayName;
+                        itemElem.innerText = this.DisplayName ?? "";
                         parent.appendChild(itemElem);
                         this.View = itemElem;
                     }
@@ -19,7 +19,7 @@ System.register("board_and_cards/game_object_base", [], function (exports_1, con
                 Update() {
                     const view = this.View;
                     if (view) {
-                        view.innerText = this.DisplayName;
+                        view.innerText = this.DisplayName ?? "";
                     }
                 }
             };
@@ -63,7 +63,7 @@ System.register("board_and_cards/board", ["board_and_cards/game_object_base"], f
                     if (!this.View && parent) {
                         const table = document.createElement("table");
                         const caption = document.createElement("caption");
-                        caption.innerText = this.DisplayName;
+                        caption.innerText = this.DisplayName ?? "";
                         table.appendChild(caption);
                         parent.appendChild(table);
                         this.View = table;
@@ -93,7 +93,7 @@ System.register("board_and_cards/board", ["board_and_cards/game_object_base"], f
                             caption = document.createElement("caption");
                             view.appendChild(caption);
                         }
-                        caption.innerText = this.DisplayName;
+                        caption.innerText = this.DisplayName ?? "";
                     }
                     const cells = this.Cells;
                     if (cells) {
@@ -560,13 +560,13 @@ System.register("README", ["common"], function (exports_11, context_11) {
                     thead.innerHTML = "<tr><th colspan=\"2\">項目</th><th>値</th></tr>";
                     table.appendChild(thead);
                     const tbody = document.createElement("tbody");
-                    function addRow(name_cat, name, value) {
+                    function addRow(name1, name2, value) {
                         const tr = document.createElement("tr");
-                        if (name) {
-                            tr.innerHTML = `<td>${name_cat}</td><td>${name}</td><td>${value}</td>`;
+                        if (name2) {
+                            tr.innerHTML = `<td>${name1}</td><td>${name2}</td><td>${value}</td>`;
                         }
                         else {
-                            tr.innerHTML = `<td colspan=\"2\">${name_cat}</td><td>${value}</td>`;
+                            tr.innerHTML = `<td colspan=\"2\">${name1}</td><td>${value}</td>`;
                         }
                         tbody.appendChild(tr);
                     }
