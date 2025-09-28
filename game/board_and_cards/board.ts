@@ -23,9 +23,9 @@ export function InitializeBoard(width: number, height: number): Board
 
 export class Board implements Base.IGameObject
 {
-	public View:        HTMLTableElement;
-	public DisplayName: string;
-	public Cells:       Cell[][];
+	public View:        HTMLTableElement | undefined;
+	public DisplayName: string           | undefined;
+	public Cells:       Cell[][]         | undefined;
 
 	public Create(parent: HTMLElement): void
 	{
@@ -33,7 +33,7 @@ export class Board implements Base.IGameObject
 			const table   = document.createElement("table");
 			const caption = document.createElement("caption");
 
-			caption.innerText = this.DisplayName;
+			caption.innerText = this.DisplayName ?? "";
 
 			table .appendChild(caption);
 			parent.appendChild(table);
@@ -68,7 +68,7 @@ export class Board implements Base.IGameObject
 				caption = document.createElement("caption");
 				view.appendChild(caption);
 			}
-			caption.innerText = this.DisplayName;
+			caption.innerText = this.DisplayName ?? "";
 		}
 
 		const cells = this.Cells;

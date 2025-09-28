@@ -1,8 +1,8 @@
 
 export interface IGameObject
 {
-	View:        HTMLElement;
-	DisplayName: string;
+	View:        HTMLElement | undefined;
+	DisplayName: string      | undefined;
 
 	Create(parent: HTMLElement): void;
 	Update(                   ): void;
@@ -10,8 +10,8 @@ export interface IGameObject
 
 export abstract class Item implements IGameObject
 {
-	public View:        HTMLElement;
-	public DisplayName: string;
+	public View:        HTMLElement | undefined;
+	public DisplayName: string      | undefined;
 
 	public    abstract GetView():    HTMLElement;
 	protected abstract GetTagName(): string;
@@ -20,7 +20,7 @@ export abstract class Item implements IGameObject
 	{
 		if (!this.View && parent) {
 			const itemElem = document.createElement(this.GetTagName());
-			itemElem.innerText = this.DisplayName;
+			itemElem.innerText = this.DisplayName ?? "";
 
 			parent.appendChild(itemElem);
 
@@ -32,7 +32,7 @@ export abstract class Item implements IGameObject
 	{
 		const view = this.View;
 		if (view) {
-			view.innerText = this.DisplayName;
+			view.innerText = this.DisplayName ?? "";
 		}
 	}
 }

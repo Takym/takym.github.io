@@ -19,9 +19,9 @@ export function InitializeCardList(count: number): CardList
 
 export class CardList implements Base.IGameObject
 {
-	public View:        HTMLUListElement;
-	public DisplayName: string;
-	public Cards:       Card[];
+	public View:        HTMLUListElement | undefined;
+	public DisplayName: string           | undefined;
+	public Cards:       Card[]           | undefined;
 
 	public Create(parent: HTMLElement): void
 	{

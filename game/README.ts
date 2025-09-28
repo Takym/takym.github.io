@@ -17,14 +17,14 @@ import * as Common from "./common";
 
 		const tbody = document.createElement("tbody");
 
-		function addRow(name_cat, name, value)
+		function addRow(name1: string, name2: string | null, value: string)
 		{
 			const tr = document.createElement("tr");
 
-			if (name) {
-				tr.innerHTML = `<td>${name_cat}</td><td>${name}</td><td>${value}</td>`;
+			if (name2) {
+				tr.innerHTML = `<td>${name1}</td><td>${name2}</td><td>${value}</td>`;
 			} else {
-				tr.innerHTML = `<td colspan=\"2\">${name_cat}</td><td>${value}</td>`;
+				tr.innerHTML = `<td colspan=\"2\">${name1}</td><td>${value}</td>`;
 			}
 
 			tbody.appendChild(tr);
