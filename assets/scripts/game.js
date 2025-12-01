@@ -12,6 +12,10 @@ System.register("board_and_cards/game_object_base", [], function (exports_1, con
                     if (!this.View && parent) {
                         const itemElem = document.createElement(this.GetTagName());
                         itemElem.innerText = this.DisplayName ?? "";
+                        const onclick = this.OnClick.bind(this);
+                        itemElem.addEventListener("click", function (pe) {
+                            onclick(this, pe);
+                        });
                         parent.appendChild(itemElem);
                         this.View = itemElem;
                     }
@@ -119,6 +123,12 @@ System.register("board_and_cards/board", ["board_and_cards/game_object_base"], f
                 GetTagName() {
                     return "td";
                 }
+                OnClick(elem, pe) {
+                    const view = this.GetView();
+                    if (view === elem) {
+                        view.innerText = `CLICKED ${pe.x}, ${pe.y}`;
+                    }
+                }
             };
             exports_2("Cell", Cell);
         }
@@ -199,6 +209,12 @@ System.register("board_and_cards/cards", ["board_and_cards/game_object_base"], f
                 }
                 GetTagName() {
                     return "li";
+                }
+                OnClick(elem, pe) {
+                    const view = this.GetView();
+                    if (view === elem) {
+                        view.innerText = "CLICKED: " + JSON.stringify(pe);
+                    }
                 }
             };
             exports_3("Card", Card);

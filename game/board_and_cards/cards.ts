@@ -83,4 +83,12 @@ export class Card extends Base.Item
 	{
 		return "li";
 	}
+
+	protected override OnClick(elem: HTMLElement, pe: PointerEvent): void
+	{
+		const view = this.GetView();
+		if (view === elem) {
+			view.innerText = "CLICKED: " + JSON.stringify(pe);
+		}
+	}
 }

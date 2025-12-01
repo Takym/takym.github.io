@@ -13,14 +13,20 @@ export abstract class Item implements IGameObject
 	public View:        HTMLElement | undefined;
 	public DisplayName: string      | undefined;
 
-	public    abstract GetView():    HTMLElement;
-	protected abstract GetTagName(): string;
+	public    abstract GetView   (                                   ): HTMLElement;
+	protected abstract GetTagName(                                   ): string;
+	protected abstract OnClick   (elem: HTMLElement, pe: PointerEvent): void;
 
 	public Create(parent: HTMLElement): void
 	{
 		if (!this.View && parent) {
 			const itemElem = document.createElement(this.GetTagName());
 			itemElem.innerText = this.DisplayName ?? "";
+
+			const onclick = this.OnClick.bind(this);
+			itemElem.addEventListener("click", function(pe) {
+				onclick(this, pe);
+			});
 
 			parent.appendChild(itemElem);
 

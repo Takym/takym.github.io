@@ -99,4 +99,12 @@ export class Cell extends Base.Item
 	{
 		return "td";
 	}
+
+	protected override OnClick(elem: HTMLElement, pe: PointerEvent): void
+	{
+		const view = this.GetView();
+		if (view === elem) {
+			view.innerText = `CLICKED ${pe.x}, ${pe.y}`;
+		}
+	}
 }
