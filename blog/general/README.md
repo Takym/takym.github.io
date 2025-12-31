@@ -12,6 +12,7 @@ Copyright (C) 2019-2025 Takym.
 * [ウィキ編集](https://github.com/Takym/takym.github.io/wiki)
 
 ## おすすめ記事
+* [美しいコードの要件](./2025/12/31/beautiful_code.html)
 * [ブートローダーの実装について](./2025/08/01/bootloader.html)
 * [Slack のデータ削除の新方針に関する意見](./2024/06/27/slack-data-removal.html)
 * [.NET 7 と C# を用いて OS を開発する事はできるのか？](./2022/12/25/osdotnet.html)
