@@ -1,6 +1,6 @@
 
 export const VersionInfo = {
-	"version": "0.0.0.0",
+	"version": "unreleased", // "0.0.0.0",
 	"authors": [
 		{
 			"id": "Takym",
