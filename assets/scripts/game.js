@@ -255,7 +255,7 @@ System.register("version", [], function (exports_5, context_5) {
         setters: [],
         execute: function () {
             exports_5("VersionInfo", VersionInfo = {
-                "version": "0.0.0.0",
+                "version": "unreleased",
                 "authors": [
                     {
                         "id": "Takym",
