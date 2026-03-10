@@ -12,6 +12,31 @@ nav#left, nav#right {
 	border-bottom: 2px dotted #882244;
 }
 
+table {
+	border-color: #B4DDB4;
+}
+
+table th {
+	border-color: #CC6688;
+}
+
+table td {
+	border-color: #8866CC;
+}
+
+table thead tr:nth-child(odd),
+table thead tr:nth-child(even) {
+	background-color: #FFDDEE;
+}
+
+table tr:nth-child(odd) {
+	background-color: #E5E5FF;
+}
+
+table tr:nth-child(even) {
+	background-color: #DDFFFF;
+}
+
 @media (min-width: 768px) {
 	nav#left {
 		border-right: 2px dotted #882244;

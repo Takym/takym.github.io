@@ -23,6 +23,16 @@ body {
 	background-color: #FF80FF;
 }
 
+table,
+table th,
+table td {
+	border-color: #000000;
+}
+
+table {
+	border-spacing: 2px;
+}
+
 @media (min-width: 768px) {
 	nav#left, nav#right {
 		min-height: 100vh;
