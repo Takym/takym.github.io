@@ -188,12 +188,17 @@ span.notice {
 	text-decoration: double underline;
 }
 
+li {
+	margin : 0.03rem;
+	padding: 0.03rem;
+}
+
 code:not(pre code) {
 	color           : #441166;
 	background-color: #E2E6FF;
 	border-radius   : 0.30rem;
-	margin          : 0.10rem 0.08rem;
-	padding         : 0.08rem 0.12rem;
+	margin          : 0.01rem 0.08rem;
+	padding         : 0.01rem 0.12rem;
 }
 
 pre:has(code) {
