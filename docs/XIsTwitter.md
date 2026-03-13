@@ -34,6 +34,7 @@ Copyright (C) 2025-2026 Takym.
 |[UI/UX](https://en.wikipedia.org/wiki/User_experience)                                    | → |UI/UTwitter                     |
 |[Chromebook X](https://9to5google.com/2023/06/20/chromebook-x/)                           | → |Chromebook Twitter              |
 |[X JAPAN](https://www.sonymusic.co.jp/artist/xjapan/)                                     | → |Twitter JAPAN                   |
+|[C++](https://learn.microsoft.com/cpp)                                                    | → |CTwitterTwitter                 |
 
 ...and please open an [issue](https://github.com/Takym/takym.github.io/issues/new?title=New+Twitter:+%28please+type+your+opinion+here%29), so you can notify me of another thing named including X, 10, 十, +, $\times$, *, or analogues of X.
 <!-- PLEASE DO NOT ADD LINK TO https://www.xvideos.com/ FOR USER SAFETY! -->
