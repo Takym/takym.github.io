@@ -13,15 +13,15 @@ nav#left, nav#right {
 }
 
 table {
-	border-color: #98DE98;
+	border-color: #87CD87;
 }
 
 table th {
-	border-color: #EE349A;
+	border-color: #AA107A;
 }
 
 table td {
-	border-color: #6532FF;
+	border-color: #4310BB;
 }
 
 table thead tr:nth-child(odd),
