@@ -13,28 +13,28 @@ nav#left, nav#right {
 }
 
 table {
-	border-color: #B4DDB4;
+	border-color: #98DE98;
 }
 
 table th {
-	border-color: #CC6688;
+	border-color: #EE349A;
 }
 
 table td {
-	border-color: #8866CC;
+	border-color: #6532FF;
 }
 
 table thead tr:nth-child(odd),
 table thead tr:nth-child(even) {
-	background-color: #FFDDEE;
+	background-color: #FFF0F0;
 }
 
 table tr:nth-child(odd) {
-	background-color: #E5E5FF;
+	background-color: #F0F0FF;
 }
 
 table tr:nth-child(even) {
-	background-color: #DDFFFF;
+	background-color: #ECFFFF;
 }
 
 @media (min-width: 768px) {
