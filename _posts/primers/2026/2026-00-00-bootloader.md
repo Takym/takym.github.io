@@ -296,6 +296,7 @@ Legacy BIOS の API を呼び出して画面に文字列を出力する関数を
 コードの配置場所は、[文字列を出力する関数](#文字列を出力する関数)（`.PRINT`）の場合と同様に、`.BPB`、`.PT`、`.BOOT_SIGN` の位置関係が変わらなければ、どの場所にでも配置する事ができます。特に拘りが無ければ、`.PRINT` の直後で良いでしょう。
 
 <!-- TODO: ここから未完成 -->
+使用するレジスタの元の値をスタックへ事前に退避しておきます。
 ```asm
 .READ_DISK:
 	PUSH	AX                                   ; AX の値をスタックへ退避
@@ -303,6 +304,9 @@ Legacy BIOS の API を呼び出して画面に文字列を出力する関数を
 	PUSH	DX                                   ; DX の値をスタックへ退避
 	PUSH	SI                                   ; SI の値をスタックへ退避
 	PUSH	BP                                   ; BP の値をスタックへ退避
+```
+
+```asm
 	MOV		BP, ADDR_MBR                         ; BP = ADDR_MBR
 	MOV		AL, [BP + IDX_SECT_CT]               ; セクタ数取得
 	MOV		BH, CL                               ; セクタ番号を BH に複写
@@ -312,6 +316,9 @@ Legacy BIOS の API を呼び出して画面に文字列を出力する関数を
 	MOV		DL, [BP + IDX_DRIVE_NUM]             ; ドライブ番号設定
 	XOR		BX, BX                               ; BX に読み込み先のアドレスを設定
 	XOR		SI, SI                               ; 試行回数はゼロ
+```
+
+```asm
 .READ_DISK_RETRY:
 	MOV		AH, 0x02                             ; ディスクからデータを読み込む
 	INT		0x13                                 ; BIOS 関数呼び出し
@@ -322,6 +329,10 @@ Legacy BIOS の API を呼び出して画面に文字列を出力する関数を
 	MOV		AH, 0x00                             ; ドライブ再設定
 	INT		0x13                                 ; BIOS 関数呼び出し
 	JMP		.READ_DISK_RETRY                     ; 再試行
+```
+
+最後に各レジスタの値をスタックから復元し、呼び出し元の文脈で処理を続行できる様にします。
+```asm
 .READ_DISK_END:
 	POP		BP                                   ; BP の値をスタックから復元
 	POP		SI                                   ; SI の値をスタックから復元
