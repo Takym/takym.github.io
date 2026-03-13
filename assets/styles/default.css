@@ -202,7 +202,7 @@ code:not(pre code) {
 }
 
 pre:has(code) {
-	border: #222222 1px dashed;
+	border: 1px dashed #222222;
 }
 
 table {
@@ -220,6 +220,10 @@ table th,
 table td {
 	border-width: calc(attr(border number, 1) * 1px);
 	border-style: solid;
+}
+
+blockquote {
+	border-left: 3px inset #808080;
 }
 
 img[alt="ジカッキィー 説明画像 通常"],
