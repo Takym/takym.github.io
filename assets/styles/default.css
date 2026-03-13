@@ -223,7 +223,9 @@ table td {
 }
 
 blockquote {
-	border-left: 3px inset #808080;
+	margin-left : 0.5rem;
+	padding-left: 0.5rem;
+	border-left : 3px inset #CCCCCC;
 }
 
 img[alt="ジカッキィー 説明画像 通常"],
