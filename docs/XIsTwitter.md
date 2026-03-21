@@ -1,5 +1,6 @@
 ---
 authors: Takym
+hatena_star: enabled
 ---
 # X is Twitter.
 Copyright (C) 2025-2026 Takym.

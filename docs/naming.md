@@ -1,5 +1,6 @@
 ---
 authors: Takym
+hatena_star: enabled
 ---
 # サイトシステム名の由来
 Copyright (C) 2019-2025 Takym.

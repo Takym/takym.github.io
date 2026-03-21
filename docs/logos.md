@@ -1,5 +1,6 @@
 ---
 authors: Takym
+hatena_star: enabled
 ---
 # 歴代のロゴ
 Copyright (C) 2019-2025 Takym.
