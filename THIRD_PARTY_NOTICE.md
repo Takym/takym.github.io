@@ -66,3 +66,7 @@ Copyright (C) 2019-2025 Takym.
 * ウェブサイト：<https://www.bing.com/webmasters>
 * 開発者：Microsoft Corporation
 * ガイドライン：[Bing Webmaster Guidelines](https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a)
+
+## はてなスター
+* ウェブサイト：<https://s.hatena.ne.jp/>
+* 開発者：Hatena
