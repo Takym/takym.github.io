@@ -1,4 +1,12 @@
 
+{% if post.lang %}
+	{% assign lang = post.lang %}
+{% elsif page.lang %}
+	{% assign lang = page.lang %}
+{% else %}
+	{% assign lang = site.lang %}
+{% endif %}
+
 {% assign repo_url        = site.github.repository_url                     %}
 {% assign repo_owner_url  = site.github.owner_url                          %}
 {% assign repo_owner_name = site.github.owner_name     | default: "Takym"  %}
@@ -7,17 +15,19 @@
 {% assign repo_build_rev  = site.github.build_revision                     %}
 
 {% if post %}
-	{% assign date       = post.date       %}
-	{% assign authors    = post.authors    %}
-	{% assign category   = post.category   %}
-	{% assign tags       = post.tags       %}
-	{% assign file_lines = post.file_lines %}
+	{% assign date        = post.date        %}
+	{% assign authors     = post.authors     %}
+	{% assign category    = post.category    %}
+	{% assign tags        = post.tags        %}
+	{% assign file_lines  = post.file_lines  %}
+	{% assign hatena_star = post.hatena_star %}
 {% else %}
-	{% assign date       = page.date       %}
-	{% assign authors    = page.authors    %}
-	{% assign category   = page.category   %}
-	{% assign tags       = page.tags       %}
-	{% assign file_lines = page.file_lines %}
+	{% assign date        = page.date        %}
+	{% assign authors     = page.authors     %}
+	{% assign category    = page.category    %}
+	{% assign tags        = page.tags        %}
+	{% assign file_lines  = page.file_lines  %}
+	{% assign hatena_star = page.hatena_star %}
 {% endif %}
 
 {% if page.path contains "wiki/" and page.not_wiki != "not_wiki" %}
@@ -35,6 +45,25 @@
 	or repo_page_path == "wiki/README.md"
 %}
 	{% assign do_not_distribute = true %}
+{% endif %}
+
+{% if hatena_star and hatena_star != "" %}
+{% else %}
+	{% if  category == "general"
+		or category == "primers"
+		or category == "faintas"
+		or category == "jikkaky"
+	%}
+		{% if page.layout == "post" %}
+			{% assign hatena_star = "enabled" %}
+		{% elsif page.layout == "posts" and page.posts_viewmode == "table" %}
+			{% assign hatena_star = "tablerow" %}
+		{% else %}
+			{% assign hatena_star = "disabled" %}
+		{% endif %}
+	{% else %}
+		{% assign hatena_star = "disabled" %}
+	{% endif %}
 {% endif %}
 
 {% if tags %}

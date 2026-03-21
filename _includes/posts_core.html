@@ -9,7 +9,7 @@
 		{% for post in posts %}
 		{% if page.category == "all" or page.category == post.category %}
 		<tr>
-			<td><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
+			<td class="post_link_title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
 			<td>{{ post.date | date: "%Y/%m/%d" | default: "不明" }}</td>
 			<td>
 				{% for author in post.authors %}
