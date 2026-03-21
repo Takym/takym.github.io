@@ -4,5 +4,4 @@ title: 全ての記事一覧
 authors: Takym
 category: all
 posts_viewmode: table
-hatena_star: tablerow
 ---

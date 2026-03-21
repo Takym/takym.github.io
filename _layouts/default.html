@@ -109,21 +109,8 @@
 				"entryNodes": {
 					"body > main": {
 						"uri": "window.location",
-						"title": "h1",
+						"title": "document.title",
 						"container": "article.hatena_star_container"
-					}
-				}
-			};
-		</script>
-		{% elsif hatena_star == "tablerow" %}
-		<script src="https://s.hatena.ne.jp/js/HatenaStar.js"></script>
-		<script>
-			Hatena.Star.SiteConfig = {
-				"entryNodes": {
-					"#posts_data > tr": {
-						"uri": "td.post_link_title > a",
-						"title": "td.post_link_title > a",
-						"container": "td.post_link_title"
 					}
 				}
 			};

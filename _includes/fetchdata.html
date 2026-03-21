@@ -49,18 +49,13 @@
 
 {% if hatena_star and hatena_star != "" %}
 {% else %}
-	{% if  category == "general"
+	{% if page.layout == "post" and (
+		   category == "general"
 		or category == "primers"
 		or category == "faintas"
-		or category == "jikkaky"
+		or category == "jikkaky")
 	%}
-		{% if page.layout == "post" %}
-			{% assign hatena_star = "enabled" %}
-		{% elsif page.layout == "posts" and page.posts_viewmode == "table" %}
-			{% assign hatena_star = "tablerow" %}
-		{% else %}
-			{% assign hatena_star = "disabled" %}
-		{% endif %}
+		{% assign hatena_star = "enabled" %}
 	{% else %}
 		{% assign hatena_star = "disabled" %}
 	{% endif %}
