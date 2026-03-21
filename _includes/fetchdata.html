@@ -49,13 +49,16 @@
 
 {% if hatena_star and hatena_star != "" %}
 {% else %}
-	{% if page.layout == "post" and (
-		   category == "general"
-		or category == "primers"
-		or category == "faintas"
-		or category == "jikkaky")
-	%}
-		{% assign hatena_star = "enabled" %}
+	{% if page.layout == "post" %}
+		{% if  category == "general"
+			or category == "primers"
+			or category == "faintas"
+			or category == "jikkaky"
+		%}
+			{% assign hatena_star = "enabled" %}
+		{% else %}
+			{% assign hatena_star = "disabled" %}
+		{% endif %}
 	{% else %}
 		{% assign hatena_star = "disabled" %}
 	{% endif %}
