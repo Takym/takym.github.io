@@ -27,9 +27,9 @@ Copyright (C) 2026 Takym.
 	* [起動ディスクの読み込み](#起動ディスクの読み込み)
 * [改造ポイント](#改造ポイント)
 * [ビルドスクリプトとリストファイル](#ビルドスクリプトとリストファイル)
-* [デバッグ](#デバッグ)
-	* [VirtualBox を用いる場合](#virtualbox-を用いる場合)
+* [起動方法](#起動方法)
 	* [WSL + QEMU を用いる場合](#wsl--qemu-を用いる場合)
+	* [VirtualBox を用いる場合](#virtualbox-を用いる場合)
 * [osdev-jp の紹介](#osdev-jp-の紹介)
 * [その他の参考文献](#その他の参考文献)
 
@@ -562,12 +562,19 @@ nasm disk.asm -o disk.vfd -l disk.lst -f bin
 
 ソースコードを変更した都度、この長いコマンドを打ち込むのも大変でしょう。Windows の場合、テキストファイルにコマンドを貼り付け、拡張子を `.bat` や `.cmd` にする事で、ビルドスクリプトとして使う事ができます。コマンドプロンプトでファイル名（拡張子は省略可）を打ち込む事で、楽に呼び出せます。例えば、[`build.cmd`](https://github.com/Takym/primers/blob/kncs/2026-03-02/src/KernelNuclearCoreShell/boot/build.cmd) と名付ければ、44 文字が 5 文字に減ります。39 文字分も減らせます。
 
-## デバッグ
-
-### VirtualBox を用いる場合
-<!-- TODO: 執筆する -->
+## 起動方法
+作成したブートローダーを仮想環境で起動する方法を説明します。デバッグにお役立てください。
 
 ### WSL + QEMU を用いる場合
+0. 仮想環境を準備します。
+	* [Microsoft の公式文書の手順](https://learn.microsoft.com/windows/wsl/install)に従って WSL を有効化してください。
+	* [QEMU の公式文書の手順](https://www.qemu.org/download/#linux)に従って Linux 版 QEMU を WSL 上にインストールしてください。
+
+<!-- TODO: 執筆する -->
+
+### VirtualBox を用いる場合
+0. <https://www.virtualbox.org/> から VirtualBox をダウンロードし、インストールしてください。
+
 <!-- TODO: 執筆する -->
 
 ## osdev-jp の紹介
