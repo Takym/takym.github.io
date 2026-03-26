@@ -15,7 +15,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v5
         with:
-          dotnet-version: 9.0.x
+          dotnet-version: 10.0.x
       - name: Switch to master branch
         run: |
           git fetch origin
@@ -33,5 +33,3 @@ jobs:
           git add .
           git commit -m "Update the game script file"
           git push
-
-
