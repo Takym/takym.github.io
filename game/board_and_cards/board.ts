@@ -23,9 +23,9 @@ export function InitializeBoard(width: number, height: number): Board
 
 export class Board implements Base.IGameObject
 {
-	public View:        HTMLTableElement | undefined;
-	public DisplayName: string           | undefined;
-	public Cells:       Cell[][]         | undefined;
+	public View?:        HTMLTableElement;
+	public DisplayName?: string;
+	public Cells?:       Cell[][];
 
 	public Create(parent: HTMLElement): void
 	{
@@ -90,7 +90,7 @@ export class Board implements Base.IGameObject
 
 export class Cell extends Base.Item
 {
-	public override GetView(): HTMLTableCellElement
+	public override GetView(): HTMLTableCellElement | undefined
 	{
 		return this.View as HTMLTableCellElement;
 	}

@@ -1,8 +1,8 @@
 
 export interface IGameObject
 {
-	View:        HTMLElement | undefined;
-	DisplayName: string      | undefined;
+	View?:        HTMLElement;
+	DisplayName?: string;
 
 	Create(parent: HTMLElement): void;
 	Update(                   ): void;
@@ -10,10 +10,10 @@ export interface IGameObject
 
 export abstract class Item implements IGameObject
 {
-	public View:        HTMLElement | undefined;
-	public DisplayName: string      | undefined;
+	public View?:        HTMLElement;
+	public DisplayName?: string;
 
-	public    abstract GetView   (                                   ): HTMLElement;
+	public    abstract GetView   (                                   ): HTMLElement | undefined;
 	protected abstract GetTagName(                                   ): string;
 	protected abstract OnClick   (elem: HTMLElement, pe: PointerEvent): void;
 

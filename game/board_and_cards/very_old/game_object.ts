@@ -37,8 +37,8 @@ export function InitializeCardList(count: number): CardList
 
 export interface IGameObject
 {
-	View:        HTMLElement;
-	DisplayName: string;
+	View?:        HTMLElement;
+	DisplayName?: string;
 
 	Create(parent: HTMLElement): void;
 	Update(                   ): void;
@@ -46,8 +46,8 @@ export interface IGameObject
 
 export abstract class Item implements IGameObject
 {
-	public View:        HTMLElement;
-	public DisplayName: string;
+	public View?:        HTMLElement;
+	public DisplayName?: string;
 
 	public    abstract GetView():    HTMLElement;
 	protected abstract GetTagName(): string;
@@ -56,7 +56,7 @@ export abstract class Item implements IGameObject
 	{
 		if (!this.View && parent) {
 			const itemElem = document.createElement(this.GetTagName());
-			itemElem.innerText = this.DisplayName;
+			itemElem.innerText = this.DisplayName ?? "";
 
 			parent.appendChild(itemElem);
 
@@ -68,7 +68,7 @@ export abstract class Item implements IGameObject
 	{
 		const view = this.View;
 		if (view) {
-			view.innerText = this.DisplayName;
+			view.innerText = this.DisplayName ?? "";
 		}
 	}
 }
@@ -101,9 +101,9 @@ export class Card extends Item
 
 export class Board implements IGameObject
 {
-	public View:        HTMLTableElement;
-	public DisplayName: string;
-	public Cells:       Cell[][];
+	public View?:        HTMLTableElement;
+	public DisplayName?: string;
+	public Cells?:       Cell[][];
 
 	public Create(parent: HTMLElement): void
 	{
@@ -111,7 +111,7 @@ export class Board implements IGameObject
 			const table   = document.createElement("table");
 			const caption = document.createElement("caption");
 
-			caption.innerText = this.DisplayName;
+			caption.innerText = this.DisplayName ?? "";
 
 			table .appendChild(caption);
 			parent.appendChild(table);
@@ -146,7 +146,7 @@ export class Board implements IGameObject
 				caption = document.createElement("caption");
 				view.appendChild(caption);
 			}
-			caption.innerText = this.DisplayName;
+			caption.innerText = this.DisplayName ?? "";
 
 			view.setAttribute("border", (Number.parseInt(view.getAttribute("border") ?? "0") + 1).toString());
 		}
@@ -170,9 +170,9 @@ export class Board implements IGameObject
 
 export class CardList implements IGameObject
 {
-	public View:        HTMLUListElement;
-	public DisplayName: string;
-	public Cards:       Card[];
+	public View?:        HTMLUListElement;
+	public DisplayName?: string;
+	public Cards?:       Card[];
 
 	public Create(parent: HTMLElement): void
 	{

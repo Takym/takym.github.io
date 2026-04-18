@@ -19,9 +19,9 @@ export function InitializeCardList(count: number): CardList
 
 export class CardList implements Base.IGameObject
 {
-	public View:        HTMLUListElement | undefined;
-	public DisplayName: string           | undefined;
-	public Cards:       Card[]           | undefined;
+	public View?:        HTMLUListElement;
+	public DisplayName?: string;
+	public Cards?:       Card[];
 
 	public Create(parent: HTMLElement): void
 	{
@@ -74,7 +74,7 @@ export class CardList implements Base.IGameObject
 
 export class Card extends Base.Item
 {
-	public override GetView(): HTMLLIElement
+	public override GetView(): HTMLLIElement | undefined
 	{
 		return this.View as HTMLLIElement;
 	}
