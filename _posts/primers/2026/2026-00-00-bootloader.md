@@ -565,12 +565,27 @@ nasm disk.asm -o disk.vfd -l disk.lst -f bin
 ## 起動方法
 作成したブートローダーを仮想環境で起動する方法を説明します。デバッグにお役立てください。
 
+実機上で別のコンピュータを再現するソフトウェアは、仮想環境や仮想マシンやエミュレータなどと呼ばれます。仮想環境の外側の OS はホスト OS と呼ばれ、内側の OS はゲスト OS と呼ばれます。仮想環境は多層化させる事もできますので、ホスト OS は必ずしも実機上で実行されている訳ではありません。また、実は、ホスト OS を介さない仮想化技術もあり、その場合は狭義のハイパーバイザと呼ばれます。広義のハイパーバイザには、ホスト OS 上で実行されるエミュレータも含まれます。
+
 ### WSL + QEMU を用いる場合
-0. 仮想環境を準備します。
+0. 仮想マシンの実行環境を準備します。
 	* [Microsoft の公式文書の手順](https://learn.microsoft.com/windows/wsl/install)に従って WSL を有効化してください。
 	* [QEMU の公式文書の手順](https://www.qemu.org/download/#linux)に従って Linux 版 QEMU を WSL 上にインストールしてください。
-
-<!-- TODO: 執筆する -->
+1. WSL を起動し、作成したディスクイメージが含まれるディレクトリへ移動します。
+	* ブートローダー（`mbr.bin`）ではなくディスクイメージ（`disk.vfd`）が格納されているディレクトリです。ご注意ください。
+2. 次のコマンドを実行してください：
+	```sh
+	$ qemu-system-x86_64 -drive if=floppy,file=disk.vfd,index=0,media=disk -monitor stdio
+	```
+	* `qemu-system-x86_64` は、64 ビット版の x86 系 CPU のエミュレータです。AMD64 や Intel 64 や EM64T や IA-32e などと呼ばれる命令セットのエミュレータです。歴史的な事情で複数の名称があります。尚、IA-64 は x86 系とは互換性がありません。今回は、16 ビットモードしか使いませんが、64 ビット対応の仮想環境でも構いません。もし、32 ビット版しか起動できない場合は、代わりに `qemu-system-i386` をお使いください。
+	* `-drive if=floppy,file=disk.vfd,index=0,media=disk` は、フロッピーディスクを指定するオプションです。
+		* `if=floppy` は、インターフェースがフロッピーディスクである事を指定します。
+		* `file=disk.vfd` は、ディスクイメージのファイル名を指定します。
+		* `index=0` は、ディスクのポート番号に最初の番号を指定します。`0` は、Windows における A ドライブの様なものです。
+		* `media=disk` は、ディスクである事を指定します。`cdrom` にすると、CD-ROM（読み取り専用のコンパクトディスク）になります。
+	* `-monitor stdio` を指定すると、対話型のデバッグモニターを有効化できます。`info registers` と入力すれば、レジスタの中身を表示できます。詳しくは [QEMU Monitor](https://www.qemu.org/docs/master/system/monitor.html) をご確認ください。
+	* その他のオプションや、厳密な仕様、調整方法は、[QEMU User Documentation](https://www.qemu.org/docs/master/system/qemu-manpage.html) をご覧ください。
+* 筆者は一連の流れをスクリプト化し、半自動化しております。詳しくは [`serve.cmd`](https://github.com/Takym/primers/blob/kncs/2026-03-02/src/KernelNuclearCoreShell/boot/serve.cmd) をご確認ください。
 
 ### VirtualBox を用いる場合
 0. <https://www.virtualbox.org/> から VirtualBox をダウンロードし、インストールしてください。
@@ -588,5 +603,13 @@ osdev-jp と似た名称の [OSDev.org](https://wiki.osdev.org/Expanded_Main_Pag
 
 ## その他の参考文献
 <!-- TODO: 30日本、青本、みかん本へのアフィリエイトリンクをここに貼る -->
+
+<!-- TODO: UEFI 版の記事（紹介するに留める）
+https://uefi.org/specifications
+https://yuma.ohgami.jp/UEFI-Bare-Metal-Programming
+https://osdev-jp.readthedocs.io/ja/latest/2017/create-uefi-app-with-edk2.html
+https://qiita.com/tnishinaga/items/40755f414557faf45dcb
+https://github.com/MichalStrehovsky/zerosharp
+-->
 
 <small>（改めて読み返してみると、なにやらこの記事は生成型 AI が書いた様な文体になっていますが、AI の手は借りず、自分自身で書きました。どうやら筆者は AI と対話を重ねる内に、知らず知らずの内に AI の影響を受けていた様です。[以前のブートローダーの記事](../../../../general/2025/08/01/bootloader.html)でも同じ様な事を述べていましたね。）</small>
