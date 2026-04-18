@@ -1,5 +1,5 @@
 # <https://Takym.GITHUB.IO/>
-Copyright (C) 2019-2025 Takym.
+Copyright (C) 2019-2026 Takym.
 
 [![Takym](./assets/images/TakymLogo.png)](./assets/images/TakymLogo.png)
 [![Deploy GitHub Pages with Jekyll and Nitdefgai](https://github.com/Takym/takym.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/Takym/takym.github.io/actions/workflows/jekyll.yml)
