@@ -367,7 +367,7 @@ System.register("board_and_cards/very_old/game_object", [], function (exports_8,
                 Create(parent) {
                     if (!this.View && parent) {
                         const itemElem = document.createElement(this.GetTagName());
-                        itemElem.innerText = this.DisplayName;
+                        itemElem.innerText = this.DisplayName ?? "";
                         parent.appendChild(itemElem);
                         this.View = itemElem;
                     }
@@ -375,7 +375,7 @@ System.register("board_and_cards/very_old/game_object", [], function (exports_8,
                 Update() {
                     const view = this.View;
                     if (view) {
-                        view.innerText = this.DisplayName;
+                        view.innerText = this.DisplayName ?? "";
                     }
                 }
             };
@@ -406,7 +406,7 @@ System.register("board_and_cards/very_old/game_object", [], function (exports_8,
                     if (!this.View && parent) {
                         const table = document.createElement("table");
                         const caption = document.createElement("caption");
-                        caption.innerText = this.DisplayName;
+                        caption.innerText = this.DisplayName ?? "";
                         table.appendChild(caption);
                         parent.appendChild(table);
                         this.View = table;
@@ -436,7 +436,7 @@ System.register("board_and_cards/very_old/game_object", [], function (exports_8,
                             caption = document.createElement("caption");
                             view.appendChild(caption);
                         }
-                        caption.innerText = this.DisplayName;
+                        caption.innerText = this.DisplayName ?? "";
                         view.setAttribute("border", (Number.parseInt(view.getAttribute("border") ?? "0") + 1).toString());
                     }
                     const cells = this.Cells;
