@@ -37,6 +37,7 @@ Copyright (C) 2025-2026 Takym.
 |[X JAPAN](https://www.sonymusic.co.jp/artist/xjapan/)                                     | → |Twitter JAPAN                   |
 |[C++](https://learn.microsoft.com/cpp)                                                    | → |CTwitterTwitter                 |
 |[The X-Files](https://www.imdb.com/title/tt0106179/)                                      | → |The Twitter-Files               |
+|[XBOX](https://www.xbox.com/)                                                             | → |TwitterBOTwitter                |
 
 ...and please open an [issue](https://github.com/Takym/takym.github.io/issues/new?title=New+Twitter:+%28please+type+your+opinion+here%29), so you can notify me of another thing named including X, 10, 十, +, $\times$, *, or analogues of X.
 <!-- PLEASE DO NOT ADD LINK TO https://www.xvideos.com/ FOR USER SAFETY! -->
