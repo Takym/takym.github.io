@@ -630,33 +630,9 @@ nasm disk.asm -o disk.vfd -l disk.lst -f bin
 osdev-jp と似た名称の [OSDev.org](https://wiki.osdev.org/Expanded_Main_Page) と呼ばれるコミュニティもありますが、こちらは英語圏の OS 開発のコミュニティです。双方に公式的な関係はありません。
 
 ## その他の参考文献
-<!--
-色々なサイトのリンクを貼り付けると、記事が長くなってしまうから、楽天だけでいいかな。
-https://books.rakuten.co.jp/rk/a3d23a47c1613f27839e17de2a9fddcd
-https://book.mynavi.jp/ec/products/detail/id=22078
-https://book.mynavi.jp/supportsite/detail/4839919844.html
-http://hrb.osask.jp
+この記事を執筆するにあたって、上記でリンクしているサイト以外で、参考にした書籍は「[30日でできる! OS自作入門](https://book.mynavi.jp/ec/products/detail/id=22078)」と「[作って理解するOS x86系コンピュータを動かす理論と実装](https://gihyo.jp/book/2019/978-4-297-10847-2)」です。ブートローダーのその先の OS 開発について興味がある方は買ってみては如何でしょうか。
 
-https://books.rakuten.co.jp/rk/d17995958d6c3478883c3da8d083ab42
-https://gihyo.jp/book/2019/978-4-297-10847-2
-https://gihyo.jp/book/2019/978-4-297-10847-2/support
-
-https://books.rakuten.co.jp/rb/16637816
-https://book.mynavi.jp/ec/products/detail/id=121220
-https://zero.osdev.jp/
-
-https://books.rakuten.co.jp/rb/18459726
-https://bookplus.nikkei.com/atcl/catalog/25/11/27/02329
-https://info.nikkeibp.co.jp/media/LIN/atcl/books/110200054
-https://github.com/sueyasu/os_book_code
--->
-この記事を執筆するにあたって、上記でリンクしているサイト以外で、参考にした書籍は「30日でできる! OS自作入門」と「作って理解するOS x86系コンピュータを動かす理論と実装」です。ブートローダーのその先の OS 開発について興味がある方は買ってみては如何でしょうか。
-
-<!-- TODO: 30日本、青本へのアフィリエイトリンクをここに貼る -->
-
-UEFI でブートローダーを開発するには、英語で書かれていますが、[公式の仕様書](https://uefi.org/specifications)が最も参考になります。他にも以下のサイトが参考になるでしょう。
-
-<!-- TODO: みかん本へのアフィリエイトリンクをここに貼る -->
+UEFI でブートローダーを開発するには、英語で書かれていますが、[公式の仕様書](https://uefi.org/specifications)が最も参考になります。UEFI に対応した OS 開発の書籍としては、「[ゼロからのOS自作入門](https://book.mynavi.jp/ec/products/detail/id=121220)」がおすすめです。他にも以下のサイトが参考になるでしょう。
 
 * [フルスクラッチで作る!UEFIベアメタルプログラミング](https://yuma.ohgami.jp/UEFI-Bare-Metal-Programming)
 * [EDK II で UEFI アプリケーションを作る — osdev-jp core docs 1.0 ドキュメント](https://osdev-jp.readthedocs.io/ja/latest/2017/create-uefi-app-with-edk2.html)
