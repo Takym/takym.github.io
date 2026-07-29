@@ -197,6 +197,10 @@ code {
 	tab-size: 4;
 }
 
+.tab8 code {
+	tab-size: 8;
+}
+
 code:not(pre code) {
 	color           : #441166;
 	background-color: #E2E6FF;
