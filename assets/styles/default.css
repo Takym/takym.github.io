@@ -193,6 +193,10 @@ li {
 	padding: 0.03rem;
 }
 
+code {
+	tab-size: 4;
+}
+
 code:not(pre code) {
 	color           : #441166;
 	background-color: #E2E6FF;

@@ -589,7 +589,7 @@ nasm disk.asm -o disk.vfd -l disk.lst -f bin
 		* `media=disk` は、ディスクである事を指定します。`cdrom` にすると、CD-ROM（読み取り専用のコンパクトディスク）になります。
 	* `-monitor stdio` を指定すると、対話型のデバッグモニターをホスト OS 側のターミナル上（コンソール画面上）で有効化できます。例えば、`info registers` と入力すれば、レジスタの中身を表示できます。詳しくは [QEMU Monitor](https://www.qemu.org/docs/master/system/monitor.html) をご確認ください。
 	* その他のオプションや、厳密な仕様、調整方法は、[QEMU User Documentation](https://www.qemu.org/docs/master/system/qemu-manpage.html)（英語）をご覧ください。
-3. 起動すると、次の様に表示されます。（※尚、下記のスクリーンショット画像で表示されている起動情報は、[`pl2_playground.asm`](https://github.com/Takym/primers/blob/kncs/2026-03-02/src/KernelNuclearCoreShell/boot/pl2_playground.asm) によるものです。二番目以降のセクタに `pl2_playground.asm` をアセンブルしたものを書き込んでいます。詳しい仕組みはソースコードをご覧ください。`pl2_playground.asm` を読み込ませない場合、何も表示されません。）
+3. 起動すると、次の様に表示されます。（※尚、下記のスクリーンショット画像で表示されている起動情報は、[`pl2_playground.asm`](https://github.com/Takym/primers/blob/kncs/2026-03-02/src/KernelNuclearCoreShell/boot/pl2_playground.asm) によるものです。二番目以降のセクタに `pl2_playground.asm` をアセンブルしたものを書き込んでいます。詳しい仕組みはソースコードをご覧ください。`pl2_playground.asm` を読み込ませない場合、何も表示されません。）<br />
 	![QEMU 実行画面](https://takym.github.io/assets/images/primers/bootloader/qemu.png)
 * 筆者は一連の流れをスクリプト化し、半自動化しております。詳しくは [`serve.cmd`](https://github.com/Takym/primers/blob/kncs/2026-03-02/src/KernelNuclearCoreShell/boot/serve.cmd) をご確認ください。
 
@@ -597,30 +597,30 @@ nasm disk.asm -o disk.vfd -l disk.lst -f bin
 00. <https://www.virtualbox.org/> から VirtualBox をダウンロードし、インストールしてください。
 	* 筆者の環境では、7.2.8 がインストールされています。
 	* ウェブサイトは英語ですが、ソフトウェア自体は日本語にできます。
-01. VirtualBox を起動し、「新規(N)」ボタンを押下してください。新しい仮想マシンを作成します。
+01. VirtualBox を起動し、「新規(N)」ボタンを押下してください。新しい仮想マシンを作成します。<br />
 	![VirtualBox ホーム画面](https://takym.github.io/assets/images/primers/bootloader/vbox_0.png)
-02. 仮想マシンの名前とフォルダは、どの様に設定しても構いません。ディスクイメージファイルと同じフォルダにする必要もありません。ご自身で整理し易い様に設定してください。OS は「Other」、OS バージョンは「Other/Unknown (64-bit)」を選択してください。
+02. 仮想マシンの名前とフォルダは、どの様に設定しても構いません。ディスクイメージファイルと同じフォルダにする必要もありません。ご自身で整理し易い様に設定してください。OS は「Other」、OS バージョンは「Other/Unknown (64-bit)」を選択してください。<br />
 	![VirtualBox 仮想マシン作成画面](https://takym.github.io/assets/images/primers/bootloader/vbox_0_new_0.png)
 03. 「無人ゲスト OS インストールの設定(<u>U</u>)」は初期設定のままにしてください。
-04. 次に「仮想ハードウェアを指定(<u>A</u>)」を開き、「EFI を使用(<u>U</u>)」のチェックが外されている事を確認してください。今回は EFI を使用しません。メモリや CPU のコア数は既定のままでも構いません。
+04. 次に「仮想ハードウェアを指定(<u>A</u>)」を開き、「EFI を使用(<u>U</u>)」のチェックが外されている事を確認してください。今回は EFI を使用しません。メモリや CPU のコア数は既定のままでも構いません。<br />
 	![VirtualBox 仮想マシン作成画面](https://takym.github.io/assets/images/primers/bootloader/vbox_0_new_1.png)
-05. 次に「仮想ハードディスクを指定(<u>K</u>)」を開き、「仮想ハードディスクなしで仮想マシンを作成(<u>R</u>)」を選択してください。このページではフロッピーディスクを指定できませんので、後ほど設定します。最後に「完了(<u>F</u>)」ボタンを押下し、仮想マシンを作成してください。
+05. 次に「仮想ハードディスクを指定(<u>K</u>)」を開き、「仮想ハードディスクなしで仮想マシンを作成(<u>R</u>)」を選択してください。このページではフロッピーディスクを指定できませんので、後ほど設定します。最後に「完了(<u>F</u>)」ボタンを押下し、仮想マシンを作成してください。<br />
 	![VirtualBox 仮想マシン作成画面](https://takym.github.io/assets/images/primers/bootloader/vbox_0_new_2.png)
-06. 左側のサイドバーから「仮想マシン」を選んでください。作成した仮想マシンが選択されている事を確認し、「設定(S)...」ボタンを押下してください。
+06. 左側のサイドバーから「仮想マシン」を選んでください。作成した仮想マシンが選択されている事を確認し、「設定(S)...」ボタンを押下してください。<br />
 	![VirtualBox ホーム画面](https://takym.github.io/assets/images/primers/bootloader/vbox_1.png)
-07. 設定画面の上部にある「高度」タブを選び、サイドバーから「ストレージ」を選んでください。ストレージの設定画面が表示されましたら、ストレージ一覧の真下にある最も左側のアイコン（下図の赤枠）を押下してください。フロッピーディスクを指定する為のコントローラーを追加します。
+07. 設定画面の上部にある「高度」タブを選び、サイドバーから「ストレージ」を選んでください。ストレージの設定画面が表示されましたら、ストレージ一覧の真下にある最も左側のアイコン（下図の赤枠）を押下してください。フロッピーディスクを指定する為のコントローラーを追加します。<br />
 	![VirtualBox 設定画面](https://takym.github.io/assets/images/primers/bootloader/vbox_1_config_0.png)
-08. メニューから「I82078 (フロッピー)」<small>（蛇足ですが、一文字目は、エルでもイチでもなく、大文字のアイです。Intel を意味しています。）</small>を選んでください。
+08. メニューから「I82078 (フロッピー)」<small>（蛇足ですが、一文字目は、エルでもイチでもなく、大文字のアイです。Intel を意味しています。）</small>を選んでください。<br />
 	![VirtualBox 設定画面 - コントローラーメニュー](https://takym.github.io/assets/images/primers/bootloader/vbox_1_config_0_ifmenu.png)
-09. 「コントローラー: Floppy」の右横にあるアイコン（下図の赤枠）を押下してください。フロッピーディスクを指定します。
+09. 「コントローラー: Floppy」の右横にあるアイコン（下図の赤枠）を押下してください。フロッピーディスクを指定します。<br />
 	![VirtualBox 設定画面](https://takym.github.io/assets/images/primers/bootloader/vbox_1_config_1.png)
-10. 「追加(A)」ボタンを押下し、表示されたファイル選択ダイアログにてディスクイメージファイルを指定してください。ディスクイメージのファイル名は、この記事と同じ名称なら、`disk.vfd` となる筈です。ダイアログを閉じたら、追加したディスクイメージファイルが選択されている事を確認し、「選択(H)」ボタンを押下してください。
+10. 「追加(A)」ボタンを押下し、表示されたファイル選択ダイアログにてディスクイメージファイルを指定してください。ディスクイメージのファイル名は、この記事と同じ名称なら、`disk.vfd` となる筈です。ダイアログを閉じたら、追加したディスクイメージファイルが選択されている事を確認し、「選択(H)」ボタンを押下してください。<br />
 	![VirtualBox 仮想ディスク追加画面](https://takym.github.io/assets/images/primers/bootloader/vbox_1_config_1_add_disk.png)
-11. `disk.vfd` の「フロッピー ドライブ(<u>D</u>)」属性に「フロッピーデバイス 0」を指定してください。「フロッピーデバイス 0」は、Windows における A ドライブの様なものです。
+11. `disk.vfd` の「フロッピー ドライブ(<u>D</u>)」属性に「フロッピーデバイス 0」を指定してください。「フロッピーデバイス 0」は、Windows における A ドライブの様なものです。<br />
 	![VirtualBox 設定画面](https://takym.github.io/assets/images/primers/bootloader/vbox_1_config_2.png)
-12. 設定画面を閉じたら、作成した仮想マシンが選択されている事を確認し、「起動(T)」ボタンを押下してください。
+12. 設定画面を閉じたら、作成した仮想マシンが選択されている事を確認し、「起動(T)」ボタンを押下してください。<br />
 	![VirtualBox ホーム画面](https://takym.github.io/assets/images/primers/bootloader/vbox_2.png)
-13. 起動すると、次の様に表示されます。（※QEMU の場合と同様に、こちらでも `pl2_playground.asm` を読み込ませています。）
+13. 起動すると、次の様に表示されます。（※QEMU の場合と同様に、こちらでも `pl2_playground.asm` を読み込ませています。）<br />
 	![VirtualBox 実行画面](https://takym.github.io/assets/images/primers/bootloader/vbox_2_display.png)
 
 ## osdev-jp の紹介
