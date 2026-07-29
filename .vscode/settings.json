@@ -16,6 +16,8 @@
 		"*.sh": "shellscript",
 		"*.bat": "bat",
 		"*.cmd": "bat",
+		"*.yml": "yaml",
+		"*.yaml": "yaml"
 	},
 
 	"[shellscript]": {
@@ -24,6 +26,12 @@
 
 	"[bat]": {
 		"files.encoding": "shiftjis"
+	},
+
+	"[yaml]": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true,
+		"files.eol": "\n"
 	},
 
 	// https://github.com/ros2/ros2/issues/1406#issuecomment-1795750318
