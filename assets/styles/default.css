@@ -210,7 +210,8 @@ code:not(pre code) {
 }
 
 pre:has(code) {
-	border: 1px dashed #222222;
+	border  : 1px dashed #222222;
+	overflow: scroll;
 }
 
 table {
