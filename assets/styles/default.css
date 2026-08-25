@@ -373,6 +373,10 @@ iframe[title="Sponsor Takym"][src="https://github.com/sponsors/Takym/button"] {
 }
 
 @media (max-width: 768px) {
+	* {
+		overflow-wrap: break-word;
+	}
+
 	nav#left_toggle, nav#right_toggle {
 		padding    : 0;
 		user-select: none;
