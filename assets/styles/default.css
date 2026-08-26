@@ -401,6 +401,10 @@ iframe[title="Sponsor Takym"][src="https://github.com/sponsors/Takym/button"] {
 		overflow-y: auto;
 	}
 
+	pre code.hljs {
+		overflow-x: visible;
+	}
+
 	iframe[title="Sponsor Takym"][src="https://github.com/sponsors/Takym/card"] {
 		width : 300px;
 		height: 260px;
