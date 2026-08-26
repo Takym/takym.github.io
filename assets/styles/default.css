@@ -210,8 +210,7 @@ code:not(pre code) {
 }
 
 pre:has(code) {
-	border  : 1px dashed #222222;
-	overflow: scroll;
+	border: 1px dashed #222222;
 }
 
 table {
@@ -395,6 +394,11 @@ iframe[title="Sponsor Takym"][src="https://github.com/sponsors/Takym/button"] {
 
 	main {
 		padding: 1rem 0;
+	}
+
+	pre:has(code) {
+		overflow-x: scroll;
+		overflow-y: auto;
 	}
 
 	iframe[title="Sponsor Takym"][src="https://github.com/sponsors/Takym/card"] {
